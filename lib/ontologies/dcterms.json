@@ -25,12 +25,14 @@
    {
       "description": "The set of classes specified by the DCMI Type Vocabulary, used to categorize the nature or genre of the resource.", 
       "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-DCMIType", 
-      "text": "DCMIType"
+      "text": "DCMIType", 
+      "type": "class"
    }, 
    {
       "description": "The set of conceptual resources specified by the Dewey Decimal Classification.", 
       "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-DDC", 
-      "text": "DDC"
+      "text": "DDC", 
+      "type": "class"
    }, 
    {
       "description": "A digital resource format.", 
@@ -47,7 +49,8 @@
    {
       "description": "The set of media types specified by the Internet Assigned Numbers Authority.", 
       "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-IMT", 
-      "text": "IMT"
+      "text": "IMT", 
+      "type": "class"
    }, 
    {
       "description": "The set of codes listed in ISO 3166-1 for the representation of names of countries.", 
@@ -76,12 +79,14 @@
    {
       "description": "The set of conceptual resources specified by the Library of Congress Classification.", 
       "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-LCC", 
-      "text": "LCC"
+      "text": "LCC", 
+      "type": "class"
    }, 
    {
       "description": "The set of labeled concepts specified by the Library of Congress Subject Headings.", 
       "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-LCSH", 
-      "text": "LCSH"
+      "text": "LCSH", 
+      "type": "class"
    }, 
    {
       "description": "A legal document giving official permission to do something with a Resource.", 
@@ -110,7 +115,8 @@
    {
       "description": "The set of labeled concepts specified by the Medical Subject Headings.", 
       "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-MESH", 
-      "text": "MESH"
+      "text": "MESH", 
+      "type": "class"
    }, 
    {
       "description": "A file format or physical medium.", 
@@ -139,7 +145,8 @@
    {
       "description": "The set of conceptual resources specified by the National Library of Medicine Classification.", 
       "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-NLM", 
-      "text": "NLM"
+      "text": "NLM", 
+      "type": "class"
    }, 
    {
       "description": "The set of time intervals defined by their limits according to the DCMI Period Encoding Scheme.", 
@@ -228,12 +235,14 @@
    {
       "description": "The set of places specified by the Getty Thesaurus of Geographic Names.", 
       "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-TGN", 
-      "text": "TGN"
+      "text": "TGN", 
+      "type": "class"
    }, 
    {
       "description": "The set of conceptual resources specified by the Universal Decimal Classification.", 
       "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-UDC", 
-      "text": "UDC"
+      "text": "UDC", 
+      "type": "class"
    }, 
    {
       "description": "The set of identifiers constructed according to the generic syntax for Uniform Resource Identifiers as specified by the Internet Engineering Task Force.", 

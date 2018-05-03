@@ -1,3 +1,11 @@
+# Copyright 2018 Thomson Reuters
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 # Convert a turtle file to a JSON object suitable for the autocompleter
 # For example:
 # cat foaf.ttl | python convert.py "http://xmlns.com/foaf/spec/#" foaf > foaf.json
@@ -15,7 +23,7 @@ urlPrefix=sys.argv[1]
 desiredPrefix=sys.argv[2]
 predicates = []
 predicateRegex = re.compile(ur'^([^:\s]*):([a-zA-Z\-_]+)')
-typeRegex = re.compile(ur'a (rdf|owl|rdfs):([\w]+)')
+typeRegex = re.compile(ur'a (rdf|owl|rdfs|dcam):([\w]+)')
 commentRegex = re.compile(ur'\s+(rdfs:comment|skos:definition) \"([^\"]+)\"')
 currentPredicate = None
 for line in sys.stdin:
@@ -30,7 +38,9 @@ for line in sys.stdin:
     if currentPredicate is not None:
         predicateType = typeRegex.search(line)
         if predicateType is not None and 'type' not in currentPredicate:
-            if predicateType.group(2) == 'Class' or predicateType.group(2) == 'Datatype':
+            if predicateType.group(2) == 'Class' \
+                or predicateType.group(2) == 'Datatype' \
+                or predicateType.group(2) == 'VocabularyEncodingScheme':
                 currentPredicate['type']='class'
             elif predicateType.group(2) == 'Property' or predicateType.group(2) == 'ObjectProperty' \
                 or predicateType.group(2) == 'AnnotationProperty'or predicateType.group(2) == 'DatatypeProperty':
