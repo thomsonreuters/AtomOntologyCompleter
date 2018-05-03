@@ -1,0 +1,51 @@
+{
+  "dc11":{
+    "title":"Dublin Core Terms",
+    "spec":"http://dublincore.org/documents/dcmi-terms/",
+    "prefix":"<http://purl.org/dc/terms/>",
+    "docprefix":"http://dublincore.org/documents/dcmi-terms/#terms-",
+    "ontology":"./ontologies/dcterms.json"
+  },
+  "dcterms":{
+    "title":"Dublin Core Elements",
+    "spec":"http://dublincore.org/documents/dcmi-terms/",
+    "prefix":"<http://purl.org/dc/elements/1.1/>",
+    "docprefix":"http://dublincore.org/documents/dcmi-terms/#elements-",
+    "ontology":"./ontologies/dc11.json"
+  },
+  "foaf":{
+    "title":"Friend of a friend",
+    "spec":"http://xmlns.com/foaf/spec/",
+    "prefix":"<http://xmlns.com/foaf/0.1/>",
+    "docprefix":"http://xmlns.com/foaf/spec/#",
+    "ontology":"./ontologies/foaf.json"
+  },
+  "prov":{
+    "title":"Provenance",
+    "spec":"https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+    "prefix":"<http://www.w3.org/ns/prov#>",
+    "docprefix":"https://www.w3.org/TR/2013/REC-prov-o-20130430/#",
+    "ontology":"./ontologies/prov.json"
+  },
+  "rdfs":{
+    "title":"RDF Schema",
+    "spec":"https://www.w3.org/TR/rdf-schema/",
+    "prefix":"<http://www.w3.org/2000/01/rdf-schema#>",
+    "docprefix":"https://www.w3.org/TR/rdf-schema/#ch_#",
+    "ontology":"./ontologies/rdfs.json"
+  },
+  "sh":{
+    "title":"Shapes Constraint Language",
+    "spec":"https://www.w3.org/TR/shacl/",
+    "prefix":"<http://www.w3.org/ns/shacl#>",
+    "docprefix":"https://www.w3.org/TR/shacl/#",
+    "ontology":"./ontologies/shacl.json"
+  },
+  "skos":{
+    "title":"Simple Knowledge Organization System",
+    "spec":"https://www.w3.org/2009/08/skos-reference/skos.html",
+    "prefix":"<http://www.w3.org/2004/02/skos/core#>",
+    "docprefix":"https://www.w3.org/2009/08/skos-reference/skos.html#",
+    "ontology":"./ontologies/skos.json"
+  }
+}

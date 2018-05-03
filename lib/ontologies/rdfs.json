@@ -1,0 +1,85 @@
+[
+   {
+      "description": "The class resource, everything.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/rdf-schema/#ch_Resource", 
+      "text": "Resource", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of classes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/rdf-schema/#ch_Class", 
+      "text": "Class", 
+      "type": "class"
+   }, 
+   {
+      "description": "The subject is a subclass of a class.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/rdf-schema/#ch_subClassOf", 
+      "text": "subClassOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "The subject is a subproperty of a property.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/rdf-schema/#ch_subPropertyOf", 
+      "text": "subPropertyOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "A description of the subject resource.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/rdf-schema/#ch_comment", 
+      "text": "comment", 
+      "type": "property"
+   }, 
+   {
+      "description": "A human-readable name for the subject.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/rdf-schema/#ch_label", 
+      "text": "label", 
+      "type": "property"
+   }, 
+   {
+      "description": "A domain of the subject property.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/rdf-schema/#ch_domain", 
+      "text": "domain", 
+      "type": "property"
+   }, 
+   {
+      "description": "A range of the subject property.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/rdf-schema/#ch_range", 
+      "text": "range", 
+      "type": "property"
+   }, 
+   {
+      "description": "Further information about the subject resource.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/rdf-schema/#ch_seeAlso", 
+      "text": "seeAlso", 
+      "type": "property"
+   }, 
+   {
+      "description": "The defininition of the subject resource.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/rdf-schema/#ch_isDefinedBy", 
+      "text": "isDefinedBy", 
+      "type": "property"
+   }, 
+   {
+      "description": "The class of literal values, eg. textual strings and integers.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/rdf-schema/#ch_Literal", 
+      "text": "Literal", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of RDF containers.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/rdf-schema/#ch_Container", 
+      "text": "Container", 
+      "type": "class"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/rdf-schema/#ch_ContainerMembershipProperty", 
+      "text": "ContainerMembershipProperty", 
+      "type": "class"
+   }, 
+   {
+      "description": "A member of the subject resource.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/rdf-schema/#ch_member", 
+      "text": "member", 
+      "type": "property"
+   }
+]

@@ -1,0 +1,188 @@
+[
+   {
+      "description": "An idea or notion; a unit of thought.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#Concept", 
+      "text": "Concept", 
+      "type": "class"
+   }, 
+   {
+      "description": "A set of concepts, optionally including statements about semantic relationships between those concepts.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#ConceptScheme", 
+      "text": "ConceptScheme", 
+      "type": "class"
+   }, 
+   {
+      "description": "A meaningful collection of concepts.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#Collection", 
+      "text": "Collection", 
+      "type": "class"
+   }, 
+   {
+      "description": "An ordered collection of concepts, where both the grouping and the ordering are meaningful.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#OrderedCollection", 
+      "text": "OrderedCollection", 
+      "type": "class"
+   }, 
+   {
+      "description": "Relates a resource (for example a concept) to a concept scheme in which it is included.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#inScheme", 
+      "text": "inScheme", 
+      "type": "property"
+   }, 
+   {
+      "description": "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#hasTopConcept", 
+      "text": "hasTopConcept", 
+      "type": "property"
+   }, 
+   {
+      "description": "Relates a concept to the concept scheme that it is a top level concept of.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#topConceptOf", 
+      "text": "topConceptOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "The preferred lexical label for a resource, in a given language.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#prefLabel", 
+      "text": "prefLabel", 
+      "type": "property"
+   }, 
+   {
+      "description": "An alternative lexical label for a resource.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#altLabel", 
+      "text": "altLabel", 
+      "type": "property"
+   }, 
+   {
+      "description": "A lexical label for a resource that should be hidden when generating visual displays of the resource, but should still be accessible to free text search operations.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#hiddenLabel", 
+      "text": "hiddenLabel", 
+      "type": "property"
+   }, 
+   {
+      "description": "A notation, also known as classification code, is a string of characters such as \\", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#notation", 
+      "text": "notation", 
+      "type": "property"
+   }, 
+   {
+      "description": "A general note, for any purpose.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#note", 
+      "text": "note", 
+      "type": "property"
+   }, 
+   {
+      "description": "A note about a modification to a concept.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#changeNote", 
+      "text": "changeNote", 
+      "type": "property"
+   }, 
+   {
+      "description": "A statement or formal explanation of the meaning of a concept.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#definition", 
+      "text": "definition", 
+      "type": "property"
+   }, 
+   {
+      "description": "A note for an editor, translator or maintainer of the vocabulary.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#editorialNote", 
+      "text": "editorialNote", 
+      "type": "property"
+   }, 
+   {
+      "description": "An example of the use of a concept.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#example", 
+      "text": "example", 
+      "type": "property"
+   }, 
+   {
+      "description": "A note about the past state/use/meaning of a concept.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#historyNote", 
+      "text": "historyNote", 
+      "type": "property"
+   }, 
+   {
+      "description": "A note that helps to clarify the meaning and/or the use of a concept.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#scopeNote", 
+      "text": "scopeNote", 
+      "type": "property"
+   }, 
+   {
+      "description": "Links a concept to a concept related by meaning.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#semanticRelation", 
+      "text": "semanticRelation", 
+      "type": "property"
+   }, 
+   {
+      "description": "Relates a concept to a concept that is more general in meaning.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#broader", 
+      "text": "broader", 
+      "type": "property"
+   }, 
+   {
+      "description": "Relates a concept to a concept that is more specific in meaning.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#narrower", 
+      "text": "narrower", 
+      "type": "property"
+   }, 
+   {
+      "description": "Relates a concept to a concept with which there is an associative semantic relationship.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#related", 
+      "text": "related", 
+      "type": "property"
+   }, 
+   {
+      "description": "skos:broaderTransitive is a transitive superproperty of skos:broader.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#broaderTransitive", 
+      "text": "broaderTransitive", 
+      "type": "property"
+   }, 
+   {
+      "description": "skos:narrowerTransitive is a transitive superproperty of skos:narrower.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#narrowerTransitive", 
+      "text": "narrowerTransitive", 
+      "type": "property"
+   }, 
+   {
+      "description": "Relates a collection to one of its members.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#member", 
+      "text": "member", 
+      "type": "property"
+   }, 
+   {
+      "description": "Relates an ordered collection to the RDF list containing its members.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#memberList", 
+      "text": "memberList", 
+      "type": "property"
+   }, 
+   {
+      "description": "Relates two concepts coming, by convention, from different schemes, and that have comparable meanings", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#mappingRelation", 
+      "text": "mappingRelation", 
+      "type": "property"
+   }, 
+   {
+      "description": "skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#broadMatch", 
+      "text": "broadMatch", 
+      "type": "property"
+   }, 
+   {
+      "description": "skos:narrowMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#narrowMatch", 
+      "text": "narrowMatch", 
+      "type": "property"
+   }, 
+   {
+      "description": "skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#relatedMatch", 
+      "text": "relatedMatch", 
+      "type": "property"
+   }, 
+   {
+      "description": "skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch.", 
+      "descriptionMoreURL": "https://www.w3.org/2009/08/skos-reference/skos.html#exactMatch", 
+      "text": "exactMatch", 
+      "type": "property"
+   }
+]

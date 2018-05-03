@@ -1,0 +1,1204 @@
+[
+   {
+      "description": "A shape is a collection of constraints that may be targeted for certain nodes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#Shape", 
+      "text": "Shape", 
+      "type": "class"
+   }, 
+   {
+      "description": "A node shape is a shape that specifies constraint that need to be met with respect to focus nodes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#NodeShape", 
+      "text": "NodeShape", 
+      "type": "class"
+   }, 
+   {
+      "description": "A property shape is a shape that specifies constraints on the values of a focus node for a given property or path.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#PropertyShape", 
+      "text": "PropertyShape", 
+      "type": "class"
+   }, 
+   {
+      "description": "If set to true then all nodes conform to this.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#deactivated", 
+      "text": "deactivated", 
+      "type": "property"
+   }, 
+   {
+      "description": "Links a shape to a class, indicating that all instances of the class must conform to the shape.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#targetClass", 
+      "text": "targetClass", 
+      "type": "property"
+   }, 
+   {
+      "description": "Links a shape to individual nodes, indicating that these nodes must conform to the shape.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#targetNode", 
+      "text": "targetNode", 
+      "type": "property"
+   }, 
+   {
+      "description": "Links a shape to a property, indicating that all all objects of triples that have the given property as their predicate must conform to the shape.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#targetObjectsOf", 
+      "text": "targetObjectsOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "Links a shape to a property, indicating that all subjects of triples that have the given property as their predicate must conform to the shape.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#targetSubjectsOf", 
+      "text": "targetSubjectsOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "A human-readable message (possibly with placeholders for variables) explaining the cause of the result.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#message", 
+      "text": "message", 
+      "type": "property"
+   }, 
+   {
+      "description": "Defines the severity that validation results produced by a shape must have. Defaults to sh:Violation.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#severity", 
+      "text": "severity", 
+      "type": "property"
+   }, 
+   {
+      "description": "The class of all node kinds, including sh:BlankNode, sh:IRI, sh:Literal or the combinations of these: sh:BlankNodeOrIRI, sh:BlankNodeOrLiteral, sh:IRIOrLiteral.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#NodeKind", 
+      "text": "NodeKind", 
+      "type": "class"
+   }, 
+   {
+      "description": "The node kind of all blank nodes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#BlankNode", 
+      "text": "BlankNode"
+   }, 
+   {
+      "description": "The node kind of all blank nodes or IRIs.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#BlankNodeOrIRI", 
+      "text": "BlankNodeOrIRI"
+   }, 
+   {
+      "description": "The node kind of all blank nodes or literals.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#BlankNodeOrLiteral", 
+      "text": "BlankNodeOrLiteral"
+   }, 
+   {
+      "description": "The node kind of all IRIs.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#IRI", 
+      "text": "IRI"
+   }, 
+   {
+      "description": "The node kind of all IRIs or literals.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#IRIOrLiteral", 
+      "text": "IRIOrLiteral"
+   }, 
+   {
+      "description": "The node kind of all literals.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#Literal", 
+      "text": "Literal"
+   }, 
+   {
+      "description": "The class of SHACL validation reports.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#ValidationReport", 
+      "text": "ValidationReport", 
+      "type": "class"
+   }, 
+   {
+      "description": "True if the validation did not produce any validation results, and false otherwise.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#conforms", 
+      "text": "conforms", 
+      "type": "property"
+   }, 
+   {
+      "description": "The validation results contained in a validation report.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#result", 
+      "text": "result", 
+      "type": "property"
+   }, 
+   {
+      "description": "If true then the validation engine was certain that the shapes graph has passed all SHACL syntax requirements during the validation process.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#shapesGraphWellFormed", 
+      "text": "shapesGraphWellFormed", 
+      "type": "property"
+   }, 
+   {
+      "description": "The base class of validation results, typically not instantiated directly.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#AbstractResult", 
+      "text": "AbstractResult", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of validation results.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#ValidationResult", 
+      "text": "ValidationResult", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of validation result severity levels, including violation and warning levels.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#Severity", 
+      "text": "Severity", 
+      "type": "class"
+   }, 
+   {
+      "description": "The severity for an informational validation result.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#Info", 
+      "text": "Info"
+   }, 
+   {
+      "description": "The severity for a violation validation result.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#Violation", 
+      "text": "Violation"
+   }, 
+   {
+      "description": "The severity for a warning validation result.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#Warning", 
+      "text": "Warning"
+   }, 
+   {
+      "description": "Links a result with other results that provide more details, for example to describe violations against nested shapes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#detail", 
+      "text": "detail", 
+      "type": "property"
+   }, 
+   {
+      "description": "The focus node that was validated when the result was produced.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#focusNode", 
+      "text": "focusNode", 
+      "type": "property"
+   }, 
+   {
+      "description": "Human-readable messages explaining the cause of the result.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#resultMessage", 
+      "text": "resultMessage", 
+      "type": "property"
+   }, 
+   {
+      "description": "The path of a validation result, based on the path of the validated property shape.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#resultPath", 
+      "text": "resultPath", 
+      "type": "property"
+   }, 
+   {
+      "description": "The severity of the result, e.g. warning.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#resultSeverity", 
+      "text": "resultSeverity", 
+      "type": "property"
+   }, 
+   {
+      "description": "The constraint that was validated when the result was produced.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#sourceConstraint", 
+      "text": "sourceConstraint", 
+      "type": "property"
+   }, 
+   {
+      "description": "The shape that is was validated when the result was produced.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#sourceShape", 
+      "text": "sourceShape", 
+      "type": "property"
+   }, 
+   {
+      "description": "The constraint component that is the source of the result.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#sourceConstraintComponent", 
+      "text": "sourceConstraintComponent", 
+      "type": "property"
+   }, 
+   {
+      "description": "An RDF node that has caused the result.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#value", 
+      "text": "value", 
+      "type": "property"
+   }, 
+   {
+      "description": "Shapes graphs that should be used when validating this data graph.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#shapesGraph", 
+      "text": "shapesGraph", 
+      "type": "property"
+   }, 
+   {
+      "description": "Suggested shapes graphs for this ontology. The values of this property may be used in the absence of specific sh:shapesGraph statements.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#suggestedShapesGraph", 
+      "text": "suggestedShapesGraph", 
+      "type": "property"
+   }, 
+   {
+      "description": "An entailment regime that indicates what kind of inferencing is required by a shapes graph.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#entailment", 
+      "text": "entailment", 
+      "type": "property"
+   }, 
+   {
+      "description": "Specifies the property path of a property shape.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#path", 
+      "text": "path", 
+      "type": "property"
+   }, 
+   {
+      "description": "The (single) value of this property represents an inverse path (object to subject).", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#inversePath", 
+      "text": "inversePath", 
+      "type": "property"
+   }, 
+   {
+      "description": "The (single) value of this property must be a list of path elements, representing the elements of alternative paths.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#alternativePath", 
+      "text": "alternativePath", 
+      "type": "property"
+   }, 
+   {
+      "description": "The (single) value of this property represents a path that is matched zero or more times.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#zeroOrMorePath", 
+      "text": "zeroOrMorePath", 
+      "type": "property"
+   }, 
+   {
+      "description": "The (single) value of this property represents a path that is matched one or more times.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#oneOrMorePath", 
+      "text": "oneOrMorePath", 
+      "type": "property"
+   }, 
+   {
+      "description": "The (single) value of this property represents a path that is matched zero or one times.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#zeroOrOnePath", 
+      "text": "zeroOrOnePath", 
+      "type": "property"
+   }, 
+   {
+      "description": "Superclass of components that can take parameters, especially functions and constraint components.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#Parameterizable", 
+      "text": "Parameterizable", 
+      "type": "class"
+   }, 
+   {
+      "description": "The parameters of a function or constraint component.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#parameter", 
+      "text": "parameter", 
+      "type": "property"
+   }, 
+   {
+      "description": "Outlines how human-readable labels of instances of the associated Parameterizable shall be produced. The values can contain {?paramName} as placeholders for the actual values of the given parameter.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#labelTemplate", 
+      "text": "labelTemplate", 
+      "type": "property"
+   }, 
+   {
+      "description": "The class of parameter declarations, consisting of a path predicate and (possibly) information about allowed value type, cardinality and other characteristics.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#Parameter", 
+      "text": "Parameter", 
+      "type": "class"
+   }, 
+   {
+      "description": "Indicates whether a parameter is optional.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#optional", 
+      "text": "optional", 
+      "type": "property"
+   }, 
+   {
+      "description": "The class of constraint components.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#ConstraintComponent", 
+      "text": "ConstraintComponent", 
+      "type": "class"
+   }, 
+   {
+      "description": "The validator(s) used to evaluate constraints of either node or property shapes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#validator", 
+      "text": "validator", 
+      "type": "property"
+   }, 
+   {
+      "description": "The validator(s) used to evaluate a constraint in the context of a node shape.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#nodeValidator", 
+      "text": "nodeValidator", 
+      "type": "property"
+   }, 
+   {
+      "description": "The validator(s) used to evaluate a constraint in the context of a property shape.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#propertyValidator", 
+      "text": "propertyValidator", 
+      "type": "property"
+   }, 
+   {
+      "description": "The class of validators, which provide instructions on how to process a constraint definition. This class serves as base class for the SPARQL-based validators and other possible implementations.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#Validator", 
+      "text": "Validator", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of validators based on SPARQL ASK queries. The queries are evaluated for each value node and are supposed to return true if the given node conforms.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#SPARQLAskValidator", 
+      "text": "SPARQLAskValidator", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of validators based on SPARQL SELECT queries. The queries are evaluated for each focus node and are supposed to produce bindings for all focus nodes that do not conform.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#SPARQLSelectValidator", 
+      "text": "SPARQLSelectValidator", 
+      "type": "class"
+   }, 
+   {
+      "description": "A constraint component that can be used to test whether a value node conforms to all members of a provided list of shapes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#AndConstraintComponent", 
+      "text": "AndConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#AndConstraintComponent-and", 
+      "text": "AndConstraintComponent-and"
+   }, 
+   {
+      "description": "RDF list of shapes to validate the value nodes against.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#and", 
+      "text": "and", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to verify that each value node is an instance of a given type.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#ClassConstraintComponent", 
+      "text": "ClassConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#ClassConstraintComponent-class", 
+      "text": "ClassConstraintComponent-class"
+   }, 
+   {
+      "description": "The type that all value nodes must have.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#class", 
+      "text": "class", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to indicate that focus nodes must only have values for those properties that have been explicitly enumerated via sh:property/sh:path.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#ClosedConstraintComponent", 
+      "text": "ClosedConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#ClosedConstraintComponent-closed", 
+      "text": "ClosedConstraintComponent-closed"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#ClosedConstraintComponent-ignoredProperties", 
+      "text": "ClosedConstraintComponent-ignoredProperties"
+   }, 
+   {
+      "description": "If set to true then the shape is closed.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#closed", 
+      "text": "closed", 
+      "type": "property"
+   }, 
+   {
+      "description": "An optional RDF list of properties that are also permitted in addition to those explicitly enumerated via sh:property/sh:path.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#ignoredProperties", 
+      "text": "ignoredProperties", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to restrict the datatype of all value nodes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#DatatypeConstraintComponent", 
+      "text": "DatatypeConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#DatatypeConstraintComponent-datatype", 
+      "text": "DatatypeConstraintComponent-datatype"
+   }, 
+   {
+      "description": "Specifies an RDF datatype that all value nodes must have.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#datatype", 
+      "text": "datatype", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to verify that the set of value nodes is disjoint with the the set of nodes that have the focus node as subject and the value of a given property as predicate.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#DisjointConstraintComponent", 
+      "text": "DisjointConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#DisjointConstraintComponent-disjoint", 
+      "text": "DisjointConstraintComponent-disjoint"
+   }, 
+   {
+      "description": "Specifies a property where the set of values must be disjoint with the value nodes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#disjoint", 
+      "text": "disjoint", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to verify that the set of value nodes is equal to the set of nodes that have the focus node as subject and the value of a given property as predicate.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#EqualsConstraintComponent", 
+      "text": "EqualsConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#EqualsConstraintComponent-equals", 
+      "text": "EqualsConstraintComponent-equals"
+   }, 
+   {
+      "description": "Specifies a property that must have the same values as the value nodes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#equals", 
+      "text": "equals", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to verify that one of the value nodes is a given RDF node.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#HasValueConstraintComponent", 
+      "text": "HasValueConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#HasValueConstraintComponent-hasValue", 
+      "text": "HasValueConstraintComponent-hasValue"
+   }, 
+   {
+      "description": "Specifies a value that must be among the value nodes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#hasValue", 
+      "text": "hasValue", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to exclusively enumerate the permitted value nodes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#InConstraintComponent", 
+      "text": "InConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#InConstraintComponent-in", 
+      "text": "InConstraintComponent-in"
+   }, 
+   {
+      "description": "Specifies a list of allowed values so that each value node must be among the members of the given list.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#in", 
+      "text": "in", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to enumerate language tags that all value nodes must have.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#LanguageInConstraintComponent", 
+      "text": "LanguageInConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#LanguageInConstraintComponent-languageIn", 
+      "text": "LanguageInConstraintComponent-languageIn"
+   }, 
+   {
+      "description": "Specifies a list of language tags that all value nodes must have.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#languageIn", 
+      "text": "languageIn", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to verify that each value node is smaller than all the nodes that have the focus node as subject and the value of a given property as predicate.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#LessThanConstraintComponent", 
+      "text": "LessThanConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#LessThanConstraintComponent-lessThan", 
+      "text": "LessThanConstraintComponent-lessThan"
+   }, 
+   {
+      "description": "Specifies a property that must have smaller values than the value nodes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#lessThan", 
+      "text": "lessThan", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to verify that every value node is smaller than all the nodes that have the focus node as subject and the value of a given property as predicate.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#LessThanOrEqualsConstraintComponent", 
+      "text": "LessThanOrEqualsConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#LessThanOrEqualsConstraintComponent-lessThanOrEquals", 
+      "text": "LessThanOrEqualsConstraintComponent-lessThanOrEquals"
+   }, 
+   {
+      "description": "Specifies a property that must have smaller or equal values than the value nodes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#lessThanOrEquals", 
+      "text": "lessThanOrEquals", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to restrict the maximum number of value nodes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#MaxCountConstraintComponent", 
+      "text": "MaxCountConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#MaxCountConstraintComponent-maxCount", 
+      "text": "MaxCountConstraintComponent-maxCount"
+   }, 
+   {
+      "description": "Specifies the maximum number of values in the set of value nodes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#maxCount", 
+      "text": "maxCount", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to restrict the range of value nodes with a maximum exclusive value.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#MaxExclusiveConstraintComponent", 
+      "text": "MaxExclusiveConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#MaxExclusiveConstraintComponent-maxExclusive", 
+      "text": "MaxExclusiveConstraintComponent-maxExclusive"
+   }, 
+   {
+      "description": "Specifies the maximum exclusive value of each value node.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#maxExclusive", 
+      "text": "maxExclusive", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to restrict the range of value nodes with a maximum inclusive value.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#MaxInclusiveConstraintComponent", 
+      "text": "MaxInclusiveConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#MaxInclusiveConstraintComponent-maxInclusive", 
+      "text": "MaxInclusiveConstraintComponent-maxInclusive"
+   }, 
+   {
+      "description": "Specifies the maximum inclusive value of each value node.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#maxInclusive", 
+      "text": "maxInclusive", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to restrict the maximum string length of value nodes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#MaxLengthConstraintComponent", 
+      "text": "MaxLengthConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#MaxLengthConstraintComponent-maxLength", 
+      "text": "MaxLengthConstraintComponent-maxLength"
+   }, 
+   {
+      "description": "Specifies the maximum string length of each value node.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#maxLength", 
+      "text": "maxLength", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to restrict the minimum number of value nodes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#MinCountConstraintComponent", 
+      "text": "MinCountConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#MinCountConstraintComponent-minCount", 
+      "text": "MinCountConstraintComponent-minCount"
+   }, 
+   {
+      "description": "Specifies the minimum number of values in the set of value nodes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#minCount", 
+      "text": "minCount", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to restrict the range of value nodes with a minimum exclusive value.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#MinExclusiveConstraintComponent", 
+      "text": "MinExclusiveConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#MinExclusiveConstraintComponent-minExclusive", 
+      "text": "MinExclusiveConstraintComponent-minExclusive"
+   }, 
+   {
+      "description": "Specifies the minimum exclusive value of each value node.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#minExclusive", 
+      "text": "minExclusive", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to restrict the range of value nodes with a minimum inclusive value.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#MinInclusiveConstraintComponent", 
+      "text": "MinInclusiveConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#MinInclusiveConstraintComponent-minInclusive", 
+      "text": "MinInclusiveConstraintComponent-minInclusive"
+   }, 
+   {
+      "description": "Specifies the minimum inclusive value of each value node.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#minInclusive", 
+      "text": "minInclusive", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to restrict the minimum string length of value nodes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#MinLengthConstraintComponent", 
+      "text": "MinLengthConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#MinLengthConstraintComponent-minLength", 
+      "text": "MinLengthConstraintComponent-minLength"
+   }, 
+   {
+      "description": "Specifies the minimum string length of each value node.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#minLength", 
+      "text": "minLength", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to verify that all value nodes conform to the given node shape.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#NodeConstraintComponent", 
+      "text": "NodeConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#NodeConstraintComponent-node", 
+      "text": "NodeConstraintComponent-node"
+   }, 
+   {
+      "description": "Specifies the node shape that all value nodes must conform to.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#node", 
+      "text": "node", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to restrict the RDF node kind of each value node.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#NodeKindConstraintComponent", 
+      "text": "NodeKindConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#NodeKindConstraintComponent-nodeKind", 
+      "text": "NodeKindConstraintComponent-nodeKind"
+   }, 
+   {
+      "description": "Specifies the node kind (e.g. IRI or literal) each value node.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#nodeKind", 
+      "text": "nodeKind", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to verify that value nodes do not conform to a given shape.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#NotConstraintComponent", 
+      "text": "NotConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#NotConstraintComponent-not", 
+      "text": "NotConstraintComponent-not"
+   }, 
+   {
+      "description": "Specifies a shape that the value nodes must not conform to.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#not", 
+      "text": "not", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to restrict the value nodes so that they conform to at least one out of several provided shapes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#OrConstraintComponent", 
+      "text": "OrConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#OrConstraintComponent-or", 
+      "text": "OrConstraintComponent-or"
+   }, 
+   {
+      "description": "Specifies a list of shapes so that the value nodes must conform to at least one of the shapes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#or", 
+      "text": "or", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to verify that every value node matches a given regular expression.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#PatternConstraintComponent", 
+      "text": "PatternConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#PatternConstraintComponent-pattern", 
+      "text": "PatternConstraintComponent-pattern"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#PatternConstraintComponent-flags", 
+      "text": "PatternConstraintComponent-flags"
+   }, 
+   {
+      "description": "An optional flag to be used with regular expression pattern matching.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#flags", 
+      "text": "flags", 
+      "type": "property"
+   }, 
+   {
+      "description": "Specifies a regular expression pattern that the string representations of the value nodes must match.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#pattern", 
+      "text": "pattern", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to verify that all value nodes conform to the given property shape.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#PropertyConstraintComponent", 
+      "text": "PropertyConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#PropertyConstraintComponent-property", 
+      "text": "PropertyConstraintComponent-property"
+   }, 
+   {
+      "description": "Links a shape to its property shapes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#property", 
+      "text": "property", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to verify that a specified maximum number of value nodes conforms to a given shape.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#QualifiedMaxCountConstraintComponent", 
+      "text": "QualifiedMaxCountConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#QualifiedMaxCountConstraintComponent-qualifiedMaxCount", 
+      "text": "QualifiedMaxCountConstraintComponent-qualifiedMaxCount"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#QualifiedMaxCountConstraintComponent-qualifiedValueShape", 
+      "text": "QualifiedMaxCountConstraintComponent-qualifiedValueShape"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#QualifiedMaxCountConstraintComponent-qualifiedValueShapesDisjoint", 
+      "text": "QualifiedMaxCountConstraintComponent-qualifiedValueShapesDisjoint"
+   }, 
+   {
+      "description": "A constraint component that can be used to verify that a specified minimum number of value nodes conforms to a given shape.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#QualifiedMinCountConstraintComponent", 
+      "text": "QualifiedMinCountConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#QualifiedMinCountConstraintComponent-qualifiedMinCount", 
+      "text": "QualifiedMinCountConstraintComponent-qualifiedMinCount"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#QualifiedMinCountConstraintComponent-qualifiedValueShape", 
+      "text": "QualifiedMinCountConstraintComponent-qualifiedValueShape"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#QualifiedMinCountConstraintComponent-qualifiedValueShapesDisjoint", 
+      "text": "QualifiedMinCountConstraintComponent-qualifiedValueShapesDisjoint"
+   }, 
+   {
+      "description": "The maximum number of value nodes that can conform to the shape.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#qualifiedMaxCount", 
+      "text": "qualifiedMaxCount", 
+      "type": "property"
+   }, 
+   {
+      "description": "The minimum number of value nodes that must conform to the shape.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#qualifiedMinCount", 
+      "text": "qualifiedMinCount", 
+      "type": "property"
+   }, 
+   {
+      "description": "The shape that a specified number of values must conform to.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#qualifiedValueShape", 
+      "text": "qualifiedValueShape", 
+      "type": "property"
+   }, 
+   {
+      "description": "Can be used to mark the qualified value shape to be disjoint with its sibling shapes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#qualifiedValueShapesDisjoint", 
+      "text": "qualifiedValueShapesDisjoint", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to specify that no pair of value nodes may use the same language tag.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#UniqueLangConstraintComponent", 
+      "text": "UniqueLangConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#UniqueLangConstraintComponent-uniqueLang", 
+      "text": "UniqueLangConstraintComponent-uniqueLang"
+   }, 
+   {
+      "description": "Specifies whether all node values must have a unique (or no) language tag.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#uniqueLang", 
+      "text": "uniqueLang", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to restrict the value nodes so that they conform to exactly one out of several provided shapes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#XoneConstraintComponent", 
+      "text": "XoneConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#XoneConstraintComponent-xone", 
+      "text": "XoneConstraintComponent-xone"
+   }, 
+   {
+      "description": "Specifies a list of shapes so that the value nodes must conform to exactly one of the shapes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#xone", 
+      "text": "xone", 
+      "type": "property"
+   }, 
+   {
+      "description": "The class of resources that encapsulate a SPARQL query.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#SPARQLExecutable", 
+      "text": "SPARQLExecutable", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of SPARQL executables that are based on an ASK query.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#SPARQLAskExecutable", 
+      "text": "SPARQLAskExecutable", 
+      "type": "class"
+   }, 
+   {
+      "description": "The SPARQL ASK query to execute.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#ask", 
+      "text": "ask", 
+      "type": "property"
+   }, 
+   {
+      "description": "The class of SPARQL executables that are based on a CONSTRUCT query.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#SPARQLConstructExecutable", 
+      "text": "SPARQLConstructExecutable", 
+      "type": "class"
+   }, 
+   {
+      "description": "The SPARQL CONSTRUCT query to execute.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#construct", 
+      "text": "construct", 
+      "type": "property"
+   }, 
+   {
+      "description": "The class of SPARQL executables based on a SELECT query.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#SPARQLSelectExecutable", 
+      "text": "SPARQLSelectExecutable", 
+      "type": "class"
+   }, 
+   {
+      "description": "The SPARQL SELECT query to execute.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#select", 
+      "text": "select", 
+      "type": "property"
+   }, 
+   {
+      "description": "The class of SPARQL executables based on a SPARQL UPDATE.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#SPARQLUpdateExecutable", 
+      "text": "SPARQLUpdateExecutable", 
+      "type": "class"
+   }, 
+   {
+      "description": "The SPARQL UPDATE to execute.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#update", 
+      "text": "update", 
+      "type": "property"
+   }, 
+   {
+      "description": "The prefixes that shall be applied before parsing the associated SPARQL query.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#prefixes", 
+      "text": "prefixes", 
+      "type": "property"
+   }, 
+   {
+      "description": "The class of prefix declarations, consisting of pairs of a prefix with a namespace.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#PrefixDeclaration", 
+      "text": "PrefixDeclaration", 
+      "type": "class"
+   }, 
+   {
+      "description": "Links a resource with its namespace prefix declarations.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#declare", 
+      "text": "declare", 
+      "type": "property"
+   }, 
+   {
+      "description": "The prefix of a prefix declaration.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#prefix", 
+      "text": "prefix", 
+      "type": "property"
+   }, 
+   {
+      "description": "The namespace associated with a prefix in a prefix declaration.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#namespace", 
+      "text": "namespace", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to define constraints based on SPARQL queries.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#SPARQLConstraintComponent", 
+      "text": "SPARQLConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#SPARQLConstraintComponent-sparql", 
+      "text": "SPARQLConstraintComponent-sparql"
+   }, 
+   {
+      "description": "Links a shape with SPARQL constraints.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#sparql", 
+      "text": "sparql", 
+      "type": "property"
+   }, 
+   {
+      "description": "The class of constraints based on SPARQL SELECT queries.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#SPARQLConstraint", 
+      "text": "SPARQLConstraint", 
+      "type": "class"
+   }, 
+   {
+      "description": "A default value for a property, for example for user interface tools to pre-populate input fields.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#defaultValue", 
+      "text": "defaultValue", 
+      "type": "property"
+   }, 
+   {
+      "description": "Human-readable descriptions for the property in the context of the surrounding shape.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#description", 
+      "text": "description", 
+      "type": "property"
+   }, 
+   {
+      "description": "Can be used to link to a property group to indicate that a property shape belongs to a group of related property shapes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#group", 
+      "text": "group", 
+      "type": "property"
+   }, 
+   {
+      "description": "Human-readable labels for the property in the context of the surrounding shape.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#name", 
+      "text": "name", 
+      "type": "property"
+   }, 
+   {
+      "description": "Specifies the relative order of this compared to its siblings. For example use 0 for the first, 1 for the second.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#order", 
+      "text": "order", 
+      "type": "property"
+   }, 
+   {
+      "description": "Instances of this class represent groups of property shapes that belong together.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#PropertyGroup", 
+      "text": "PropertyGroup", 
+      "type": "class"
+   }, 
+   {
+      "description": "Links a shape to a target specified by an extension language, for example instances of sh:SPARQLTarget.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#target", 
+      "text": "target", 
+      "type": "property"
+   }, 
+   {
+      "description": "The base class of targets such as those based on SPARQL queries.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#Target", 
+      "text": "Target", 
+      "type": "class"
+   }, 
+   {
+      "description": "The (meta) class for parameterizable targets.\tInstances of this are instantiated as values of the sh:target property.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#TargetType", 
+      "text": "TargetType", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of targets that are based on SPARQL queries.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#SPARQLTarget", 
+      "text": "SPARQLTarget", 
+      "type": "class"
+   }, 
+   {
+      "description": "The (meta) class for parameterizable targets that are based on SPARQL queries.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#SPARQLTargetType", 
+      "text": "SPARQLTargetType", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of SHACL functions.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#Function", 
+      "text": "Function", 
+      "type": "class"
+   }, 
+   {
+      "description": "The expected type of values returned by the associated function.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#returnType", 
+      "text": "returnType", 
+      "type": "property"
+   }, 
+   {
+      "description": "A function backed by a SPARQL query - either ASK or SELECT.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#SPARQLFunction", 
+      "text": "SPARQLFunction", 
+      "type": "class"
+   }, 
+   {
+      "description": "Links a SPARQL validator with zero or more sh:ResultAnnotation instances, defining how to derive additional result properties based on the variables of the SELECT query.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#resultAnnotation", 
+      "text": "resultAnnotation", 
+      "type": "property"
+   }, 
+   {
+      "description": "A class of result annotations, which define the rules to derive the values of a given annotation property as extra values for a validation result.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#ResultAnnotation", 
+      "text": "ResultAnnotation", 
+      "type": "class"
+   }, 
+   {
+      "description": "The annotation property that shall be set.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#annotationProperty", 
+      "text": "annotationProperty", 
+      "type": "property"
+   }, 
+   {
+      "description": "The (default) values of the annotation property.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#annotationValue", 
+      "text": "annotationValue", 
+      "type": "property"
+   }, 
+   {
+      "description": "The name of the SPARQL variable from the SELECT clause that shall be used for the values.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#annotationVarName", 
+      "text": "annotationVarName", 
+      "type": "property"
+   }, 
+   {
+      "description": "A node expression that represents the current focus node.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#this", 
+      "text": "this", 
+      "type": "snippet"
+   }, 
+   {
+      "description": "The shape that all input nodes of the expression need to conform to.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#filterShape", 
+      "text": "filterShape", 
+      "type": "property"
+   }, 
+   {
+      "description": "The node expression producing the input nodes of a filter shape expression.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#nodes", 
+      "text": "nodes", 
+      "type": "property"
+   }, 
+   {
+      "description": "A list of node expressions that shall be intersected.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#intersection", 
+      "text": "intersection", 
+      "type": "property"
+   }, 
+   {
+      "description": "A list of node expressions that shall be used together.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#union", 
+      "text": "union", 
+      "type": "property"
+   }, 
+   {
+      "description": "A constraint component that can be used to verify that a given node expression produces true for all value nodes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#ExpressionConstraintComponent", 
+      "text": "ExpressionConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#ExpressionConstraintComponent-expression", 
+      "text": "ExpressionConstraintComponent-expression"
+   }, 
+   {
+      "description": "The node expression that must return true for the value nodes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#expression", 
+      "text": "expression", 
+      "type": "property"
+   }, 
+   {
+      "description": "The class of SHACL rules. Never instantiated directly.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#Rule", 
+      "text": "Rule", 
+      "type": "class"
+   }, 
+   {
+      "description": "The rules linked to a shape.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#rule", 
+      "text": "rule", 
+      "type": "property"
+   }, 
+   {
+      "description": "The shapes that the focus nodes need to conform to before a rule is executed on them.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#condition", 
+      "text": "condition", 
+      "type": "property"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#TripleRule", 
+      "text": "TripleRule", 
+      "type": "class"
+   }, 
+   {
+      "description": "An expression producing the resources that shall be inferred as subjects.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#subject", 
+      "text": "subject", 
+      "type": "property"
+   }, 
+   {
+      "description": "An expression producing the properties that shall be inferred as predicates.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#predicate", 
+      "text": "predicate", 
+      "type": "property"
+   }, 
+   {
+      "description": "An expression producing the nodes that shall be inferred as objects.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#object", 
+      "text": "object", 
+      "type": "property"
+   }, 
+   {
+      "description": "The class of SHACL rules based on SPARQL CONSTRUCT queries.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#SPARQLRule", 
+      "text": "SPARQLRule", 
+      "type": "class"
+   }, 
+   {
+      "description": "Abstract base class of resources that declare an executable JavaScript.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#JSExecutable", 
+      "text": "JSExecutable", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of targets that are based on JavaScript functions.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#JSTarget", 
+      "text": "JSTarget", 
+      "type": "class"
+   }, 
+   {
+      "description": "The (meta) class for parameterizable targets that are based on JavaScript functions.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#JSTargetType", 
+      "text": "JSTargetType", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of constraints backed by a JavaScript function.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#JSConstraint", 
+      "text": "JSConstraint", 
+      "type": "class"
+   }, 
+   {
+      "description": "A constraint component with the parameter sh:js linking to a sh:JSConstraint containing a sh:script.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#JSConstraintComponent", 
+      "text": "JSConstraintComponent"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#JSConstraint-js", 
+      "text": "JSConstraint-js"
+   }, 
+   {
+      "description": "Constraints expressed in JavaScript.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#js", 
+      "text": "js", 
+      "type": "property"
+   }, 
+   {
+      "description": "The name of the JavaScript function to execute.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#jsFunctionName", 
+      "text": "jsFunctionName", 
+      "type": "property"
+   }, 
+   {
+      "description": "Declares which JavaScript libraries are needed to execute this.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#jsLibrary", 
+      "text": "jsLibrary", 
+      "type": "property"
+   }, 
+   {
+      "description": "Declares the URLs of a JavaScript library. This should be the absolute URL of a JavaScript file. Implementations may redirect those to local files.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#jsLibraryURL", 
+      "text": "jsLibraryURL", 
+      "type": "property"
+   }, 
+   {
+      "description": "The class of SHACL functions that execute a JavaScript function when called.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#JSFunction", 
+      "text": "JSFunction", 
+      "type": "class"
+   }, 
+   {
+      "description": "Represents a JavaScript library, typically identified by one or more URLs of files to include.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#JSLibrary", 
+      "text": "JSLibrary", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of SHACL rules expressed using JavaScript.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/shacl/#JSRule", 
+      "text": "JSRule", 
+      "type": "class"
+   }
+]

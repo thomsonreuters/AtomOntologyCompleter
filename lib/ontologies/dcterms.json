@@ -1,0 +1,574 @@
+[
+   {
+      "description": "A resource that acts or has the power to act.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-Agent", 
+      "text": "Agent"
+   }, 
+   {
+      "description": "A group of agents.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-AgentClass", 
+      "text": "AgentClass", 
+      "type": "class"
+   }, 
+   {
+      "description": "A book, article, or other documentary resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-BibliographicResource", 
+      "text": "BibliographicResource", 
+      "type": "class"
+   }, 
+   {
+      "description": "The set of regions in space defined by their geographic coordinates according to the DCMI Box Encoding Scheme.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-Box", 
+      "text": "Box", 
+      "type": "class"
+   }, 
+   {
+      "description": "The set of classes specified by the DCMI Type Vocabulary, used to categorize the nature or genre of the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-DCMIType", 
+      "text": "DCMIType"
+   }, 
+   {
+      "description": "The set of conceptual resources specified by the Dewey Decimal Classification.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-DDC", 
+      "text": "DDC"
+   }, 
+   {
+      "description": "A digital resource format.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-FileFormat", 
+      "text": "FileFormat", 
+      "type": "class"
+   }, 
+   {
+      "description": "A rate at which something recurs.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-Frequency", 
+      "text": "Frequency", 
+      "type": "class"
+   }, 
+   {
+      "description": "The set of media types specified by the Internet Assigned Numbers Authority.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-IMT", 
+      "text": "IMT"
+   }, 
+   {
+      "description": "The set of codes listed in ISO 3166-1 for the representation of names of countries.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-ISO", 
+      "text": "ISO", 
+      "type": "class"
+   }, 
+   {
+      "description": "The three-letter alphabetic codes listed in ISO639-2 for the representation of names of languages.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-ISO", 
+      "text": "ISO", 
+      "type": "class"
+   }, 
+   {
+      "description": "The set of three-letter codes listed in ISO 639-3 for the representation of names of languages.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-ISO", 
+      "text": "ISO", 
+      "type": "class"
+   }, 
+   {
+      "description": "The extent or range of judicial, law enforcement, or other authority.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-Jurisdiction", 
+      "text": "Jurisdiction", 
+      "type": "class"
+   }, 
+   {
+      "description": "The set of conceptual resources specified by the Library of Congress Classification.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-LCC", 
+      "text": "LCC"
+   }, 
+   {
+      "description": "The set of labeled concepts specified by the Library of Congress Subject Headings.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-LCSH", 
+      "text": "LCSH"
+   }, 
+   {
+      "description": "A legal document giving official permission to do something with a Resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-LicenseDocument", 
+      "text": "LicenseDocument", 
+      "type": "class"
+   }, 
+   {
+      "description": "A system of signs, symbols, sounds, gestures, or rules used in communication.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-LinguisticSystem", 
+      "text": "LinguisticSystem", 
+      "type": "class"
+   }, 
+   {
+      "description": "A spatial region or named place.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-Location", 
+      "text": "Location", 
+      "type": "class"
+   }, 
+   {
+      "description": "A location, period of time, or jurisdiction.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-LocationPeriodOrJurisdiction", 
+      "text": "LocationPeriodOrJurisdiction", 
+      "type": "class"
+   }, 
+   {
+      "description": "The set of labeled concepts specified by the Medical Subject Headings.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-MESH", 
+      "text": "MESH"
+   }, 
+   {
+      "description": "A file format or physical medium.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-MediaType", 
+      "text": "MediaType", 
+      "type": "class"
+   }, 
+   {
+      "description": "A media type or extent.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-MediaTypeOrExtent", 
+      "text": "MediaTypeOrExtent", 
+      "type": "class"
+   }, 
+   {
+      "description": "A method by which resources are added to a collection.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-MethodOfAccrual", 
+      "text": "MethodOfAccrual", 
+      "type": "class"
+   }, 
+   {
+      "description": "A process that is used to engender knowledge, attitudes, and skills.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-MethodOfInstruction", 
+      "text": "MethodOfInstruction", 
+      "type": "class"
+   }, 
+   {
+      "description": "The set of conceptual resources specified by the National Library of Medicine Classification.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-NLM", 
+      "text": "NLM"
+   }, 
+   {
+      "description": "The set of time intervals defined by their limits according to the DCMI Period Encoding Scheme.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-Period", 
+      "text": "Period", 
+      "type": "class"
+   }, 
+   {
+      "description": "An interval of time that is named or defined by its start and end dates.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-PeriodOfTime", 
+      "text": "PeriodOfTime", 
+      "type": "class"
+   }, 
+   {
+      "description": "A physical material or carrier.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-PhysicalMedium", 
+      "text": "PhysicalMedium", 
+      "type": "class"
+   }, 
+   {
+      "description": "A material thing.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-PhysicalResource", 
+      "text": "PhysicalResource", 
+      "type": "class"
+   }, 
+   {
+      "description": "The set of points in space defined by their geographic coordinates according to the DCMI Point Encoding Scheme.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-Point", 
+      "text": "Point", 
+      "type": "class"
+   }, 
+   {
+      "description": "A plan or course of action by an authority, intended to influence and determine decisions, actions, and other matters.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-Policy", 
+      "text": "Policy", 
+      "type": "class"
+   }, 
+   {
+      "description": "A statement of any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-ProvenanceStatement", 
+      "text": "ProvenanceStatement", 
+      "type": "class"
+   }, 
+   {
+      "description": "The set of tags, constructed according to RFC 1766, for the identification of languages.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-RFC", 
+      "text": "RFC", 
+      "type": "class"
+   }, 
+   {
+      "description": "The set of tags constructed according to RFC 3066 for the identification of languages.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-RFC", 
+      "text": "RFC", 
+      "type": "class"
+   }, 
+   {
+      "description": "The set of tags constructed according to RFC 4646 for the identification of languages.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-RFC", 
+      "text": "RFC", 
+      "type": "class"
+   }, 
+   {
+      "description": "The set of tags constructed according to RFC 5646 for the identification of languages.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-RFC", 
+      "text": "RFC", 
+      "type": "class"
+   }, 
+   {
+      "description": "A statement about the intellectual property rights (IPR) held in or over a Resource, a legal document giving official permission to do something with a resource, or a statement about access rights.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-RightsStatement", 
+      "text": "RightsStatement", 
+      "type": "class"
+   }, 
+   {
+      "description": "A dimension or extent, or a time taken to play or execute.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-SizeOrDuration", 
+      "text": "SizeOrDuration", 
+      "type": "class"
+   }, 
+   {
+      "description": "A basis for comparison; a reference point against which other things can be evaluated.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-Standard", 
+      "text": "Standard", 
+      "type": "class"
+   }, 
+   {
+      "description": "The set of places specified by the Getty Thesaurus of Geographic Names.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-TGN", 
+      "text": "TGN"
+   }, 
+   {
+      "description": "The set of conceptual resources specified by the Universal Decimal Classification.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-UDC", 
+      "text": "UDC"
+   }, 
+   {
+      "description": "The set of identifiers constructed according to the generic syntax for Uniform Resource Identifiers as specified by the Internet Engineering Task Force.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-URI", 
+      "text": "URI", 
+      "type": "class"
+   }, 
+   {
+      "description": "The set of dates and times constructed according to the W3C Date and Time Formats Specification.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-W", 
+      "text": "W", 
+      "type": "class"
+   }, 
+   {
+      "description": "A summary of the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-abstract", 
+      "text": "abstract", 
+      "type": "property"
+   }, 
+   {
+      "description": "Information about who can access the resource or an indication of its security status.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-accessRights", 
+      "text": "accessRights", 
+      "type": "property"
+   }, 
+   {
+      "description": "The method by which items are added to a collection.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-accrualMethod", 
+      "text": "accrualMethod", 
+      "type": "property"
+   }, 
+   {
+      "description": "The frequency with which items are added to a collection.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-accrualPeriodicity", 
+      "text": "accrualPeriodicity", 
+      "type": "property"
+   }, 
+   {
+      "description": "The policy governing the addition of items to a collection.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-accrualPolicy", 
+      "text": "accrualPolicy", 
+      "type": "property"
+   }, 
+   {
+      "description": "An alternative name for the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-alternative", 
+      "text": "alternative", 
+      "type": "property"
+   }, 
+   {
+      "description": "A class of entity for whom the resource is intended or useful.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-audience", 
+      "text": "audience", 
+      "type": "property"
+   }, 
+   {
+      "description": "Date (often a range) that the resource became or will become available.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-available", 
+      "text": "available", 
+      "type": "property"
+   }, 
+   {
+      "description": "A bibliographic reference for the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-bibliographicCitation", 
+      "text": "bibliographicCitation", 
+      "type": "property"
+   }, 
+   {
+      "description": "An established standard to which the described resource conforms.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-conformsTo", 
+      "text": "conformsTo", 
+      "type": "property"
+   }, 
+   {
+      "description": "An entity responsible for making contributions to the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-contributor", 
+      "text": "contributor", 
+      "type": "property"
+   }, 
+   {
+      "description": "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-coverage", 
+      "text": "coverage", 
+      "type": "property"
+   }, 
+   {
+      "description": "Date of creation of the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-created", 
+      "text": "created", 
+      "type": "property"
+   }, 
+   {
+      "description": "An entity primarily responsible for making the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-creator", 
+      "text": "creator", 
+      "type": "property"
+   }, 
+   {
+      "description": "A point or period of time associated with an event in the lifecycle of the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-date", 
+      "text": "date", 
+      "type": "property"
+   }, 
+   {
+      "description": "Date of acceptance of the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-dateAccepted", 
+      "text": "dateAccepted", 
+      "type": "property"
+   }, 
+   {
+      "description": "Date of copyright.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-dateCopyrighted", 
+      "text": "dateCopyrighted", 
+      "type": "property"
+   }, 
+   {
+      "description": "Date of submission of the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-dateSubmitted", 
+      "text": "dateSubmitted", 
+      "type": "property"
+   }, 
+   {
+      "description": "An account of the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-description", 
+      "text": "description", 
+      "type": "property"
+   }, 
+   {
+      "description": "A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-educationLevel", 
+      "text": "educationLevel", 
+      "type": "property"
+   }, 
+   {
+      "description": "The size or duration of the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-extent", 
+      "text": "extent", 
+      "type": "property"
+   }, 
+   {
+      "description": "The file format, physical medium, or dimensions of the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-format", 
+      "text": "format", 
+      "type": "property"
+   }, 
+   {
+      "description": "A related resource that is substantially the same as the pre-existing described resource, but in another format.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-hasFormat", 
+      "text": "hasFormat", 
+      "type": "property"
+   }, 
+   {
+      "description": "A related resource that is included either physically or logically in the described resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-hasPart", 
+      "text": "hasPart", 
+      "type": "property"
+   }, 
+   {
+      "description": "A related resource that is a version, edition, or adaptation of the described resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-hasVersion", 
+      "text": "hasVersion", 
+      "type": "property"
+   }, 
+   {
+      "description": "An unambiguous reference to the resource within a given context.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-identifier", 
+      "text": "identifier", 
+      "type": "property"
+   }, 
+   {
+      "description": "A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-instructionalMethod", 
+      "text": "instructionalMethod", 
+      "type": "property"
+   }, 
+   {
+      "description": "A related resource that is substantially the same as the described resource, but in another format.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-isFormatOf", 
+      "text": "isFormatOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "A related resource in which the described resource is physically or logically included.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-isPartOf", 
+      "text": "isPartOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "A related resource that references, cites, or otherwise points to the described resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-isReferencedBy", 
+      "text": "isReferencedBy", 
+      "type": "property"
+   }, 
+   {
+      "description": "A related resource that supplants, displaces, or supersedes the described resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-isReplacedBy", 
+      "text": "isReplacedBy", 
+      "type": "property"
+   }, 
+   {
+      "description": "A related resource that requires the described resource to support its function, delivery, or coherence.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-isRequiredBy", 
+      "text": "isRequiredBy", 
+      "type": "property"
+   }, 
+   {
+      "description": "A related resource of which the described resource is a version, edition, or adaptation.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-isVersionOf", 
+      "text": "isVersionOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "Date of formal issuance (e.g., publication) of the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-issued", 
+      "text": "issued", 
+      "type": "property"
+   }, 
+   {
+      "description": "A language of the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-language", 
+      "text": "language", 
+      "type": "property"
+   }, 
+   {
+      "description": "A legal document giving official permission to do something with the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-license", 
+      "text": "license", 
+      "type": "property"
+   }, 
+   {
+      "description": "An entity that mediates access to the resource and for whom the resource is intended or useful.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-mediator", 
+      "text": "mediator", 
+      "type": "property"
+   }, 
+   {
+      "description": "The material or physical carrier of the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-medium", 
+      "text": "medium", 
+      "type": "property"
+   }, 
+   {
+      "description": "Date on which the resource was changed.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-modified", 
+      "text": "modified", 
+      "type": "property"
+   }, 
+   {
+      "description": "A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-provenance", 
+      "text": "provenance", 
+      "type": "property"
+   }, 
+   {
+      "description": "An entity responsible for making the resource available.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-publisher", 
+      "text": "publisher", 
+      "type": "property"
+   }, 
+   {
+      "description": "A related resource that is referenced, cited, or otherwise pointed to by the described resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-references", 
+      "text": "references", 
+      "type": "property"
+   }, 
+   {
+      "description": "A related resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-relation", 
+      "text": "relation", 
+      "type": "property"
+   }, 
+   {
+      "description": "A related resource that is supplanted, displaced, or superseded by the described resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-replaces", 
+      "text": "replaces", 
+      "type": "property"
+   }, 
+   {
+      "description": "A related resource that is required by the described resource to support its function, delivery, or coherence.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-requires", 
+      "text": "requires", 
+      "type": "property"
+   }, 
+   {
+      "description": "Information about rights held in and over the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-rights", 
+      "text": "rights", 
+      "type": "property"
+   }, 
+   {
+      "description": "A person or organization owning or managing rights over the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-rightsHolder", 
+      "text": "rightsHolder", 
+      "type": "property"
+   }, 
+   {
+      "description": "A related resource from which the described resource is derived.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-source", 
+      "text": "source", 
+      "type": "property"
+   }, 
+   {
+      "description": "Spatial characteristics of the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-spatial", 
+      "text": "spatial", 
+      "type": "property"
+   }, 
+   {
+      "description": "The topic of the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-subject", 
+      "text": "subject", 
+      "type": "property"
+   }, 
+   {
+      "description": "A list of subunits of the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-tableOfContents", 
+      "text": "tableOfContents", 
+      "type": "property"
+   }, 
+   {
+      "description": "Temporal characteristics of the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-temporal", 
+      "text": "temporal", 
+      "type": "property"
+   }, 
+   {
+      "description": "A name given to the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-title", 
+      "text": "title", 
+      "type": "property"
+   }, 
+   {
+      "description": "The nature or genre of the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#elements-type", 
+      "text": "type", 
+      "type": "property"
+   }
+]

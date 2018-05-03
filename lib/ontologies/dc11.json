@@ -1,0 +1,86 @@
+[
+   {
+      "description": "An entity responsible for making contributions to the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#terms-contributor", 
+      "text": "contributor", 
+      "type": "property"
+   }, 
+   {
+      "description": "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#terms-coverage", 
+      "text": "coverage", 
+      "type": "property"
+   }, 
+   {
+      "description": "An entity primarily responsible for making the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#terms-creator", 
+      "text": "creator", 
+      "type": "property"
+   }, 
+   {
+      "description": "A point or period of time associated with an event in the lifecycle of the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#terms-date", 
+      "text": "date", 
+      "type": "property"
+   }, 
+   {
+      "description": "An account of the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#terms-description", 
+      "text": "description", 
+      "type": "property"
+   }, 
+   {
+      "description": "The file format, physical medium, or dimensions of the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#terms-format", 
+      "text": "format", 
+      "type": "property"
+   }, 
+   {
+      "description": "An unambiguous reference to the resource within a given context.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#terms-identifier", 
+      "text": "identifier", 
+      "type": "property"
+   }, 
+   {
+      "description": "A language of the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#terms-language", 
+      "text": "language", 
+      "type": "property"
+   }, 
+   {
+      "description": "An entity responsible for making the resource available.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#terms-publisher", 
+      "text": "publisher", 
+      "type": "property"
+   }, 
+   {
+      "description": "A related resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#terms-relation", 
+      "text": "relation", 
+      "type": "property"
+   }, 
+   {
+      "description": "Information about rights held in and over the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#terms-rights", 
+      "text": "rights", 
+      "type": "property"
+   }, 
+   {
+      "description": "A related resource from which the described resource is derived.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#terms-source", 
+      "text": "source", 
+      "type": "property"
+   }, 
+   {
+      "description": "The topic of the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#terms-subject", 
+      "text": "subject", 
+      "type": "property"
+   }, 
+   {
+      "description": "A name given to the resource.", 
+      "descriptionMoreURL": "http://dublincore.org/documents/dcmi-terms/#terms-title", 
+      "text": "title", 
+      "type": "property"
+   }
+]
