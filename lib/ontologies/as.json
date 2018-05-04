@@ -1,0 +1,740 @@
+[
+   {
+      "description": "Subproperty of as:attributedTo that identifies the primary actor", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-actor", 
+      "text": "actor", 
+      "type": "property"
+   }, 
+   {
+      "description": "Identifies an entity to which an object is attributed", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-attributedTo", 
+      "text": "attributedTo", 
+      "type": "property"
+   }, 
+   {
+      "description": "attachment", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-attachment", 
+      "text": "attachment", 
+      "type": "property"
+   }, 
+   {
+      "description": "attachments", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-attachments", 
+      "text": "attachments", 
+      "type": "property"
+   }, 
+   {
+      "description": "Identifies the author of an object. Deprecated. Use as:attributedTo instead", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-author", 
+      "text": "author", 
+      "type": "property"
+   }, 
+   {
+      "description": "bcc", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-bcc", 
+      "text": "bcc", 
+      "type": "property"
+   }, 
+   {
+      "description": "bto", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-bto", 
+      "text": "bto", 
+      "type": "property"
+   }, 
+   {
+      "description": "cc", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-cc", 
+      "text": "cc", 
+      "type": "property"
+   }, 
+   {
+      "description": "Specifies the context within which an object exists or an activity was performed", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-context", 
+      "text": "context", 
+      "type": "property"
+   }, 
+   {
+      "description": "current", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-current", 
+      "text": "current", 
+      "type": "property"
+   }, 
+   {
+      "description": "first", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-first", 
+      "text": "first", 
+      "type": "property"
+   }, 
+   {
+      "description": "generator", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-generator", 
+      "text": "generator", 
+      "type": "property"
+   }, 
+   {
+      "description": "icon", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-icon", 
+      "text": "icon", 
+      "type": "property"
+   }, 
+   {
+      "description": "image", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-image", 
+      "text": "image", 
+      "type": "property"
+   }, 
+   {
+      "description": "inReplyTo", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-inReplyTo", 
+      "text": "inReplyTo", 
+      "type": "property"
+   }, 
+   {
+      "description": "items", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-items", 
+      "text": "items", 
+      "type": "property"
+   }, 
+   {
+      "description": "last", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-last", 
+      "text": "last", 
+      "type": "property"
+   }, 
+   {
+      "description": "location", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-location", 
+      "text": "location", 
+      "type": "property"
+   }, 
+   {
+      "description": "next", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-next", 
+      "text": "next", 
+      "type": "property"
+   }, 
+   {
+      "description": "object", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object", 
+      "text": "object", 
+      "type": "property"
+   }, 
+   {
+      "description": "Describes a possible exclusive answer or option for a question.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-oneOf", 
+      "text": "oneOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "Describes a possible inclusive answer or option for a question.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-anyOf", 
+      "text": "anyOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "prev", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-prev", 
+      "text": "prev", 
+      "type": "property"
+   }, 
+   {
+      "description": "preview", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-preview", 
+      "text": "preview", 
+      "type": "property"
+   }, 
+   {
+      "description": "provider", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-provider", 
+      "text": "provider", 
+      "type": "property"
+   }, 
+   {
+      "description": "replies", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-replies", 
+      "text": "replies", 
+      "type": "property"
+   }, 
+   {
+      "description": "result", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-result", 
+      "text": "result", 
+      "type": "property"
+   }, 
+   {
+      "description": "audience", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-audience", 
+      "text": "audience", 
+      "type": "property"
+   }, 
+   {
+      "description": "partOf", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-partOf", 
+      "text": "partOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "tag", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-tag", 
+      "text": "tag", 
+      "type": "property"
+   }, 
+   {
+      "description": "tags", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-tags", 
+      "text": "tags", 
+      "type": "property"
+   }, 
+   {
+      "description": "target", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-target", 
+      "text": "target", 
+      "type": "property"
+   }, 
+   {
+      "description": "For certain activities, specifies the entity from which the action is directed.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-origin", 
+      "text": "origin", 
+      "type": "property"
+   }, 
+   {
+      "description": "Indentifies an object used (or to be used) to complete an activity", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-instrument", 
+      "text": "instrument", 
+      "type": "property"
+   }, 
+   {
+      "description": "to", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-to", 
+      "text": "to", 
+      "type": "property"
+   }, 
+   {
+      "description": "Specifies a link to a specific representation of the Object", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-url", 
+      "text": "url", 
+      "type": "property"
+   }, 
+   {
+      "description": "On a Relationship object, identifies the subject. e.g. when saying \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-subject", 
+      "text": "subject", 
+      "type": "property"
+   }, 
+   {
+      "description": "On a Relationship object, describes the type of relationship", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-relationship", 
+      "text": "relationship", 
+      "type": "property"
+   }, 
+   {
+      "description": "On a Profile object, describes the object described by the profile", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-describes", 
+      "text": "describes", 
+      "type": "property"
+   }, 
+   {
+      "description": "On a Tombstone object, describes the former type of the deleted object", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-formerType", 
+      "text": "formerType", 
+      "type": "property"
+   }, 
+   {
+      "description": "Specifies the accuracy around the point established by the longitude and latitude", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-accuracy", 
+      "text": "accuracy", 
+      "type": "property"
+   }, 
+   {
+      "description": "The altitude of a place", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-altitude", 
+      "text": "altitude", 
+      "type": "property"
+   }, 
+   {
+      "description": "The content of the object.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-content", 
+      "text": "content", 
+      "type": "property"
+   }, 
+   {
+      "description": "name", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-name", 
+      "text": "name", 
+      "type": "property"
+   }, 
+   {
+      "description": "downstreamDuplicates", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-downstreamDuplicates", 
+      "text": "downstreamDuplicates", 
+      "type": "property"
+   }, 
+   {
+      "description": "The duration of the object", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-duration", 
+      "text": "duration", 
+      "type": "property"
+   }, 
+   {
+      "description": "The ending time of the object", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-endTime", 
+      "text": "endTime", 
+      "type": "property"
+   }, 
+   {
+      "description": "The display height expressed as device independent pixels", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-height", 
+      "text": "height", 
+      "type": "property"
+   }, 
+   {
+      "description": "The target URI of the Link", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-href", 
+      "text": "href", 
+      "type": "property"
+   }, 
+   {
+      "description": "A hint about the language of the referenced resource", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-hreflang", 
+      "text": "hreflang", 
+      "type": "property"
+   }, 
+   {
+      "description": "id", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-id", 
+      "text": "id", 
+      "type": "property"
+   }, 
+   {
+      "description": "The latitude", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-latitude", 
+      "text": "latitude", 
+      "type": "property"
+   }, 
+   {
+      "description": "The longitude", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-longitude", 
+      "text": "longitude", 
+      "type": "property"
+   }, 
+   {
+      "description": "The MIME Media Type", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-mediaType", 
+      "text": "mediaType", 
+      "type": "property"
+   }, 
+   {
+      "description": "objectType", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-objectType", 
+      "text": "objectType", 
+      "type": "property"
+   }, 
+   {
+      "description": "Specifies the date and time the object was published", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-published", 
+      "text": "published", 
+      "type": "property"
+   }, 
+   {
+      "description": "Specifies a radius around the point established by the longitude and latitude", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-radius", 
+      "text": "radius", 
+      "type": "property"
+   }, 
+   {
+      "description": "A numeric rating (>= 0.0, <= 5.0) for the object", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-rating", 
+      "text": "rating", 
+      "type": "property"
+   }, 
+   {
+      "description": "The RFC 5988 or HTML5 Link Relation associated with the Link", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-rel", 
+      "text": "rel", 
+      "type": "property"
+   }, 
+   {
+      "description": "In a strictly ordered logical collection, specifies the index position of the first item in the items list", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-startIndex", 
+      "text": "startIndex", 
+      "type": "property"
+   }, 
+   {
+      "description": "The starting time of the object", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-startTime", 
+      "text": "startTime", 
+      "type": "property"
+   }, 
+   {
+      "description": "A short summary of the object", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-summary", 
+      "text": "summary", 
+      "type": "property"
+   }, 
+   {
+      "description": "The total number of items in a logical collection", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-totalItems", 
+      "text": "totalItems", 
+      "type": "property"
+   }, 
+   {
+      "description": "Identifies the unit of measurement used by the radius, altitude and accuracy properties. The value can be expressed either as one of a set of predefined units or as a well-known common URI that identifies units.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-units", 
+      "text": "units", 
+      "type": "property"
+   }, 
+   {
+      "description": "Specifies when the object was last updated", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-updated", 
+      "text": "updated", 
+      "type": "property"
+   }, 
+   {
+      "description": "upstreamDuplicates", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-upstreamDuplicates", 
+      "text": "upstreamDuplicates", 
+      "type": "property"
+   }, 
+   {
+      "description": "verb", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-verb", 
+      "text": "verb", 
+      "type": "property"
+   }, 
+   {
+      "description": "Specifies the preferred display width of the content, expressed in terms of device independent pixels.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-width", 
+      "text": "width", 
+      "type": "property"
+   }, 
+   {
+      "description": "Specifies the date and time the object was deleted", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-deleted", 
+      "text": "deleted", 
+      "type": "property"
+   }, 
+   {
+      "description": "Actor accepts the Object", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Accept", 
+      "text": "Accept", 
+      "type": "class"
+   }, 
+   {
+      "description": "An Object representing some form of Action that has been taken", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Activity", 
+      "text": "Activity", 
+      "type": "class"
+   }, 
+   {
+      "description": "Block", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Block", 
+      "text": "Block", 
+      "type": "class"
+   }, 
+   {
+      "description": "An Activity that has no direct object", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-IntransitiveActivity", 
+      "text": "IntransitiveActivity", 
+      "type": "class"
+   }, 
+   {
+      "description": "To Add an Object or Link to Something", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Add", 
+      "text": "Add", 
+      "type": "class"
+   }, 
+   {
+      "description": "Actor announces the object to the target", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Announce", 
+      "text": "Announce", 
+      "type": "class"
+   }, 
+   {
+      "description": "Represents a software application of any sort", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Application", 
+      "text": "Application", 
+      "type": "class"
+   }, 
+   {
+      "description": "To Arrive Somewhere (can be used, for instance, to indicate that a particular entity is currently located somewhere, e.g. a \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Arrive", 
+      "text": "Arrive", 
+      "type": "class"
+   }, 
+   {
+      "description": "A written work. Typically several paragraphs long. For example, a blog post or a news article.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Article", 
+      "text": "Article", 
+      "type": "class"
+   }, 
+   {
+      "description": "An audio file", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Audio", 
+      "text": "Audio", 
+      "type": "class"
+   }, 
+   {
+      "description": "An ordered or unordered collection of Objects or Links", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Collection", 
+      "text": "Collection", 
+      "type": "class"
+   }, 
+   {
+      "description": "A subset of items from a Collection", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-CollectionPage", 
+      "text": "CollectionPage", 
+      "type": "class"
+   }, 
+   {
+      "description": "An ordered subset of items from an OrderedCollection", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-OrderedCollectionPage", 
+      "text": "OrderedCollectionPage", 
+      "type": "class"
+   }, 
+   {
+      "description": "Represents a Social Graph relationship between two Individuals (indicated by the 'a' and 'b' properties)", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Relationship", 
+      "text": "Relationship", 
+      "type": "class"
+   }, 
+   {
+      "description": "To Create Something", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Create", 
+      "text": "Create", 
+      "type": "class"
+   }, 
+   {
+      "description": "To Delete Something", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Delete", 
+      "text": "Delete", 
+      "type": "class"
+   }, 
+   {
+      "description": "The actor dislikes the object", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Dislike", 
+      "text": "Dislike", 
+      "type": "class"
+   }, 
+   {
+      "description": "Represents a digital document/file of any sort", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Document", 
+      "text": "Document", 
+      "type": "class"
+   }, 
+   {
+      "description": "An Event of any kind", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Event", 
+      "text": "Event", 
+      "type": "class"
+   }, 
+   {
+      "description": "To flag something (e.g. flag as inappropriate, flag as spam, etc)", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Flag", 
+      "text": "Flag", 
+      "type": "class"
+   }, 
+   {
+      "description": "To Express Interest in Something", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Follow", 
+      "text": "Follow", 
+      "type": "class"
+   }, 
+   {
+      "description": "A Group of any kind.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Group", 
+      "text": "Group", 
+      "type": "class"
+   }, 
+   {
+      "description": "Actor is ignoring the Object", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Ignore", 
+      "text": "Ignore", 
+      "type": "class"
+   }, 
+   {
+      "description": "An Image file", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Image", 
+      "text": "Image", 
+      "type": "class"
+   }, 
+   {
+      "description": "To invite someone or something to something", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Invite", 
+      "text": "Invite", 
+      "type": "class"
+   }, 
+   {
+      "description": "To Join Something", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Join", 
+      "text": "Join", 
+      "type": "class"
+   }, 
+   {
+      "description": "To Leave Something", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Leave", 
+      "text": "Leave", 
+      "type": "class"
+   }, 
+   {
+      "description": "To Like Something", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Like", 
+      "text": "Like", 
+      "type": "class"
+   }, 
+   {
+      "description": "The actor viewed the object", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-View", 
+      "text": "View", 
+      "type": "class"
+   }, 
+   {
+      "description": "The actor listened to the object", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Listen", 
+      "text": "Listen", 
+      "type": "class"
+   }, 
+   {
+      "description": "The actor read the object", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Read", 
+      "text": "Read", 
+      "type": "class"
+   }, 
+   {
+      "description": "The actor is moving the object. The target specifies where the object is moving to. The origin specifies where the object is moving from.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Move", 
+      "text": "Move", 
+      "type": "class"
+   }, 
+   {
+      "description": "The actor is traveling to the target. The origin specifies where the actor is traveling from.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Travel", 
+      "text": "Travel", 
+      "type": "class"
+   }, 
+   {
+      "description": "Represents a qualified reference to another resource. Patterned after the RFC5988 Web Linking Model", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Link", 
+      "text": "Link", 
+      "type": "class"
+   }, 
+   {
+      "description": "A specialized Link that represents an @mention", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Mention", 
+      "text": "Mention", 
+      "type": "class"
+   }, 
+   {
+      "description": "A Short note, typically less than a single paragraph. A \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Note", 
+      "text": "Note", 
+      "type": "class"
+   }, 
+   {
+      "description": "Object", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Object", 
+      "text": "Object", 
+      "type": "class"
+   }, 
+   {
+      "description": "To Offer something to someone or something", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Offer", 
+      "text": "Offer", 
+      "type": "class"
+   }, 
+   {
+      "description": "A variation of Collection in which items are strictly ordered", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-OrderedCollection", 
+      "text": "OrderedCollection", 
+      "type": "class"
+   }, 
+   {
+      "description": "A rdf:List variant for Objects and Links", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-OrderedItems", 
+      "text": "OrderedItems", 
+      "type": "class"
+   }, 
+   {
+      "description": "A Web Page", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Page", 
+      "text": "Page", 
+      "type": "class"
+   }, 
+   {
+      "description": "A Person", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Person", 
+      "text": "Person", 
+      "type": "class"
+   }, 
+   {
+      "description": "An Organization", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Organization", 
+      "text": "Organization", 
+      "type": "class"
+   }, 
+   {
+      "description": "A Profile Document", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Profile", 
+      "text": "Profile", 
+      "type": "class"
+   }, 
+   {
+      "description": "A physical or logical location", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Place", 
+      "text": "Place", 
+      "type": "class"
+   }, 
+   {
+      "description": "A question of any sort.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Question", 
+      "text": "Question", 
+      "type": "class"
+   }, 
+   {
+      "description": "Actor rejects the Object", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Reject", 
+      "text": "Reject", 
+      "type": "class"
+   }, 
+   {
+      "description": "To Remove Something", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Remove", 
+      "text": "Remove", 
+      "type": "class"
+   }, 
+   {
+      "description": "A service provided by some entity", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Service", 
+      "text": "Service", 
+      "type": "class"
+   }, 
+   {
+      "description": "Actor tentatively accepts the Object", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-TentativeAccept", 
+      "text": "TentativeAccept", 
+      "type": "class"
+   }, 
+   {
+      "description": "Actor tentatively rejects the object", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-TentativeReject", 
+      "text": "TentativeReject", 
+      "type": "class"
+   }, 
+   {
+      "description": "A placeholder for a deleted object", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Tombstone", 
+      "text": "Tombstone", 
+      "type": "class"
+   }, 
+   {
+      "description": "To Undo Something. This would typically be used to indicate that a previous Activity has been undone.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Undo", 
+      "text": "Undo", 
+      "type": "class"
+   }, 
+   {
+      "description": "To Update/Modify Something", 
+      "descriptionMoreURL": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-Update", 
+      "text": "Update", 
+      "type": "class"
+   }
+]

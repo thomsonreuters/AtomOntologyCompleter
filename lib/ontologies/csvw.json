@@ -1,0 +1,488 @@
+[
+   {
+      "description": "A Cell represents a cell at the intersection of a Row and a Column within a Table.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#Cell", 
+      "text": "Cell", 
+      "type": "class"
+   }, 
+   {
+      "description": "A Column represents a vertical arrangement of Cells within a Table.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#Column", 
+      "text": "Column", 
+      "type": "class"
+   }, 
+   {
+      "description": "Describes facets of a datatype.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#Datatype", 
+      "text": "Datatype", 
+      "type": "class"
+   }, 
+   {
+      "description": "A Dialect Description provides hints to parsers about how to parse a linked file.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#Dialect", 
+      "text": "Dialect", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of table/text directions.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#Direction", 
+      "text": "Direction", 
+      "type": "class"
+   }, 
+   {
+      "description": "Describes relationships between Columns in one or more Tables.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#ForeignKey", 
+      "text": "ForeignKey", 
+      "type": "class"
+   }, 
+   {
+      "description": "If the datatype is a numeric type, the format property indicates the expected format for that number. Its value must be either a single string or an object with one or more properties.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#NumericFormat", 
+      "text": "NumericFormat", 
+      "type": "class"
+   }, 
+   {
+      "description": "A Row represents a horizontal arrangement of cells within a Table.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#Row", 
+      "text": "Row", 
+      "type": "class"
+   }, 
+   {
+      "description": "A Schema is a definition of a tabular format that may be common to multiple tables.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#Schema", 
+      "text": "Schema", 
+      "type": "class"
+   }, 
+   {
+      "description": "An annotated table is a table that is annotated with additional metadata.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#Table", 
+      "text": "Table", 
+      "type": "class"
+   }, 
+   {
+      "description": "A Group of Tables comprises a set of Annotated Tables and a set of annotations that relate to those Tables.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#TableGroup", 
+      "text": "TableGroup", 
+      "type": "class"
+   }, 
+   {
+      "description": "An object property that identifies a referenced table and a set of referenced columns within that table.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#TableReference", 
+      "text": "TableReference", 
+      "type": "class"
+   }, 
+   {
+      "description": "A Transformation Definition is a definition of how tabular data can be transformed into another format.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#Transformation", 
+      "text": "Transformation", 
+      "type": "class"
+   }, 
+   {
+      "description": "A literal containing JSON.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#JSON", 
+      "text": "JSON", 
+      "type": "class"
+   }, 
+   {
+      "description": "uri template", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#uriTemplate", 
+      "text": "uriTemplate", 
+      "type": "class"
+   }, 
+   {
+      "description": "Indicates whether the tables in the group should be displayed based on the first character in the table that has a specific direction.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#auto", 
+      "text": "auto"
+   }, 
+   {
+      "description": "For `textDirection`, indicates that the direction is inherited from the `tableDirection` annotation of the `table`.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#inherit", 
+      "text": "inherit"
+   }, 
+   {
+      "description": "Indicates whether the tables in the group should be displayed with the first column on the right.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#ltr", 
+      "text": "ltr"
+   }, 
+   {
+      "description": "Indicates whether the tables in the group should be displayed with the first column on the left.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#rtl", 
+      "text": "rtl"
+   }, 
+   {
+      "description": "Describes the role of a CSV file in the tabular data mapping.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#csvEncodedTabularData", 
+      "text": "csvEncodedTabularData"
+   }, 
+   {
+      "description": "Describes the role of a Metadata file in the tabular data mapping.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#tabularMetadata", 
+      "text": "tabularMetadata"
+   }, 
+   {
+      "description": "A URI template property that MAY be used to indicate what a cell contains information about.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#aboutUrl", 
+      "text": "aboutUrl", 
+      "type": "property"
+   }, 
+   {
+      "description": "An atomic property that contains a single string: a term defined in the default context representing a built-in datatype URL, as listed above.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#base", 
+      "text": "base", 
+      "type": "property"
+   }, 
+   {
+      "description": "A column reference property that holds either a single reference to a column description object within this schema, or an array of references. These form the referencing columns for the foreign key definition.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#columnReference", 
+      "text": "columnReference", 
+      "type": "property"
+   }, 
+   {
+      "description": "An array property of column descriptions as described in section 5.6 Columns.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#column", 
+      "text": "column", 
+      "type": "property"
+   }, 
+   {
+      "description": "An atomic property that sets the comment prefix flag to the single provided value, which MUST be a string.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#commentPrefix", 
+      "text": "commentPrefix", 
+      "type": "property"
+   }, 
+   {
+      "description": "An object property that contains either a single string that is the main datatype of the values of the cell or a datatype description object. If the value of this property is a string, it MUST be one of the built-in datatypes defined in section 5.11.1 Built-in Datatypes or an absolute URL; if it is an object then it describes a more specialised datatype.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#datatype", 
+      "text": "datatype", 
+      "type": "property"
+   }, 
+   {
+      "description": "A string whose value is used to represent a decimal point within the number.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#decimalChar", 
+      "text": "decimalChar", 
+      "type": "property"
+   }, 
+   {
+      "description": "An atomic property holding a single string that is used to create a default value for the cell in cases where the original string value is an empty string.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#default", 
+      "text": "default", 
+      "type": "property"
+   }, 
+   {
+      "description": "From IANA describes: The relationship A 'describes' B asserts that resource A provides a description of resource B. There are no constraints on the format or representation of either A or B, neither are there any further constraints on either resource.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#describes", 
+      "text": "describes", 
+      "type": "property"
+   }, 
+   {
+      "description": "An atomic property that sets the delimiter flag to the single provided value, which MUST be a string.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#delimiter", 
+      "text": "delimiter", 
+      "type": "property"
+   }, 
+   {
+      "description": "An object property that provides a single dialect description. If provided, dialect provides hints to processors about how to parse the referenced files to create tabular data models for the tables in the group.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#dialect", 
+      "text": "dialect", 
+      "type": "property"
+   }, 
+   {
+      "description": "A boolean atomic property that, if `true`, sets the escape character flag to `\\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#doubleQuote", 
+      "text": "doubleQuote", 
+      "type": "property"
+   }, 
+   {
+      "description": "An atomic property that sets the encoding flag to the single provided string value, which MUST be a defined in [[encoding]]. The default is \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#encoding", 
+      "text": "encoding", 
+      "type": "property"
+   }, 
+   {
+      "description": "foreign key", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#foreignKey", 
+      "text": "foreignKey", 
+      "type": "property"
+   }, 
+   {
+      "description": "An atomic property that contains either a single string or an object that defines the format of a value of this type, used when parsing a string value as described in Parsing Cells in [[tabular-data-model]].", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#format", 
+      "text": "format", 
+      "type": "property"
+   }, 
+   {
+      "description": "A string whose value is used to group digits within the number.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#groupChar", 
+      "text": "groupChar", 
+      "type": "property"
+   }, 
+   {
+      "description": "A boolean atomic property that, if `true`, sets the header row count flag to `1`, and if `false` to `0`, unless headerRowCount is provided, in which case the value provided for the header property is ignored.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#header", 
+      "text": "header", 
+      "type": "property"
+   }, 
+   {
+      "description": "An numeric atomic property that sets the header row count flag to the single provided value, which must be a non-negative integer.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#headerRowCount", 
+      "text": "headerRowCount", 
+      "type": "property"
+   }, 
+   {
+      "description": "An atomic property giving a single string language code as defined by [[BCP47]].", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#lang", 
+      "text": "lang", 
+      "type": "property"
+   }, 
+   {
+      "description": "The exact length of the value of the cell.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#length", 
+      "text": "length", 
+      "type": "property"
+   }, 
+   {
+      "description": "An atomic property that sets the line terminators flag to either an array containing the single provided string value, or the provided array.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#lineTerminators", 
+      "text": "lineTerminators", 
+      "type": "property"
+   }, 
+   {
+      "description": "An atomic property that contains a single number that is the maximum valid value (exclusive).", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#maxExclusive", 
+      "text": "maxExclusive", 
+      "type": "property"
+   }, 
+   {
+      "description": "An atomic property that contains a single number that is the maximum valid value (inclusive).", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#maxInclusive", 
+      "text": "maxInclusive", 
+      "type": "property"
+   }, 
+   {
+      "description": "A numeric atomic property that contains a single integer that is the maximum length of the value.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#maxLength", 
+      "text": "maxLength", 
+      "type": "property"
+   }, 
+   {
+      "description": "An atomic property that contains a single number that is the minimum valid value (exclusive).", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#minExclusive", 
+      "text": "minExclusive", 
+      "type": "property"
+   }, 
+   {
+      "description": "An atomic property that contains a single number that is the minimum valid value (inclusive).", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#minInclusive", 
+      "text": "minInclusive", 
+      "type": "property"
+   }, 
+   {
+      "description": "An atomic property that contains a single integer that is the minimum length of the value.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#minLength", 
+      "text": "minLength", 
+      "type": "property"
+   }, 
+   {
+      "description": "An atomic property that gives a single canonical name for the column. The value of this property becomes the name annotation for the described column.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#name", 
+      "text": "name", 
+      "type": "property"
+   }, 
+   {
+      "description": "An array property that provides an array of objects representing arbitrary annotations on the annotated tabular data model.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#note", 
+      "text": "note", 
+      "type": "property"
+   }, 
+   {
+      "description": "An atomic property giving the string or strings used for null values within the data. If the string value of the cell is equal to any one of these values, the cell value is `null`.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#null", 
+      "text": "null", 
+      "type": "property"
+   }, 
+   {
+      "description": "A boolean atomic property taking a single value which indicates whether a list that is the value of the cell is ordered (if `true`) or unordered (if `false`).", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#ordered", 
+      "text": "ordered", 
+      "type": "property"
+   }, 
+   {
+      "description": "A regular expression string, in the syntax and interpreted as defined by [[ECMASCRIPT]].", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#pattern", 
+      "text": "pattern", 
+      "type": "property"
+   }, 
+   {
+      "description": "primary key", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#primaryKey", 
+      "text": "primaryKey", 
+      "type": "property"
+   }, 
+   {
+      "description": "An URI template property that MAY be used to create a URI for a property if the table is mapped to another format. ", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#propertyUrl", 
+      "text": "propertyUrl", 
+      "type": "property"
+   }, 
+   {
+      "description": "An atomic property that sets the quote character flag to the single provided value, which must be a string or `null`.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#quoteChar", 
+      "text": "quoteChar", 
+      "type": "property"
+   }, 
+   {
+      "description": "An object property that identifies a **referenced table** and a set of **referenced columns** within that table.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#reference", 
+      "text": "reference", 
+      "type": "property"
+   }, 
+   {
+      "description": "A possibly empty list of pairs of a foreign key and a row in a table within the same group of tables.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#referencedRow", 
+      "text": "referencedRow", 
+      "type": "property"
+   }, 
+   {
+      "description": "A boolean atomic property taking a single value which indicates whether the cell must have a non-null value. The default is `false`. ", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#required", 
+      "text": "required", 
+      "type": "property"
+   }, 
+   {
+      "description": "A link property holding a URL that is the identifier for a specific table that is being referenced.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#resource", 
+      "text": "resource", 
+      "type": "property"
+   }, 
+   {
+      "description": "Relates a Table to each Row output.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#row", 
+      "text": "row", 
+      "type": "property"
+   }, 
+   {
+      "description": "A column reference property that holds either a single reference to a column description object or an array of references.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#rowTitle", 
+      "text": "rowTitle", 
+      "type": "property"
+   }, 
+   {
+      "description": "The position of the row amongst the rows of the Annotated Tabl, starting from 1", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#rownum", 
+      "text": "rownum", 
+      "type": "property"
+   }, 
+   {
+      "description": "A link property giving the single URL for the format that is used by the script or template.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#scriptFormat", 
+      "text": "scriptFormat", 
+      "type": "property"
+   }, 
+   {
+      "description": "A link property holding a URL that is the identifier for a schema that is being referenced.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#schemaReference", 
+      "text": "schemaReference", 
+      "type": "property"
+   }, 
+   {
+      "description": "An atomic property that MUST have a single string value that is the character used to separate items in the string value of the cell.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#separator", 
+      "text": "separator", 
+      "type": "property"
+   }, 
+   {
+      "description": "An boolean atomic property that sets the `skip blank rows` flag to the single provided boolean value.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#skipBlankRows", 
+      "text": "skipBlankRows", 
+      "type": "property"
+   }, 
+   {
+      "description": "An numeric atomic property that sets the `skip columns` flag to the single provided numeric value, which MUST be a non-negative integer.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#skipColumns", 
+      "text": "skipColumns", 
+      "type": "property"
+   }, 
+   {
+      "description": "A boolean atomic property that, if `true`, sets the trim flag to \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#skipInitialSpace", 
+      "text": "skipInitialSpace", 
+      "type": "property"
+   }, 
+   {
+      "description": "An numeric atomic property that sets the `skip rows` flag to the single provided numeric value, which MUST be a non-negative integer.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#skipRows", 
+      "text": "skipRows", 
+      "type": "property"
+   }, 
+   {
+      "description": "A single string atomic property that provides, if specified, the format to which the tabular data should be transformed prior to the transformation using the script or template.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#source", 
+      "text": "source", 
+      "type": "property"
+   }, 
+   {
+      "description": "A boolean atomic property. If `true`, suppresses any output that would be generated when converting a table or cells within a column.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#suppressOutput", 
+      "text": "suppressOutput", 
+      "type": "property"
+   }, 
+   {
+      "description": "Relates an Table group to annotated tables.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#table", 
+      "text": "table", 
+      "type": "property"
+   }, 
+   {
+      "description": "One of `rtl`, `ltr` or `auto`. Indicates whether the tables in the group should be displayed with the first column on the right, on the left, or based on the first character in the table that has a specific direction.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#tableDirection", 
+      "text": "tableDirection", 
+      "type": "property"
+   }, 
+   {
+      "description": "An object property that provides a single schema description as described in section 5.5 Schemas, used as the default for all the tables in the group", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#tableSchema", 
+      "text": "tableSchema", 
+      "type": "property"
+   }, 
+   {
+      "description": "A link property giving the single URL for the format that will be created through the transformation.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#targetFormat", 
+      "text": "targetFormat", 
+      "type": "property"
+   }, 
+   {
+      "description": "An array property of transformation definitions that provide mechanisms to transform the tabular data into other formats.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#transformations", 
+      "text": "transformations", 
+      "type": "property"
+   }, 
+   {
+      "description": "An atomic property that must have a single value that is one of `rtl` or `ltr` (the default).", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#textDirection", 
+      "text": "textDirection", 
+      "type": "property"
+   }, 
+   {
+      "description": "title", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#title", 
+      "text": "title", 
+      "type": "property"
+   }, 
+   {
+      "description": "An atomic property that, if the boolean `true`, sets the trim flag to `true` and if the boolean `false` to `false`. If the value provided is a string, sets the trim flag to the provided value, which must be one of \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#trim", 
+      "text": "trim", 
+      "type": "property"
+   }, 
+   {
+      "description": "url", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#url", 
+      "text": "url", 
+      "type": "property"
+   }, 
+   {
+      "description": "An URI template property that is used to map the values of cells into URLs.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/tabular-metadata/#valueUrl", 
+      "text": "valueUrl", 
+      "type": "property"
+   }
+]

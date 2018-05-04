@@ -1,4 +1,18 @@
 {
+  "as":{
+    "title":"Activity Vocabulary",
+    "spec":"http://dublincore.org/documents/dcmi-terms/",
+    "prefix":"https://www.w3.org/ns/activitystreams#",
+    "docprefix":"https://www.w3.org/TR/activitystreams-vocabulary/#dfn-",
+    "ontology":"./ontologies/as.json"
+  },
+  "csvw":{
+    "title":"Metadata for Tabular Data",
+    "spec":"https://www.w3.org/TR/tabular-metadata/",
+    "prefix":"http://www.w3.org/ns/csvw#",
+    "docprefix":"https://www.w3.org/TR/tabular-metadata/#",
+    "ontology":"./ontologies/csvw.json"
+  },
   "dc11":{
     "title":"Dublin Core Terms",
     "spec":"http://dublincore.org/documents/dcmi-terms/",

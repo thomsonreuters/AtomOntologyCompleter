@@ -24,7 +24,7 @@ desiredPrefix=sys.argv[2]
 predicates = []
 predicateRegex = re.compile(ur'^([^:\s]*):([a-zA-Z\-_]+)')
 typeRegex = re.compile(ur'a (rdf|owl|rdfs|dcam):([\w]+)')
-commentRegex = re.compile(ur'\s+(rdfs:comment|skos:definition) \"([^\"]+)\"')
+commentRegex = re.compile(ur'\s+(rdfs:comment|skos:definition|rdfs:label) \"([^\"]+)\"')
 currentPredicate = None
 for line in sys.stdin:
     predicateName = predicateRegex.match(line)
@@ -42,8 +42,7 @@ for line in sys.stdin:
                 or predicateType.group(2) == 'Datatype' \
                 or predicateType.group(2) == 'VocabularyEncodingScheme':
                 currentPredicate['type']='class'
-            elif predicateType.group(2) == 'Property' or predicateType.group(2) == 'ObjectProperty' \
-                or predicateType.group(2) == 'AnnotationProperty'or predicateType.group(2) == 'DatatypeProperty':
+            elif 'Property' in predicateType.group(2): # bit of a hack
                 currentPredicate['type']='property'
             elif predicateType.group(2) == 'Resource':
                 currentPredicate['type']='snippet'
@@ -51,7 +50,11 @@ for line in sys.stdin:
                 currentPredicate['type']='Something weird: '+predicateType.group(2)
             continue
         predicateComment = commentRegex.match(line)
-        if predicateComment is not None and 'description' not in currentPredicate:
-            currentPredicate['description']=predicateComment.group(2)
+        if predicateComment is not None:
+            if 'description' not in currentPredicate:
+                currentPredicate['description']=predicateComment.group(2)
+            else:
+                if predicateComment.group(1) != 'rdfs:label':   # permit rdfs:label as a fallback
+                    currentPredicate['description']=predicateComment.group(2)
 
 json.dump(predicates,sys.stdout,indent=3,sort_keys=True)
