@@ -1,0 +1,140 @@
+[
+   {
+      "description": "A curated collection of metadata about datasets", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#Catalog", 
+      "text": "Catalog", 
+      "type": "class"
+   }, 
+   {
+      "description": "The knowledge organization system (KOS) used to classify catalog's datasets.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#themeTaxonomy", 
+      "text": "themeTaxonomy", 
+      "type": "property"
+   }, 
+   {
+      "description": "Links a catalog to a dataset that is part of the catalog.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#dataset", 
+      "text": "dataset", 
+      "type": "property"
+   }, 
+   {
+      "description": "Links a catalog to its records.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#record", 
+      "text": "record", 
+      "type": "property"
+   }, 
+   {
+      "description": "A record in a data catalog, describing a single dataset.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#CatalogRecord", 
+      "text": "CatalogRecord", 
+      "type": "class"
+   }, 
+   {
+      "description": "A collection of data, published or curated by a single source, and available for access or download in one or more formats", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#Dataset", 
+      "text": "Dataset", 
+      "type": "class"
+   }, 
+   {
+      "description": "The main category of the dataset. A dataset can have multiple themes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#theme", 
+      "text": "theme", 
+      "type": "property"
+   }, 
+   {
+      "description": "A keyword or tag describing the dataset.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#keyword", 
+      "text": "keyword", 
+      "type": "property"
+   }, 
+   {
+      "description": "Links a dataset to relevant contact information which is provided using VCard.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#contactPoint", 
+      "text": "contactPoint", 
+      "type": "property"
+   }, 
+   {
+      "description": "Connects a dataset to one of its available distributions.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#distribution", 
+      "text": "distribution", 
+      "type": "property"
+   }, 
+   {
+      "description": "A Web page that can be navigated to in a Web browser to gain access to the dataset, its distributions and/or additional information.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#landingPage", 
+      "text": "landingPage", 
+      "type": "property"
+   }, 
+   {
+      "description": "Distribution", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#Distribution", 
+      "text": "Distribution", 
+      "type": "class"
+   }, 
+   {
+      "description": "access URL", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#accessURL", 
+      "text": "accessURL", 
+      "type": "property"
+   }, 
+   {
+      "description": "download URL", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#downloadURL", 
+      "text": "downloadURL", 
+      "type": "property"
+   }, 
+   {
+      "description": "The size of a distribution in bytes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#byteSize", 
+      "text": "byteSize", 
+      "type": "property"
+   }, 
+   {
+      "description": "media type", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#mediaType", 
+      "text": "mediaType", 
+      "type": "property"
+   }, 
+   {
+      "description": "represents availability of a dataset as a feed. This term has been deprecated", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#Feed", 
+      "text": "Feed", 
+      "type": "class"
+   }, 
+   {
+      "description": "represents a web service that enables access to the data of a dataset. This term has been deprecated", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#WebService", 
+      "text": "WebService", 
+      "type": "class"
+   }, 
+   {
+      "description": "represents a downloadable distribution of a dataset. This term has been deprecated", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#Download", 
+      "text": "Download", 
+      "type": "class"
+   }, 
+   {
+      "description": "describes the quality of data e.g. precision. This should not be used to describe the data collection characteristics, other more specialized statistical properties can be used instead. This term has been deprecated", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#dataQuality", 
+      "text": "dataQuality", 
+      "type": "property"
+   }, 
+   {
+      "description": "links a dataset to a dictionary that helps interpreting the data. This term has been deprecated", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#dataDictionary", 
+      "text": "dataDictionary", 
+      "type": "property"
+   }, 
+   {
+      "description": "describes the level of granularity of data in a dataset. The granularity can be in time, place etc. This term has been deprecated", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#granularity", 
+      "text": "granularity", 
+      "type": "property"
+   }, 
+   {
+      "description": "the size of a distribution. This term has been deprecated", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-dcat/#size", 
+      "text": "size", 
+      "type": "property"
+   }
+]

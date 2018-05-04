@@ -24,7 +24,7 @@ desiredPrefix=sys.argv[2]
 predicates = []
 predicateRegex = re.compile(ur'^([^:\s]*):([a-zA-Z\-_]+)')
 typeRegex = re.compile(ur'a (rdf|owl|rdfs|dcam):([\w]+)')
-commentRegex = re.compile(ur'\s+(rdfs:comment|skos:definition|rdfs:label) \"([^\"]+)\"')
+commentRegex = re.compile(ur'\s+(rdfs:comment|skos:definition|rdfs:label) \"([^\"]+)\"(@\w\w)?')
 currentPredicate = None
 for line in sys.stdin:
     predicateName = predicateRegex.match(line)
@@ -50,7 +50,7 @@ for line in sys.stdin:
                 currentPredicate['type']='Something weird: '+predicateType.group(2)
             continue
         predicateComment = commentRegex.match(line)
-        if predicateComment is not None:
+        if predicateComment is not None and (predicateComment.group(3) is None or predicateComment.group(3) == '@en'):
             if 'description' not in currentPredicate:
                 currentPredicate['description']=predicateComment.group(2)
             else:
