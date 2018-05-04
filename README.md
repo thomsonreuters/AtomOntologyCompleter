@@ -3,6 +3,8 @@
 This is an autocompleter for the [Atom](http://atom.io) editor that knows common ontologies and will suggest predicates based on your typing.
 
 Current ontologies are:
+* [Activity Vocabulary](http://dublincore.org/documents/dcmi-terms/)
+* [Metadata for Tabular Data](https://www.w3.org/TR/tabular-metadata/)
 * [Dublin Core & Terms](http://dublincore.org/documents/dcmi-terms/)
 * [FOAF](http://xmlns.com/foaf/spec/)
 * [W3C Provenance](https://www.w3.org/TR/2013/REC-prov-o-20130430/)
