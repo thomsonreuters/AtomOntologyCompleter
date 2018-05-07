@@ -31,12 +31,6 @@ module.exports =
       completions = require @ontologies[ontologyPrefix].ontology
       @ontologies[ontologyPrefix].completions = completions
 
-  newgetSuggestions: ({editor,bufferPosition,scopeDescriptor, prefix}) ->
-    console.log 'GS'
-    if not @ontologies['prov'].completions?
-      @loadOntology('prov')
-    return @ontologies['prov'].completions
-
   getSuggestions: ({editor,bufferPosition,scopeDescriptor, prefix}) ->
     return [] if not prefix? or not prefix.length
     currentScope = scopeDescriptor.getScopesArray()
@@ -55,7 +49,7 @@ module.exports =
     text: match.text
     description: match.description
     descriptionMoreURL: match.descriptionMoreURL
-  #  replacementPrefix: prefix
+  #  replacementPrefix: prefix  # doesn't seem necessary
 
   getMatches: (candidateArray, prefix) ->
     return [] if not candidateArray?
