@@ -6,6 +6,7 @@ Current ontologies are:
 * [Activity Vocabulary](http://dublincore.org/documents/dcmi-terms/)
 * [Metadata for Tabular Data](https://www.w3.org/TR/tabular-metadata/)
 * [Data Catalog Vocabulary](https://www.w3.org/TR/vocab-dcat/)
+* [Data Quality Vocabulary](http://www.w3.org/TR/vocab-dqv)
 * [Dublin Core & Terms](http://dublincore.org/documents/dcmi-terms/)
 * [FOAF](http://xmlns.com/foaf/spec/)
 * [W3C Provenance](https://www.w3.org/TR/2013/REC-prov-o-20130430/)
@@ -18,3 +19,5 @@ If you'd like others added either raise an issue on the atom pacakge or do a pul
 Known ontologies are referenced from the file `ontologies.json` in `\lib`. Each ontology has a JSON file that contains the completion info.
 
 To generate a new file, run `convert.py` over a ttl version of the ontology to generate the json.
+
+Contributions are greatly appreciated. Please fork this repository and open a pull request to add new ontologies.
