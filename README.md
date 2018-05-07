@@ -1,6 +1,6 @@
 # Turtle Autocompleter package
 
-This is an autocompleter for the [Atom](http://atom.io) editor that knows common ontologies and will suggest predicates based on your typing.
+This is an autocompleter for the [Atom](http://atom.io) editor, compatible with AutoComplete+ that knows common ontologies and will suggest predicates based on your typing.
 
 Current ontologies are:
 * [Activity Vocabulary](http://dublincore.org/documents/dcmi-terms/)
@@ -14,10 +14,8 @@ Current ontologies are:
 * [SHACL](https://www.w3.org/TR/shacl/)
 * [SKOS](https://www.w3.org/2009/08/skos-reference/skos.html)
 
-If you'd like others added either raise an issue on the atom pacakge or do a pull request with the conversion. Note that the ontology is matched based on common prefixes.
+If you'd like others added either raise an issue on the atom package or do a pull request with the conversion. Contributions are greatly appreciated.  Note that the ontology is matched based on common prefixes.
 
 Known ontologies are referenced from the file `ontologies.json` in `\lib`. Each ontology has a JSON file that contains the completion info.
 
-To generate a new file, run `convert.py` over a ttl version of the ontology to generate the json.
-
-Contributions are greatly appreciated. Please fork this repository and open a pull request to add new ontologies.
+To generate a new file, run `convert.py` over a ttl version of the ontology to generate the JSON.
