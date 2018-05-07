@@ -4,7 +4,9 @@
 cat as.ttl | python convert.py "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-" as > as.json
 cat csvw.ttl | python convert.py "https://www.w3.org/TR/tabular-metadata/#" csvw > csvw.json
 cat dc11.ttl | python convert.py "http://dublincore.org/documents/dcmi-terms/#terms-" dc11 > dc11.json
+cat dcat.ttl | python convert.py "https://www.w3.org/TR/vocab-dcat/#" dcat > dcat.json
 cat dcterms.ttl | python convert.py "http://dublincore.org/documents/dcmi-terms/#elements-" dcterms > dcterms.json
+cat dqv.ttl | python convert.py "https://www.w3.org/TR/vocab-dqv/#dqv:" dqv > dqv.json
 cat foaf.ttl | python convert.py "http://xmlns.com/foaf/spec/#" foaf > foaf.json
 cat prov.ttl | python convert.py "https://www.w3.org/TR/2013/REC-prov-o-20130430/#" "" > prov.json
 cat rdfs.ttl | python convert.py "https://www.w3.org/TR/rdf-schema/#ch_" rdfs > rdfs.json

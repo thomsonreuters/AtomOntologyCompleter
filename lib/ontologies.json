@@ -34,6 +34,13 @@
     "docprefix":"http://dublincore.org/documents/dcmi-terms/#elements-",
     "ontology":"./ontologies/dc11.json"
   },
+  "dqv":{
+    "title":"Data on the Web Best Practices: Data Quality Vocabulary",
+    "spec":"https://www.w3.org/TR/vocab-dqv/",
+    "prefix":"http://www.w3.org/ns/dqv#",
+    "docprefix":"https://www.w3.org/TR/vocab-dqv/#dqv:",
+    "ontology":"./ontologies/dqv.json"
+  },
   "foaf":{
     "title":"Friend of a friend",
     "spec":"http://xmlns.com/foaf/spec/",
