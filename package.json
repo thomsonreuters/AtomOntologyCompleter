@@ -1,6 +1,6 @@
 {
   "name": "turtle-completer",
-  "main": "./lib/autocomplete-turtle.js",
+  "main": "./lib/autocomplete-turtle",
   "version": "0.2.0",
   "description": "Auto completer for the RDF turtle serialization with knowledge of common schema",
   "keywords": [],
@@ -12,7 +12,7 @@
   "providedServices": {
     "autocomplete.provider": {
       "versions": {
-        "4.0.0": "provide"
+        "4.0.0": "getProvider"
       }
     }
   },
