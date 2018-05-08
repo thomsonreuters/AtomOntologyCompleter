@@ -8,6 +8,7 @@ cat dcat.ttl | python convert.py "https://www.w3.org/TR/vocab-dcat/#" dcat > dca
 cat dcterms.ttl | python convert.py "http://dublincore.org/documents/dcmi-terms/#elements-" dcterms > dcterms.json
 cat dqv.ttl | python convert.py "https://www.w3.org/TR/vocab-dqv/#dqv:" dqv > dqv.json
 cat foaf.ttl | python convert.py "http://xmlns.com/foaf/spec/#" foaf > foaf.json
+ cat owl.ttl | python convert.py "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_" owl > owl.json
 cat prov.ttl | python convert.py "https://www.w3.org/TR/2013/REC-prov-o-20130430/#" "" > prov.json
 cat rdfs.ttl | python convert.py "https://www.w3.org/TR/rdf-schema/#ch_" rdfs > rdfs.json
 cat shacl.ttl | python convert.py "https://www.w3.org/TR/shacl/#" sh > shacl.json

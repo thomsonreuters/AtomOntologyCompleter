@@ -1,0 +1,458 @@
+[
+   {
+      "description": "The class of collections of pairwise different individuals.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_AllDifferent", 
+      "text": "AllDifferent", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of collections of pairwise disjoint classes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_AllDisjointClasses", 
+      "text": "AllDisjointClasses", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of collections of pairwise disjoint properties.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_AllDisjointProperties", 
+      "text": "AllDisjointProperties", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of annotated annotations for which the RDF serialization consists of an annotated subject, predicate and object.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_Annotation", 
+      "text": "Annotation", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of annotation properties.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_AnnotationProperty", 
+      "text": "AnnotationProperty", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of asymmetric properties.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_AsymmetricProperty", 
+      "text": "AsymmetricProperty", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of annotated axioms for which the RDF serialization consists of an annotated subject, predicate and object.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_Axiom", 
+      "text": "Axiom", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of OWL classes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_Class", 
+      "text": "Class", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of OWL data ranges, which are special kinds of datatypes. Note: The use of the IRI owl:DataRange has been deprecated as of OWL 2. The IRI rdfs:Datatype SHOULD be used instead.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_DataRange", 
+      "text": "DataRange", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of data properties.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_DatatypeProperty", 
+      "text": "DatatypeProperty", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of deprecated classes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_DeprecatedClass", 
+      "text": "DeprecatedClass", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of deprecated properties.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_DeprecatedProperty", 
+      "text": "DeprecatedProperty", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of functional properties.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_FunctionalProperty", 
+      "text": "FunctionalProperty", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of inverse-functional properties.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_InverseFunctionalProperty", 
+      "text": "InverseFunctionalProperty", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of irreflexive properties.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_IrreflexiveProperty", 
+      "text": "IrreflexiveProperty", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of named individuals.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_NamedIndividual", 
+      "text": "NamedIndividual", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of negative property assertions.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_NegativePropertyAssertion", 
+      "text": "NegativePropertyAssertion", 
+      "type": "class"
+   }, 
+   {
+      "description": "This is the empty class.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_Nothing", 
+      "text": "Nothing", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of object properties.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_ObjectProperty", 
+      "text": "ObjectProperty", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of ontologies.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_Ontology", 
+      "text": "Ontology", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of ontology properties.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_OntologyProperty", 
+      "text": "OntologyProperty", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of reflexive properties.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_ReflexiveProperty", 
+      "text": "ReflexiveProperty", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of property restrictions.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_Restriction", 
+      "text": "Restriction", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of symmetric properties.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_SymmetricProperty", 
+      "text": "SymmetricProperty", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of transitive properties.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_TransitiveProperty", 
+      "text": "TransitiveProperty", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of OWL individuals.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_Thing", 
+      "text": "Thing", 
+      "type": "class"
+   }, 
+   {
+      "description": "The property that determines the class that a universal property restriction refers to.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_allValuesFrom", 
+      "text": "allValuesFrom", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the predicate of an annotated axiom or annotated annotation.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_annotatedProperty", 
+      "text": "annotatedProperty", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the subject of an annotated axiom or annotated annotation.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_annotatedSource", 
+      "text": "annotatedSource", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the object of an annotated axiom or annotated annotation.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_annotatedTarget", 
+      "text": "annotatedTarget", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the predicate of a negative property assertion.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_assertionProperty", 
+      "text": "assertionProperty", 
+      "type": "property"
+   }, 
+   {
+      "description": "The annotation property that indicates that a given ontology is backward compatible with another ontology.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_backwardCompatibleWith", 
+      "text": "backwardCompatibleWith", 
+      "type": "property"
+   }, 
+   {
+      "description": "The data property that does not relate any individual to any data value.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_bottomDataProperty", 
+      "text": "bottomDataProperty", 
+      "type": "property"
+   }, 
+   {
+      "description": "The object property that does not relate any two individuals.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_bottomObjectProperty", 
+      "text": "bottomObjectProperty", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the cardinality of an exact cardinality restriction.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_cardinality", 
+      "text": "cardinality", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines that a given class is the complement of another class.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_complementOf", 
+      "text": "complementOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines that a given data range is the complement of another data range with respect to the data domain.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_datatypeComplementOf", 
+      "text": "datatypeComplementOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "The annotation property that indicates that a given entity has been deprecated.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_deprecated", 
+      "text": "deprecated", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines that two given individuals are different.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_differentFrom", 
+      "text": "differentFrom", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines that a given class is equivalent to the disjoint union of a collection of other classes.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_disjointUnionOf", 
+      "text": "disjointUnionOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines that two given classes are disjoint.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_disjointWith", 
+      "text": "disjointWith", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the collection of pairwise different individuals in a owl:AllDifferent axiom.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_distinctMembers", 
+      "text": "distinctMembers", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines that two given classes are equivalent, and that is used to specify datatype definitions.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_equivalentClass", 
+      "text": "equivalentClass", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines that two given properties are equivalent.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_equivalentProperty", 
+      "text": "equivalentProperty", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the collection of properties that jointly build a key.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_hasKey", 
+      "text": "hasKey", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the property that a self restriction refers to.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_hasSelf", 
+      "text": "hasSelf", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the individual that a has-value restriction refers to.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_hasValue", 
+      "text": "hasValue", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that is used for importing other ontologies into a given ontology.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_imports", 
+      "text": "imports", 
+      "type": "property"
+   }, 
+   {
+      "description": "The annotation property that indicates that a given ontology is incompatible with another ontology.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_incompatibleWith", 
+      "text": "incompatibleWith", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the collection of classes or data ranges that build an intersection.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_intersectionOf", 
+      "text": "intersectionOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines that two given properties are inverse.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_inverseOf", 
+      "text": "inverseOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the cardinality of a maximum cardinality restriction.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_maxCardinality", 
+      "text": "maxCardinality", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the cardinality of a maximum qualified cardinality restriction.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_maxQualifiedCardinality", 
+      "text": "maxQualifiedCardinality", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the collection of members in either a owl:AllDifferent, owl:AllDisjointClasses or owl:AllDisjointProperties axiom.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_members", 
+      "text": "members", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the cardinality of a minimum cardinality restriction.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_minCardinality", 
+      "text": "minCardinality", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the cardinality of a minimum qualified cardinality restriction.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_minQualifiedCardinality", 
+      "text": "minQualifiedCardinality", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the class that a qualified object cardinality restriction refers to.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_onClass", 
+      "text": "onClass", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the data range that a qualified data cardinality restriction refers to.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_onDataRange", 
+      "text": "onDataRange", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the datatype that a datatype restriction refers to.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_onDatatype", 
+      "text": "onDatatype", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the collection of individuals or data values that build an enumeration.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_oneOf", 
+      "text": "oneOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the n-tuple of properties that a property restriction on an n-ary data range refers to.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_onProperties", 
+      "text": "onProperties", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the property that a property restriction refers to.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_onProperty", 
+      "text": "onProperty", 
+      "type": "property"
+   }, 
+   {
+      "description": "The annotation property that indicates the predecessor ontology of a given ontology.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_priorVersion", 
+      "text": "priorVersion", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the n-tuple of properties that build a sub property chain of a given property.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_propertyChainAxiom", 
+      "text": "propertyChainAxiom", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines that two given properties are disjoint.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_propertyDisjointWith", 
+      "text": "propertyDisjointWith", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the cardinality of an exact qualified cardinality restriction.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_qualifiedCardinality", 
+      "text": "qualifiedCardinality", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines that two given individuals are equal.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_sameAs", 
+      "text": "sameAs", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the class that an existential property restriction refers to.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_someValuesFrom", 
+      "text": "someValuesFrom", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the subject of a negative property assertion.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_sourceIndividual", 
+      "text": "sourceIndividual", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the object of a negative object property assertion.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_targetIndividual", 
+      "text": "targetIndividual", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the value of a negative data property assertion.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_targetValue", 
+      "text": "targetValue", 
+      "type": "property"
+   }, 
+   {
+      "description": "The data property that relates every individual to every data value.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_topDataProperty", 
+      "text": "topDataProperty", 
+      "type": "property"
+   }, 
+   {
+      "description": "The object property that relates every two individuals.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_topObjectProperty", 
+      "text": "topObjectProperty", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that determines the collection of classes or data ranges that build a union.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_unionOf", 
+      "text": "unionOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "The annotation property that provides version information for an ontology or another OWL construct.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_versionInfo", 
+      "text": "versionInfo", 
+      "type": "property"
+   }, 
+   {
+      "description": "The property that identifies the version IRI of an ontology.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#a_versionIRI", 
+      "text": "versionIRI", 
+      "type": "property"
+   }
+]

@@ -48,6 +48,13 @@
     "docprefix":"http://xmlns.com/foaf/spec/#",
     "ontology":"./ontologies/foaf.json"
   },
+  "owl":{
+    "title":"OWL 2 Web Ontology Language",
+    "spec":"https://www.w3.org/TR/owl2-overview/",
+    "prefix":"<http://www.w3.org/2002/07/owl#>",
+    "docprefix":"https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/",
+    "ontology":"./ontologies/owl.json"
+  },
   "prov":{
     "title":"Provenance",
     "spec":"https://www.w3.org/TR/2013/REC-prov-o-20130430/",
