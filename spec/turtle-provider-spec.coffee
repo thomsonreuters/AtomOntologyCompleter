@@ -16,10 +16,11 @@ describe "Turtle autocompletions", ->
 
   beforeEach ->
     waitsForPromise -> atom.packages.activatePackage('turtle-completer')
-    waitsForPromise -> atom.packages.activatePackage('language-rdf') # Used in all CSS languages
+    waitsForPromise -> atom.packages.activatePackage('language-rdf')
 
     runs ->
-      provider = atom.packages.getActivePackage('turtle-completer').mainModule.getProvider()
+      provider = atom.packages.getActivePackage('turtle-completer').
+      mainModule.getProvider()
 
     waitsFor -> Object.keys(provider.ontologies).length > 0
     waitsForPromise -> atom.workspace.open('test.ttl')
@@ -32,11 +33,12 @@ describe "Turtle autocompletions", ->
     editor.setCursorBufferPosition([0, 0])
     expect(getCompletions().length).toBe 0
 
-  it "returns owl and only owl as an option when text is o", ->
+  it "returns owl and oa as an option when text is o", ->
     editor.setText('o')
     completions = getCompletions()
-    expect(completions.length).toBe 1
-    expect(completions[0].text).toBe 'owl'
+    expect(completions.length).toBe 2
+    expect(completions[0].text).toBe 'oa'
+    expect(completions[1].text).toBe 'owl'
 
   it "returns approporiate ontologies for owl when text is owl:Cl", ->
     editor.setText('owl:Cl')
@@ -63,7 +65,7 @@ describe "Turtle autocompletions", ->
     expect(-> completions = getCompletions()).not.toThrow()
     expect(completions.length).toBe 0
 
-  it "does not throw or return suggestions when an unrecognized prefix is used", ->
+  it "does not throw or return suggestions when an odd prefix is used", ->
     editor.setText('dan:Be')
 
     completions = []

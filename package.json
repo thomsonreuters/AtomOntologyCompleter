@@ -19,5 +19,8 @@
   "devDependencies": {
     "coffeelint": "^1.9.7",
     "request": "^2.53.0"
+  },
+  "dependencies": {
+    "language-rdf": "^0.5.0"
   }
 }
