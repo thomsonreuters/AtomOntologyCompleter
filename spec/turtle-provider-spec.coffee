@@ -33,12 +33,13 @@ describe "Turtle autocompletions", ->
     editor.setCursorBufferPosition([0, 0])
     expect(getCompletions().length).toBe 0
 
-  it "returns owl and oa as an option when text is o", ->
+  it "returns owl,odrl and oa as an option when text is o", ->
     editor.setText('o')
     completions = getCompletions()
-    expect(completions.length).toBe 2
+    expect(completions.length).toBe 3
     expect(completions[0].text).toBe 'oa'
-    expect(completions[1].text).toBe 'owl'
+    expect(completions[1].text).toBe 'odrl'
+    expect(completions[2].text).toBe 'owl'
 
   it "returns approporiate ontologies for owl when text is owl:Cl", ->
     editor.setText('owl:Cl')

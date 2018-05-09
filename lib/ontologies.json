@@ -69,6 +69,13 @@
     "docprefix":"http://www.w3.org/TR/annotation-vocab/",
     "ontology":"./ontologies/oa.json"
   },
+  "odrl":{
+    "title":"ODRL Version 2.2 Ontology",
+    "spec":"https://www.w3.org/TR/odrl-vocab/",
+    "prefix":"<https://www.w3.org/ns/odrl/2/>",
+    "docprefix":"https://www.w3.org/TR/odrl-vocab/#term-",
+    "ontology":"./ontologies/odrl.json"
+  },
   "owl":{
     "title":"OWL 2 Web Ontology Language",
     "spec":"https://www.w3.org/TR/owl2-overview/",
@@ -83,12 +90,33 @@
     "docprefix":"https://www.w3.org/TR/2013/REC-prov-o-20130430/#",
     "ontology":"./ontologies/prov.json"
   },
+  "qb":{
+      "title":"Data Cubes",
+      "spec":"https://www.w3.org/TR/vocab-data-cube/",
+      "prefix":"<http://purl.org/linked-data/cube#>",
+      "docprefix":"https://www.w3.org/TR/vocab-data-cube/#dfn-qb-",
+      "ontology":"./ontologies/qb.json"
+    },
+  "rdf":{
+    "title":"RDF",
+    "spec":"https://www.w3.org/TR/2004/REC-rdf-mt-20040210/",
+    "prefix":"<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "docprefix":"https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#",
+    "ontology":"./ontologies/rdf.json"
+  },
   "rdfs":{
     "title":"RDF Schema",
     "spec":"https://www.w3.org/TR/rdf-schema/",
     "prefix":"<http://www.w3.org/2000/01/rdf-schema#>",
     "docprefix":"https://www.w3.org/TR/rdf-schema/#ch_#",
     "ontology":"./ontologies/rdfs.json"
+  },
+  "rr":{
+    "title":"R2RML: RDB to RDF Mapping Language",
+    "spec":"http://www.w3.org/TR/2012/REC-r2rml-20120927/",
+    "prefix":"<http://www.w3.org/ns/r2rml#>",
+    "docprefix":"https://www.w3.org/ns/r2rml#",
+    "ontology":"./ontologies/rr.json"
   },
   "sh":{
     "title":"Shapes Constraint Language",
