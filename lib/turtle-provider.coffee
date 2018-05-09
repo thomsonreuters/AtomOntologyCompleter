@@ -1,9 +1,21 @@
 # Copyright 2018 Thomson Reuters
-# Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-# The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+# Permission is hereby granted, free of charge, to any person obtaining a
+# copy of this software and associated documentation files (the "Software"),
+# to deal in the Software without restriction, including without limitation the
+# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+# sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
 
 ONTOLOGIES = require './ontologies.json'
 
@@ -24,7 +36,7 @@ module.exports =
       ontologyEntry.descriptionMoreURL = ontology.spec
       ontologyEntry.text = key
       completions.push(ontologyEntry)
-    @ontologyCompletions = completions;
+    @ontologyCompletions = completions
 
   loadOntology: (ontologyPrefix) ->
     if ontologyPrefix of @ontologies
@@ -35,10 +47,11 @@ module.exports =
     return [] if not prefix? or not prefix.length
     currentScope = scopeDescriptor.getScopesArray()
     candidateArray = null
-    if currentScope.length < 2  # we're not sure of scope yet, so choose from ontologies.
+    if currentScope.length < 2  # we're not sure of scope yet, so choose ont
       candidateArray = @ontologyCompletions
     else if currentScope.includes("entity.name.tag.prefixed-uri.turtle")
-      namespace = @determineNamespace(editor.lineTextForBufferRow(bufferPosition.row))
+      namespace = @determineNamespace(
+        editor.lineTextForBufferRow(bufferPosition.row))
       if namespace? and namespace of @ontologies
         if not @ontologies[namespace].completions?
           @loadOntology(namespace)
@@ -54,7 +67,8 @@ module.exports =
   getMatches: (candidateArray, prefix) ->
     return [] if not candidateArray?
     matches = []
-    for candidate in candidateArray when not prefix.trim() or firstCharsEqual(candidate.text,prefix)
+    for candidate in candidateArray when not prefix.trim() or
+    firstCharsEqual(candidate.text,prefix)
       matches.push(@buildMatch(candidate,prefix))
     matches
 
