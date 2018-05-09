@@ -55,7 +55,7 @@ module.exports =
       if namespace? and namespace of @ontologies
         if not @ontologies[namespace].completions?
           @loadOntology(namespace)
-        candidateArray = @ontologies[namespace].completions;
+        candidateArray = @ontologies[namespace].completions
     return @getMatches(candidateArray,prefix)
 
   buildMatch: (match, prefix) ->
