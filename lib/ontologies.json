@@ -41,12 +41,33 @@
     "docprefix":"https://www.w3.org/TR/vocab-dqv/#dqv:",
     "ontology":"./ontologies/dqv.json"
   },
+  "duv":{
+      "title":"Data Usage Vocabulary",
+      "spec":"https://www.w3.org/TR/vocab-duv/#",
+      "prefix":"<https://www.w3.org/TR/vocab-duv/#>",
+      "docprefix":"https://www.w3.org/TR/vocab-duv/#",
+      "ontology":"./ontologies/duv.json"
+  },
   "foaf":{
     "title":"Friend of a friend",
     "spec":"http://xmlns.com/foaf/spec/",
     "prefix":"<http://xmlns.com/foaf/0.1/>",
     "docprefix":"http://xmlns.com/foaf/spec/#",
     "ontology":"./ontologies/foaf.json"
+  },
+  "ma":{
+    "title":"Ontology for Media Resources",
+    "spec":"https://www.w3.org/TR/2012/REC-mediaont-10-20120209/",
+    "prefix":"<http://www.w3.org/ns/ma-ont#>",
+    "docprefix":"https://www.w3.org/TR/2012/REC-mediaont-10-20120209/",
+    "ontology":"./ontologies/ma.json"
+  },
+  "oa":{
+    "title":"Web Annotation Vocabulary",
+    "spec":"http://www.w3.org/TR/annotation-vocab/",
+    "prefix":"<http://www.w3.org/ns/oa#>",
+    "docprefix":"http://www.w3.org/TR/annotation-vocab/",
+    "ontology":"./ontologies/oa.json"
   },
   "owl":{
     "title":"OWL 2 Web Ontology Language",

@@ -1,0 +1,569 @@
+[
+   {
+      "description": "A specialisation of Track for Audio to provide a link to specific data properties such as sampleRate, etc. Specialisation is defined through object properties.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#AudioTrack", 
+      "text": "AudioTrack", 
+      "type": "class"
+   }, 
+   {
+      "description": "An organisation or moral agent.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#Organisation", 
+      "text": "Organisation", 
+      "type": "class"
+   }, 
+   {
+      "description": "Corresponds to 'title.title' in the Ontology for Media Resources with a 'title.type' meaning \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#alternativeTitle", 
+      "text": "alternativeTitle", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'averageBitRate' in the Ontology for Media Resources, expressed in kilobits/second.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#averageBitRate", 
+      "text": "averageBitRate", 
+      "type": "property"
+   }, 
+   {
+      "description": "The name by which a collection (e.g. series) is known.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#collectionName", 
+      "text": "collectionName", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'copyright.copyright' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#copyright", 
+      "text": "copyright", 
+      "type": "property"
+   }, 
+   {
+      "description": "A subproperty of 'hasRelatedLocation\\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#createdIn", 
+      "text": "createdIn", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'date.date' in the Ontology for Media Resources with a 'date.type' meaning \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#creationDate", 
+      "text": "creationDate", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to date.date in the ontology for Media Resources. Subproperties can be used to distinguish different values of 'date.type'. The recommended range is 'xsd:dateTime' (for compliance with OWL2-QL and OWL2-RL) but other time-related datatypes may be used (e.g. 'xsd:gYear', 'xsd:date'...).", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#date", 
+      "text": "date", 
+      "type": "property"
+   }, 
+   {
+      "description": "A subproperty of 'hasRelatedLocation' used to specify where the action depicted in the media is supposed to take place, as opposed to the location where shooting actually took place (see 'createdIn').", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#depictsFictionalLocation", 
+      "text": "depictsFictionalLocation", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'description' in the Ontology for Media Resources. This can be specialised by using sub-properties e.g. 'summary' or 'script'.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#description", 
+      "text": "description", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'duration' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#duration", 
+      "text": "duration", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'date.date' in the Ontology for Media Resources with a 'date.type' meaning \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#editDate", 
+      "text": "editDate", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'contributor.contributor' in the Ontology for Media Resources with a 'contributor.role' meaning \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#features", 
+      "text": "features", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'namedFragment.label' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#fragmentName", 
+      "text": "fragmentName", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'frameSize.height' in the Ontology for Media Resources, measured in frameSizeUnit.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#frameHeight", 
+      "text": "frameHeight", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'frameRate' in the Ontology for Media Resources, in frame per second.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#frameRate", 
+      "text": "frameRate", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'frameSize.unit' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#frameSizeUnit", 
+      "text": "frameSizeUnit", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'frameSize.width' in the Ontology for Media Resources measured in frameSizeUnit.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#frameWidth", 
+      "text": "frameWidth", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'policy' in the Ontology for Media Resources with a 'policy.type' \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasAccessConditions", 
+      "text": "hasAccessConditions", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'fragment' in the Ontology for Media Resources with a 'fragment.role' meaning \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasAudioDescription", 
+      "text": "hasAudioDescription", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'fragment' in the Ontology for Media Resources with a 'fragment.role' meaning \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasCaptioning", 
+      "text": "hasCaptioning", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'fragment' in the Ontology for Media Resources with a 'fragment.role' meaning \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasChapter", 
+      "text": "hasChapter", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'targetAudience.classification' in the Ontology for Media Resources. This property is used to provide a value characterising the target audience.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasClassification", 
+      "text": "hasClassification", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'targetAudience.identifier' in the Ontology for Media Resources. This is used to identify the reference sheme against which the target audience has been characterised.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasClassificationSystem", 
+      "text": "hasClassificationSystem", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'compression' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasCompression", 
+      "text": "hasCompression", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'contributor.contributor' in the Ontology for Media Resources. Subproperties can be used to distinguish different values of 'contributor.role'.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasContributor", 
+      "text": "hasContributor", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'creator.creator' in the Ontology for Media Resources. Subproperties can be used to distinguish different values of 'creator.role'. Note that this property is semantically a subproperty of 'hasContributor'.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasCreator", 
+      "text": "hasCreator", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'fragment' in the Ontology for Media Resources. Subproperties can be used to distinguish different values of 'fragment.role'.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasFragment", 
+      "text": "hasFragment", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'format' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasFormat", 
+      "text": "hasFormat", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'genre' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasGenre", 
+      "text": "hasGenre", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'keyword' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasKeyword", 
+      "text": "hasKeyword", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'language' in the Ontology for Media Resources. The language used in the resource. A controlled vocabulary such as defined in BCP 47 SHOULD be used. This property can also be used to identify the presence of sign language (RFC 5646). By inheritance, the hasLanguage property applies indifferently at the media resource / fragment / track levels.  Best practice recommends to use to best possible level of granularity fo describe the usage of language within a media resource including at fragment and track levels.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasLanguage", 
+      "text": "hasLanguage", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'location.coordinateSystem' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasLocationCoordinateSystem", 
+      "text": "hasLocationCoordinateSystem", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'namedFragment' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasNamedFragment", 
+      "text": "hasNamedFragment", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'policy' in the Ontology for Media Resources with a  'policy.type' meaning \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasPermissions", 
+      "text": "hasPermissions", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'policy' in the Ontology for Media Resources. Subproperties can be used to distinguish different values of 'policy.type'.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasPolicy", 
+      "text": "hasPolicy", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'publisher' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasPublisher", 
+      "text": "hasPublisher", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'rating' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasRating", 
+      "text": "hasRating", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'rating.type' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasRatingSystem", 
+      "text": "hasRatingSystem", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'relation' and in the Ontology for Media Resources with a 'relation.type' meaning \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasRelatedImage", 
+      "text": "hasRelatedImage", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'location' in the Ontology for Media Resources. Subproperties are provided to specify, when possible, the relation between the media resource and the location.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasRelatedLocation", 
+      "text": "hasRelatedLocation", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'relation' and in the Ontology for Media Resources. Subproperties can be used to distinguish different values of 'relation.type'.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasRelatedResource", 
+      "text": "hasRelatedResource", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'fragment' in the Ontology for Media Resources with a 'fragment.role' meaning \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasSigning", 
+      "text": "hasSigning", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'relation' and in the Ontology for Media Resources with a 'relation.type' meaning \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasSource", 
+      "text": "hasSource", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'fragment' in the Ontology for Media Resources with a 'fragment.role' meaning \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasSubtitling", 
+      "text": "hasSubtitling", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'targetAudience' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasTargetAudience", 
+      "text": "hasTargetAudience", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'fragment' in the Ontology for Media Resources with a 'fragment.role' meaning \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasTrack", 
+      "text": "hasTrack", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'copyright.identifier' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#isCopyrightedBy", 
+      "text": "isCopyrightedBy", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'collection' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#isMemberOf", 
+      "text": "isMemberOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'rating.identifier' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#isProvidedBy", 
+      "text": "isProvidedBy", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'location.altitude' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#locationAltitude", 
+      "text": "locationAltitude", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'location.latitude' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#locationLatitude", 
+      "text": "locationLatitude", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'location.longitude' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#locationLongitude", 
+      "text": "locationLongitude", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'location.name' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#locationName", 
+      "text": "locationName", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'locator' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#locator", 
+      "text": "locator", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'title.title' in the Ontology for Media Resources with a 'title.type' meaning \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#mainOriginalTitle", 
+      "text": "mainOriginalTitle", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'numTracks.number' in the Ontology for Media Resources. Subproperties can be used to distinguish different values of 'numTracks.type'.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#numberOfTracks", 
+      "text": "numberOfTracks", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'rating.max' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#ratingScaleMax", 
+      "text": "ratingScaleMax", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'rating.min' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#ratingScaleMin", 
+      "text": "ratingScaleMin", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'rating.value' in the Ontology for Media Resources.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#ratingValue", 
+      "text": "ratingValue", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'date.date' in the Ontology for Media Resources with a 'date.type' meaning \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#recordDate", 
+      "text": "recordDate", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'date.date' in the Ontology for Media Resources with a 'date.type' meaning \\", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#releaseDate", 
+      "text": "releaseDate", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'samplingRate' in the Ontology for Media Resources, in samples per second.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#samplingRate", 
+      "text": "samplingRate", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'title.title' in the Ontology for Media Resources. Subproperties can be used to distinguish different values of 'title.type'.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#title", 
+      "text": "title", 
+      "type": "property"
+   }, 
+   {
+      "description": "Corresponds to 'fragment.name' in the Ontology for Media Resources, for Track fragments.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#trackName", 
+      "text": "trackName", 
+      "type": "property"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasContributedTo", 
+      "text": "hasContributedTo", 
+      "type": "property"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasCopyrightOver", 
+      "text": "hasCopyrightOver", 
+      "type": "property"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasCreated", 
+      "text": "hasCreated", 
+      "type": "property"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasMember", 
+      "text": "hasMember", 
+      "type": "property"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#hasPublished", 
+      "text": "hasPublished", 
+      "type": "property"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#isCaptioningOf", 
+      "text": "isCaptioningOf", 
+      "type": "property"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#isChapterOf", 
+      "text": "isChapterOf", 
+      "type": "property"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#isCreationLocationOf", 
+      "text": "isCreationLocationOf", 
+      "type": "property"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#isFictionalLocationDepictedIn", 
+      "text": "isFictionalLocationDepictedIn", 
+      "type": "property"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#isFragmentOf", 
+      "text": "isFragmentOf", 
+      "type": "property"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#isImageRelatedTo", 
+      "text": "isImageRelatedTo", 
+      "type": "property"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#isLocationRelatedTo", 
+      "text": "isLocationRelatedTo", 
+      "type": "property"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#isNamedFragmentOf", 
+      "text": "isNamedFragmentOf", 
+      "type": "property"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#isRatingOf", 
+      "text": "isRatingOf", 
+      "type": "property"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#isRelatedTo", 
+      "text": "isRelatedTo", 
+      "type": "property"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#isSigningOf", 
+      "text": "isSigningOf", 
+      "type": "property"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#isSourceOf", 
+      "text": "isSourceOf", 
+      "type": "property"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#isTargetAudienceOf", 
+      "text": "isTargetAudienceOf", 
+      "type": "property"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#isTrackOf", 
+      "text": "isTrackOf", 
+      "type": "property"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#playsIn", 
+      "text": "playsIn", 
+      "type": "property"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#provides", 
+      "text": "provides", 
+      "type": "property"
+   }, 
+   {
+      "description": "A person or organisation contributing to the media resource.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#Agent", 
+      "text": "Agent", 
+      "type": "class"
+   }, 
+   {
+      "description": "Any group of media resource e.g. a series.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#Collection", 
+      "text": "Collection", 
+      "type": "class"
+   }, 
+   {
+      "description": "Ancillary data track e.g. captioning  in addition to video and audio tracks. Specialisation is made through the use of appropriate object properties.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#DataTrack", 
+      "text": "DataTrack", 
+      "type": "class"
+   }, 
+   {
+      "description": "A still image / thumbnail / key frame related to the media resource or being the media resource itself.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#Image", 
+      "text": "Image", 
+      "type": "class"
+   }, 
+   {
+      "description": "A location related to the media resource, e.g. depicted in the resource (possibly fictional) or where the resource was created (shooting location), etc.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#Location", 
+      "text": "Location", 
+      "type": "class"
+   }, 
+   {
+      "description": "A media fragment (spatial, temporal, track...) composing a media resource. In other ontologies fragment is sometimes referred to as a 'part' or 'segment'.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#MediaFragment", 
+      "text": "MediaFragment", 
+      "type": "class"
+   }, 
+   {
+      "description": "An image or an audiovisual media resource, which can be composed of one or more fragment / track.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#MediaResource", 
+      "text": "MediaResource", 
+      "type": "class"
+   }, 
+   {
+      "description": "A physical person.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#Person", 
+      "text": "Person", 
+      "type": "class"
+   }, 
+   {
+      "description": "Information about the rating given to a media resource.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#Rating", 
+      "text": "Rating", 
+      "type": "class"
+   }, 
+   {
+      "description": "Information about The target audience (target region, target audience category but also parental guidance recommendation) for which a media resource is intended.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#TargetAudience", 
+      "text": "TargetAudience", 
+      "type": "class"
+   }, 
+   {
+      "description": "A specialisation of MediaFragment for audiovisual content.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/2012/REC-mediaont-10-20120209/#Track", 
+      "text": "Track", 
+      "type": "class"
+   }
+]
