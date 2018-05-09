@@ -1,11 +1,13 @@
 {
   "name": "turtle-completer",
   "main": "./lib/autocomplete-turtle",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Auto completer for the RDF turtle serialization with knowledge of common schema",
   "keywords": [],
   "repository": "https://github.com/thomsonreuters/AtomOntologyCompleter",
-  "package-deps": ["language-rdf"],
+  "package-deps": [
+    "language-rdf"
+  ],
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
