@@ -11,12 +11,16 @@ Current ontologies are:
 * [Metadata for Tabular Data](https://www.w3.org/TR/tabular-metadata/)
 * [Data Catalog Vocabulary](https://www.w3.org/TR/vocab-dcat/)
 * [Data Quality Vocabulary](http://www.w3.org/TR/vocab-dqv)
+* [Data Usage Vocabulary](https://www.w3.org/TR/vocab-duv/#)
 * [Dublin Core & Terms](http://dublincore.org/documents/dcmi-terms/)
-* [FOAF](http://xmlns.com/foaf/spec/)
-* [W3C Provenance](https://www.w3.org/TR/2013/REC-prov-o-20130430/)
+* [Friend of a Friend](http://xmlns.com/foaf/spec/)
+* [Ontology for Media Resources](https://www.w3.org/TR/2012/REC-mediaont-10-20120209/)
+* [OWL](https://www.w3.org/TR/owl2-overview/)
 * [RDFS](https://www.w3.org/TR/rdf-schema/)
-* [SHACL](https://www.w3.org/TR/shacl/)
+* [SHapes Constraint Language](https://www.w3.org/TR/shacl/)
 * [SKOS](https://www.w3.org/2009/08/skos-reference/skos.html)
+* [W3C Provenance](https://www.w3.org/TR/2013/REC-prov-o-20130430/)
+* [Web Annotation Vocabulary](http://www.w3.org/TR/annotation-vocab/)
 
 If you'd like others added either raise an issue on the atom package or do a pull request with the conversion. Contributions are greatly appreciated.  Note that the ontology is matched based on common prefixes.
 
