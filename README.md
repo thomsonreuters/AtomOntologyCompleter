@@ -1,5 +1,6 @@
 # Turtle Autocompleter package
 [![dependencies Status](https://david-dm.org/thomsonreuters/AtomOntologyCompleter/status.svg)](https://david-dm.org/thomsonreuters/AtomOntologyCompleter)
+[![Build Status](https://travis-ci.org/thomsonreuters/AtomOntologyCompleter.svg?branch=master)](https://travis-ci.org/thomsonreuters/AtomOntologyCompleter)
 [![Installs!](https://img.shields.io/apm/dm/atom-clock.svg?style=flat-square)](https://atom.io/packages/turtle-completer)
 [![Version!](https://img.shields.io/apm/v/atom-clock.svg?style=flat-square)](https://atom.io/packages/turtle-completer)
 [![License](https://img.shields.io/apm/l/atom-clock.svg?style=flat-square)](https://github.com/thomsonreuters/AtomOntologyCompleter/blob/master/LICENSE)
