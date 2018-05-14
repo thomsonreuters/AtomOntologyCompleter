@@ -1,3 +1,6 @@
+##
+* 0.4.1
+* Updated README, patched for ontologies missed on checkin
 ## 0.4.0
 * Added unit tests
 * Now builds on travis.ci so we know the tests work
