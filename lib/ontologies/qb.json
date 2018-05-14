@@ -1,0 +1,210 @@
+[
+   {
+      "description": "Represents a collection of observations, possibly organized into various slices, conforming to some common dimensional structure.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-DataSet", 
+      "text": "DataSet", 
+      "type": "class"
+   }, 
+   {
+      "description": "A single observation in the cube, may have one or more associated measured values", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-Observation", 
+      "text": "Observation", 
+      "type": "class"
+   }, 
+   {
+      "description": "indicates the data set of which this observation is a part", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-dataSet", 
+      "text": "dataSet", 
+      "type": "property"
+   }, 
+   {
+      "description": "indicates a observation contained within this slice of the data set", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-observation", 
+      "text": "observation", 
+      "type": "property"
+   }, 
+   {
+      "description": "A, possibly arbitrary, group of observations.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-ObservationGroup", 
+      "text": "ObservationGroup", 
+      "type": "class"
+   }, 
+   {
+      "description": "Indicates a group of observations. The domain of this property is left open so that a group may be attached to different resources and need not be restricted to a single DataSet", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-observationGroup", 
+      "text": "observationGroup", 
+      "type": "property"
+   }, 
+   {
+      "description": "Denotes a subset of a DataSet defined by fixing a subset of the dimensional values, component properties on the Slice", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-Slice", 
+      "text": "Slice", 
+      "type": "class"
+   }, 
+   {
+      "description": "Indicates a subset of a DataSet defined by fixing a subset of the dimensional values", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-slice", 
+      "text": "slice", 
+      "type": "property"
+   }, 
+   {
+      "description": "Abstract superclass for everything that can have attributes and dimensions", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-Attachable", 
+      "text": "Attachable", 
+      "type": "class"
+   }, 
+   {
+      "description": "Abstract super-property of all properties representing dimensions, attributes or measures", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-ComponentProperty", 
+      "text": "ComponentProperty", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of components which represent the dimensions of the cube", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-DimensionProperty", 
+      "text": "DimensionProperty", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of components which represent attributes of observations in the cube, e.g. unit of measurement", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-AttributeProperty", 
+      "text": "AttributeProperty", 
+      "type": "class"
+   }, 
+   {
+      "description": "The class of components which represent the measured value of the phenomenon being observed", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-MeasureProperty", 
+      "text": "MeasureProperty", 
+      "type": "class"
+   }, 
+   {
+      "description": "Superclass of all coded ComponentProperties", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-CodedProperty", 
+      "text": "CodedProperty", 
+      "type": "class"
+   }, 
+   {
+      "description": "Generic measure dimension, the value of this dimension indicates which measure (from the set of measures in the DSD) is being given by the obsValue (or other primary measure)", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-measureType", 
+      "text": "measureType"
+   }, 
+   {
+      "description": "Defines the structure of a DataSet or slice", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-DataStructureDefinition", 
+      "text": "DataStructureDefinition", 
+      "type": "class"
+   }, 
+   {
+      "description": "indicates the structure to which this data set conforms", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-structure", 
+      "text": "structure", 
+      "type": "property"
+   }, 
+   {
+      "description": "indicates a component specification which is included in the structure of the dataset", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-component", 
+      "text": "component", 
+      "type": "property"
+   }, 
+   {
+      "description": "Component specification", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-ComponentSpecification", 
+      "text": "ComponentSpecification", 
+      "type": "class"
+   }, 
+   {
+      "description": "Abstract class of things which reference one or more ComponentProperties", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-ComponentSet", 
+      "text": "ComponentSet", 
+      "type": "class"
+   }, 
+   {
+      "description": "indicates a ComponentProperty (i.e. attribute/dimension) expected on a DataSet, or a dimension fixed in a SliceKey", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-componentProperty", 
+      "text": "componentProperty", 
+      "type": "property"
+   }, 
+   {
+      "description": "order", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-order", 
+      "text": "order", 
+      "type": "property"
+   }, 
+   {
+      "description": "component required", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-componentRequired", 
+      "text": "componentRequired", 
+      "type": "property"
+   }, 
+   {
+      "description": "component attachment", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-componentAttachment", 
+      "text": "componentAttachment", 
+      "type": "property"
+   }, 
+   {
+      "description": "An alternative to qb:componentProperty which makes explicit that the component is a dimension", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-dimension", 
+      "text": "dimension", 
+      "type": "property"
+   }, 
+   {
+      "description": "An alternative to qb:componentProperty which makes explicit that the component is a measure", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-measure", 
+      "text": "measure", 
+      "type": "property"
+   }, 
+   {
+      "description": "An alternative to qb:componentProperty which makes explicit that the component is a attribute", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-attribute", 
+      "text": "attribute", 
+      "type": "property"
+   }, 
+   {
+      "description": "An alternative to qb:componentProperty which makes explicit that the component is a measure dimension", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-measureDimension", 
+      "text": "measureDimension", 
+      "type": "property"
+   }, 
+   {
+      "description": "Denotes a subset of the component properties of a DataSet which are fixed in the corresponding slices", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-SliceKey", 
+      "text": "SliceKey", 
+      "type": "class"
+   }, 
+   {
+      "description": "indicates the sub-key corresponding to this slice", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-sliceStructure", 
+      "text": "sliceStructure", 
+      "type": "property"
+   }, 
+   {
+      "description": "indicates a slice key which is used for slices in this dataset", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-sliceKey", 
+      "text": "sliceKey", 
+      "type": "property"
+   }, 
+   {
+      "description": "gives the concept which is being measured or indicated by a ComponentProperty", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-concept", 
+      "text": "concept", 
+      "type": "property"
+   }, 
+   {
+      "description": "gives the code list associated with a CodedProperty", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-codeList", 
+      "text": "codeList", 
+      "type": "property"
+   }, 
+   {
+      "description": "Represents a generalized hierarchy of concepts which can be used for coding. The hierarchy is defined by one or more roots together with a property which relates concepts in the hierarchy to thier child concept .  The same concepts may be members of multiple hierarchies provided that different qb:parentChildProperty values are used for each hierarchy.", 
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-HierarchicalCodeList", 
+      "text": "HierarchicalCodeList", 
+      "type": "class"
+   }, 
+   {
+      "descriptionMoreURL": "https://www.w3.org/TR/vocab-data-cube/#dfn-qb-hierarchyRoot", 
+      "text": "hierarchyRoot", 
+      "type": "property"
+   }
+]

@@ -1,0 +1,245 @@
+[
+   {
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#BaseTableOrView",
+      "text": "BaseTableOrView",
+      "type": "class"
+   },
+   {
+      "description": "Denotes a blank node, used with termType",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#BlankNode",
+      "text": "BlankNode",
+      "type": "class"
+   },
+   {
+      "description": "Represents a graph map.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#GraphMap",
+      "text": "GraphMap",
+      "type": "class"
+   },
+   {
+      "description": "Denotes an IRI, used with termpType.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#IRI",
+      "text": "IRI",
+      "type": "class"
+   },
+   {
+      "description": "Represents a join condition.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#Join",
+      "text": "Join",
+      "type": "class"
+   },
+   {
+      "description": "Denotes a Literal, used with termType.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#Literal",
+      "text": "Literal",
+      "type": "class"
+   },
+   {
+      "description": "Represents a logical table.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#LogicalTable",
+      "text": "LogicalTable",
+      "type": "class"
+   },
+   {
+      "description": "Represents an object map.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#ObjectMap",
+      "text": "ObjectMap",
+      "type": "class"
+   },
+   {
+      "description": "Represents a predicate map.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#PredicateMap",
+      "text": "PredicateMap",
+      "type": "class"
+   },
+   {
+      "description": "Represents a predicate-object map.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#PredicateObjectMap",
+      "text": "PredicateObjectMap",
+      "type": "class"
+   },
+   {
+      "description": "Denotes a reference to an object map.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#RefObjectMap",
+      "text": "RefObjectMap",
+      "type": "class"
+   },
+   {
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#R",
+      "text": "R",
+      "type": "class"
+   },
+   {
+      "description": "Represents a subject map.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#SubjectMap",
+      "text": "SubjectMap",
+      "type": "class"
+   },
+   {
+      "description": "Represents a triples map.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#TriplesMap",
+      "text": "TriplesMap",
+      "type": "class"
+   },
+   {
+      "description": "A function that generates an RDF term from a logical table row.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#TermMap",
+      "text": "TermMap",
+      "type": "class"
+   },
+   {
+      "description": "Names a column in the child table of a join.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#child",
+      "text": "child",
+      "type": "property"
+   },
+   {
+      "description": "The subject value generated for a logical table row will be asserted as an instance of this RDFS class.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#class",
+      "text": "class",
+      "type": "property"
+   },
+   {
+      "description": "Name of a column in the logical table. When generating RDF triples from a logical table row, value from the specified column is used as the subject, predicate, or object (based upon the specific domain).",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#column",
+      "text": "column",
+      "type": "property"
+   },
+   {
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#constant",
+      "text": "constant",
+      "type": "property"
+   },
+   {
+      "description": "Specifies the datatype of the object component for the generated triple from a logical table row.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#datatype",
+      "text": "datatype",
+      "type": "property"
+   },
+   {
+      "description": "An IRI reference for use as the graph name of all triples generated with the GraphMap.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#graph",
+      "text": "graph",
+      "type": "property"
+   },
+   {
+      "description": "Specifies a GraphMap. When used with a SubjectMap element, all the RDF triples generated from a logical row will be stored in the specified named graph. Otherwise, the RDF triple generated using the (predicate, object) pair will be stored in the specified named graph.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#graphMap",
+      "text": "graphMap",
+      "type": "property"
+   },
+   {
+      "description": "An expression that allows, at query processing time, use of index-based access to the the (underlying) relational tables, instead of simply retrieving the table rows first and then applying a filter. This property is useful for retrieval based on conditions involving subject, predicate, or object generated from logical table column(s) and involves some transformation.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#inverseExpression",
+      "text": "inverseExpression",
+      "type": "property"
+   },
+   {
+      "description": "Specifies the join condition for joining the child logical table with the parent logical table of the foreign key constraint.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#joinCondition",
+      "text": "joinCondition",
+      "type": "property"
+   },
+   {
+      "description": "Specified the language for the object component for the generated triple from a logical table row.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#language",
+      "text": "language",
+      "type": "property"
+   },
+   {
+      "description": "Definition of logical table to be mapped.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#logicalTable",
+      "text": "logicalTable",
+      "type": "property"
+   },
+   {
+      "description": "Specifies the object for the generated triple from the logical table row.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#object",
+      "text": "object",
+      "type": "property"
+   },
+   {
+      "description": "An ObjectMap element to generate the object component of the (predicate, object) pair from a logical table row.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#objectMap",
+      "text": "objectMap",
+      "type": "property"
+   },
+   {
+      "description": "Names a column in the parent table of a join.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#parent",
+      "text": "parent",
+      "type": "property"
+   },
+   {
+      "description": "Specifies the TriplesMap element corresponding to the parent logical table of the foreign key constraint.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#parentTriplesMap",
+      "text": "parentTriplesMap",
+      "type": "property"
+   },
+   {
+      "description": "Specifies the predicate for the generated triple from the logical table row.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#predicate",
+      "text": "predicate",
+      "type": "property"
+   },
+   {
+      "description": "A PredicateMap element to generate the predicate component of the (predicate, object) pair from a logical table row.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#predicateMap",
+      "text": "predicateMap",
+      "type": "property"
+   },
+   {
+      "description": "A PredicateObjectMap element to generate (predicate, object) pair from a logical table row.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#predicateObjectMap",
+      "text": "predicateObjectMap",
+      "type": "property"
+   },
+   {
+      "description": "A valid SQL query.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#sqlQuery",
+      "text": "sqlQuery",
+      "type": "property"
+   },
+   {
+      "description": "An identifier for a SQL version.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#sqlVersion",
+      "text": "sqlVersion",
+      "type": "property"
+   },
+   {
+      "description": "An IRI reference for use as subject for all the RDF triples generated from a logical table row.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#subject",
+      "text": "subject",
+      "type": "property"
+   },
+   {
+      "description": "A SubjectMap element to generate a subject from a logical table row.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#subjectMap",
+      "text": "subjectMap",
+      "type": "property"
+   },
+   {
+      "description": "Schema-qualified name of a table or view.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#tableName",
+      "text": "tableName",
+      "type": "property"
+   },
+   {
+      "description": "A template (format string) to specify how to generate a value for a subject, predicate, or object, using one or more columns from a logical table row.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#template",
+      "text": "template",
+      "type": "property"
+   },
+   {
+      "description": "A string indicating whether subject or object generated using the value from column name specified for rr:column should be an IRI reference, blank node, or a literal.",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#termType",
+      "text": "termType",
+      "type": "property"
+   },
+   {
+      "description": "Core SQL 2008",
+      "descriptionMoreURL": "https://www.w3.org/ns/r2rml#SQL",
+      "text": "SQL",
+      "type": "class"
+   }
+]

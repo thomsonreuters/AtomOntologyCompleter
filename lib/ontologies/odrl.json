@@ -1,0 +1,1111 @@
+[
+   {
+      "description": "Identifier for the ODRL Core Profile",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-core",
+      "text": "core",
+      "type": "class"
+   },
+   {
+      "description": "A resource or a collection of resources that are the subject of a Rule.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-Asset",
+      "text": "Asset",
+      "type": "class"
+   },
+   {
+      "description": "An Asset that is collection of individual resources",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-AssetCollection",
+      "text": "AssetCollection",
+      "type": "class"
+   },
+   {
+      "description": "Identifies an Asset/PartyCollection that the Asset/Party is a member of.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-partOf",
+      "text": "partOf",
+      "type": "property"
+   },
+   {
+      "description": "An entity or a collection of entities that undertake Roles in a Rule.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-Party",
+      "text": "Party",
+      "type": "class"
+   },
+   {
+      "description": "A Party that is a group of individual entities",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-PartyCollection",
+      "text": "PartyCollection",
+      "type": "class"
+   },
+   {
+      "description": "A non-empty group of Permissions and/or Prohibitions.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-Policy",
+      "text": "Policy",
+      "type": "class"
+   },
+   {
+      "description": "Identifies an ODRL Policy for which the identified Asset is the target Asset to all the Rules.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-hasPolicy",
+      "text": "hasPolicy",
+      "type": "property"
+   },
+   {
+      "description": "An unambiguous identifier",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-uid",
+      "text": "uid",
+      "type": "property"
+   },
+   {
+      "description": "Reference to a Asset/PartyCollection",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-source",
+      "text": "source",
+      "type": "property"
+   },
+   {
+      "description": "Used to establish strategies to resolve conflicts that arise from the merging of Policies or conflicts between Permissions and Prohibitions in the same Policy.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-ConflictTerm",
+      "text": "ConflictTerm",
+      "type": "class"
+   },
+   {
+      "description": "Permissions take preference over prohibitions.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-perm",
+      "text": "perm"
+   },
+   {
+      "description": "Prohibitions take preference over permissions.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-prohibit",
+      "text": "prohibit"
+   },
+   {
+      "description": "Is used to indicate how to support Actions that are not part of any vocabulary or profile in the policy expression system.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-UndefinedTerm",
+      "text": "UndefinedTerm",
+      "type": "class"
+   },
+   {
+      "description": "The Action is to be ignored and is not part of the policy \u2013 and the policy remains valid.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-ignore",
+      "text": "ignore"
+   },
+   {
+      "description": "The policy is void.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-invalid",
+      "text": "invalid"
+   },
+   {
+      "description": "The Action is to be supported as part of the policy \u2013 and the policy remains valid.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-support",
+      "text": "support"
+   },
+   {
+      "description": "The conflict-resolution strategy for a Policy.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-conflict",
+      "text": "conflict",
+      "type": "property"
+   },
+   {
+      "description": "Relates the strategy used for handling undefined actions to a Policy.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-undefined",
+      "text": "undefined",
+      "type": "property"
+   },
+   {
+      "description": "Relates an individual Permission to a Policy.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-permission",
+      "text": "permission",
+      "type": "property"
+   },
+   {
+      "description": "Relates an individual Prohibition to a Policy.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-prohibition",
+      "text": "prohibition",
+      "type": "property"
+   },
+   {
+      "description": "Indicates if the Policy entity can be inherited.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-inheritAllowed",
+      "text": "inheritAllowed",
+      "type": "property"
+   },
+   {
+      "description": "Relates a (child) policy to another (parent) policy from which terms are inherited.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-inheritFrom",
+      "text": "inheritFrom",
+      "type": "property"
+   },
+   {
+      "description": "Indentifies the type of inheritance.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-inheritRelation",
+      "text": "inheritRelation",
+      "type": "property"
+   },
+   {
+      "description": "The identifier(s) of an ODRL Profile that the Policy conforms to.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-profile",
+      "text": "profile",
+      "type": "property"
+   },
+   {
+      "description": "An abstract concept that represents the common characteristics of Permissions, Prohibitions, and Duties.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-Rule",
+      "text": "Rule",
+      "type": "class"
+   },
+   {
+      "description": "The ability to perform an Action over an Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-Permission",
+      "text": "Permission",
+      "type": "class"
+   },
+   {
+      "description": "The inability to perform an Action over an Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-Prohibition",
+      "text": "Prohibition",
+      "type": "class"
+   },
+   {
+      "description": "The obligation to perform an Action",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-Duty",
+      "text": "Duty",
+      "type": "class"
+   },
+   {
+      "description": "An operation on an Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-Action",
+      "text": "Action",
+      "type": "class"
+   },
+   {
+      "description": "An Action transitively asserts that another Action that encompasses its operational semantics.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-includedIn",
+      "text": "includedIn",
+      "type": "property"
+   },
+   {
+      "description": "An Action asserts that another Action is not prohibited to enable its operational semantics.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-implies",
+      "text": "implies",
+      "type": "property"
+   },
+   {
+      "description": "A boolean expression that refines the semantics of an Action and Party/Asset Collection or declare the conditions applicable to a Rule.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-Constraint",
+      "text": "Constraint",
+      "type": "class"
+   },
+   {
+      "description": "A logical expression that refines the semantics of an Action and Party/Asset Collection or declare the conditions applicable to a Rule.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-LogicalConstraint",
+      "text": "LogicalConstraint",
+      "type": "class"
+   },
+   {
+      "description": "Relation is an abstract property which creates an explicit link between an Action and an Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-relation",
+      "text": "relation",
+      "type": "property"
+   },
+   {
+      "description": "The output property specifies the Asset which is created from the output of the Action.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-output",
+      "text": "output",
+      "type": "property"
+   },
+   {
+      "description": "The target property indicates the Asset that is the primary subject to which the Rule action directly applies.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-target",
+      "text": "target",
+      "type": "property"
+   },
+   {
+      "description": "Function is an abstract property whose sub-properties define the functional roles which may be fulfilled by a party in relation to a Rule.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-function",
+      "text": "function",
+      "type": "property"
+   },
+   {
+      "description": "The identifier of a scope that provides context to the extent of the entity.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-scope",
+      "text": "scope",
+      "type": "property"
+   },
+   {
+      "description": "The operation relating to the Asset for which the Rule is being subjected.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-action",
+      "text": "action",
+      "type": "property"
+   },
+   {
+      "description": "Constraint applied to a Rule",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-constraint",
+      "text": "constraint",
+      "type": "property"
+   },
+   {
+      "description": "Constraint used to refine the semantics of an Action, or Party/Asset Collection",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-refinement",
+      "text": "refinement",
+      "type": "property"
+   },
+   {
+      "description": "Relates an individual Duty to a Permission.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-duty",
+      "text": "duty",
+      "type": "property"
+   },
+   {
+      "description": "Relates an individual Duty to a Policy.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-obligation",
+      "text": "obligation",
+      "type": "property"
+   },
+   {
+      "description": "Failure is an abstract property that defines the violation (or unmet) relationship between Rules.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-failure",
+      "text": "failure",
+      "type": "property"
+   },
+   {
+      "description": "Relates a Duty to another Duty, the latter being a consequence of not fulfilling the former.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-consequence",
+      "text": "consequence",
+      "type": "property"
+   },
+   {
+      "description": "Relates an individual remedy Duty to a Prohibition.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-remedy",
+      "text": "remedy",
+      "type": "property"
+   },
+   {
+      "description": "The unit of measurement of the value of the rightOperand or rightOperandReference of a Constraint.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-unit",
+      "text": "unit",
+      "type": "property"
+   },
+   {
+      "description": "The datatype of the value of the rightOperand or rightOperandReference of a Constraint.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-dataType",
+      "text": "dataType",
+      "type": "property"
+   },
+   {
+      "description": "The operator function applied to operands of a Constraint",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-operator",
+      "text": "operator",
+      "type": "property"
+   },
+   {
+      "description": "The value of the right operand in a constraint expression.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-rightOperand",
+      "text": "rightOperand",
+      "type": "property"
+   },
+   {
+      "description": "A reference to a web resource providing the value for the right operand of a Constraint.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-rightOperandReference",
+      "text": "rightOperandReference",
+      "type": "property"
+   },
+   {
+      "description": "The left operand in a constraint expression.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-leftOperand",
+      "text": "leftOperand",
+      "type": "property"
+   },
+   {
+      "description": "the value generated from the leftOperand action or a value related to the leftOperand set as the reference for the comparison.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-status",
+      "text": "status",
+      "type": "property"
+   },
+   {
+      "description": "Operand is an abstract property for a logical relationship.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-operand",
+      "text": "operand",
+      "type": "property"
+   },
+   {
+      "description": "Operator for constraint expression.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-Operator",
+      "text": "Operator",
+      "type": "class"
+   },
+   {
+      "description": "Indicating that a given value equals the right operand of the Constraint.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-eq",
+      "text": "eq"
+   },
+   {
+      "description": "Indicating that a given value is greater than the right operand of the Constraint.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-gt",
+      "text": "gt"
+   },
+   {
+      "description": "Indicating that a given value is greater than or equal to the right operand of the Constraint.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-gteq",
+      "text": "gteq"
+   },
+   {
+      "description": "A set-based operator indicating that a given value contains the right operand of the Constraint.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-hasPart",
+      "text": "hasPart"
+   },
+   {
+      "description": "A set-based operator indicating that a given value is an instance of the right operand of the Constraint.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-isA",
+      "text": "isA"
+   },
+   {
+      "description": "A set-based operator indicating that a given value is all of the right operand of the Constraint.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-isAllOf",
+      "text": "isAllOf"
+   },
+   {
+      "description": "A set-based operator indicating that a given value is any of the right operand of the Constraint.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-isAnyOf",
+      "text": "isAnyOf"
+   },
+   {
+      "description": "A set-based operator indicating that a given value is none of the right operand of the Constraint.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-isNoneOf",
+      "text": "isNoneOf"
+   },
+   {
+      "description": "A set-based operator indicating that a given value is contained by the right operand of the Constraint.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-isPartOf",
+      "text": "isPartOf"
+   },
+   {
+      "description": "Indicating that a given value is less than the right operand of the Constraint.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-lt",
+      "text": "lt"
+   },
+   {
+      "description": "Indicating that a given value is less than or equal to the right operand of the Constraint.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-lteq",
+      "text": "lteq"
+   },
+   {
+      "description": "Indicating that a given value is not equal to the right operand of the Constraint.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-neq",
+      "text": "neq"
+   },
+   {
+      "description": "The relation is satisfied when each of the Constraints are satisfied in the order specified.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-andSequence",
+      "text": "andSequence",
+      "type": "property"
+   },
+   {
+      "description": "The relation is satisfied when at least one of the Constraints is satisfied.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-or",
+      "text": "or",
+      "type": "property"
+   },
+   {
+      "description": "The relation is satisfied when all of the Constraints are satisfied.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-and",
+      "text": "and",
+      "type": "property"
+   },
+   {
+      "description": "The relation is satisfied when only one, and not more, of the Constaints is satisfied",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-xone",
+      "text": "xone",
+      "type": "property"
+   },
+   {
+      "description": "Left operand for a constraint expression.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-LeftOperand",
+      "text": "LeftOperand",
+      "type": "class"
+   },
+   {
+      "description": "A point in space or time defined with absolute coordinates for the positioning of the target Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-absolutePosition",
+      "text": "absolutePosition"
+   },
+   {
+      "description": "The absolute spatial positions of four corners of a rectangle on a 2D-canvas or the eight corners of a cuboid in a 3D-space for the target Asset to fit.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-absoluteSpatialPosition",
+      "text": "absoluteSpatialPosition"
+   },
+   {
+      "description": "The absolute temporal positions in a media stream the target Asset has to fit.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-absoluteTemporalPosition",
+      "text": "absoluteTemporalPosition"
+   },
+   {
+      "description": "Measure(s) of one or two axes for 2D-objects or measure(s) of one to tree axes for 3D-objects of the target Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-absoluteSize",
+      "text": "absoluteSize"
+   },
+   {
+      "description": "Numeric count of executions of the action of the Rule.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-count",
+      "text": "count"
+   },
+   {
+      "description": "The date (and optional time and timezone) of exercising the action of the Rule. Right operand value MUST be an xsd:date or xsd:dateTime as defined by [[xmlschema11-2]].",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-dateTime",
+      "text": "dateTime"
+   },
+   {
+      "description": "A time delay period prior to exercising the action of the Rule. The point in time triggering this period MAY be defined by another temporal Constraint combined by a Logical Constraint (utilising the odrl:andSequence operand). Right operand value MUST be an xsd:duration as defined by [[xmlschema11-2]].",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-delayPeriod",
+      "text": "delayPeriod"
+   },
+   {
+      "description": "The delivery channel used for exercising the action of the Rule.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-deliveryChannel",
+      "text": "deliveryChannel"
+   },
+   {
+      "description": "An identified device used for exercising the action of the Rule.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-device",
+      "text": "device"
+   },
+   {
+      "description": "A continuous elapsed time period which may be used for exercising of the action of the Rule. Right operand value MUST be an xsd:duration as defined by [[xmlschema11-2]].",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-elapsedTime",
+      "text": "elapsedTime"
+   },
+   {
+      "description": "An identified event setting a context for exercising the action of the Rule.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-event",
+      "text": "event"
+   },
+   {
+      "description": "A transformed file format of the target Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-fileFormat",
+      "text": "fileFormat"
+   },
+   {
+      "description": "A defined industry sector setting a context for exercising the action of the Rule.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-industry",
+      "text": "industry"
+   },
+   {
+      "description": "A natural language used by the target Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-language",
+      "text": "language"
+   },
+   {
+      "description": "Category of a media asset setting a context for exercising the action of the Rule.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-media",
+      "text": "media"
+   },
+   {
+      "description": "An accumulated amount of one to many metered time periods which were used for exercising the action of the Rule. Right operand value MUST be an xsd:duration as defined by [[xmlschema11-2]].",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-meteredTime",
+      "text": "meteredTime"
+   },
+   {
+      "description": "The amount of a financial payment. Right operand value MUST be an xsd:decimal. ",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-payAmount",
+      "text": "payAmount"
+   },
+   {
+      "description": "A percentage amount of the target Asset relevant for exercising the action of the Rule. Right operand value MUST be an xsd:decimal from 0 to 100.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-percentage",
+      "text": "percentage"
+   },
+   {
+      "description": "Category of product or service setting a context for exercising the action of the Rule.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-product",
+      "text": "product"
+   },
+   {
+      "description": "A defined purpose for exercising the action of the Rule.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-purpose",
+      "text": "purpose"
+   },
+   {
+      "description": "The party receiving the result/outcome of exercising the action of the Rule.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-recipient",
+      "text": "recipient"
+   },
+   {
+      "description": "A point in space or time defined with coordinates relative to full measures the positioning of the target Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-relativePosition",
+      "text": "relativePosition"
+   },
+   {
+      "description": "The relative spatial positions - expressed as percentages of full values - of four corners of a rectangle on a 2D-canvas or the eight corners of a cuboid in a 3D-space of the target Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-relativeSpatialPosition",
+      "text": "relativeSpatialPosition"
+   },
+   {
+      "description": "A point in space or time defined with coordinates relative to full measures the positioning of the target Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-relativeTemporalPosition",
+      "text": "relativeTemporalPosition"
+   },
+   {
+      "description": "Measure(s) of one or two axes for 2D-objects or measure(s) of one to tree axes for 3D-objects - expressed as percentages of full values - of the target Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-relativeSize",
+      "text": "relativeSize"
+   },
+   {
+      "description": "Resolution of the rendition of the target Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-resolution",
+      "text": "resolution"
+   },
+   {
+      "description": "A named and identified geospatial area with defined borders which is used for exercising the action of the Rule. An IRI MUST be used to represent this value.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-spatial",
+      "text": "spatial"
+   },
+   {
+      "description": "A set of coordinates setting the borders of a geospatial area used for exercising the action of the Rule. The coordinates MUST include longitude and latitude, they MAY include altitude and the geodetic datum.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-spatialCoordinates",
+      "text": "spatialCoordinates"
+   },
+   {
+      "description": "An identified computing system used for exercising the action of the Rule.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-system",
+      "text": "system"
+   },
+   {
+      "description": "An identified computing system or computing device used for exercising the action of the Rule.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-systemDevice",
+      "text": "systemDevice"
+   },
+   {
+      "description": "A recurring period of time before the next execution of the action of the Rule. Right operand value MUST be an xsd:duration as defined by [[xmlschema11-2]].",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-timeInterval",
+      "text": "timeInterval"
+   },
+   {
+      "description": "The unit of measure used for counting the executions of the action of the Rule.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-unitOfCount",
+      "text": "unitOfCount"
+   },
+   {
+      "description": "The version of the target Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-version",
+      "text": "version"
+   },
+   {
+      "description": "An identified location of the IT communication space which is relevant for exercising the action of the Rule.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-virtualLocation",
+      "text": "virtualLocation"
+   },
+   {
+      "description": "Right operand for constraint expression.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-RightOperand",
+      "text": "RightOperand",
+      "type": "class"
+   },
+   {
+      "description": "Indicates the actual datetime the action of the Rule was exercised.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-policyUsage",
+      "text": "policyUsage"
+   },
+   {
+      "description": "To use the Asset",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-use",
+      "text": "use"
+   },
+   {
+      "description": "To grant the use of the Asset to third parties.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-grantUse",
+      "text": "grantUse"
+   },
+   {
+      "description": "To compensate by transfer of some amount of value, if defined, for using or selling the Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-compensate",
+      "text": "compensate"
+   },
+   {
+      "description": "To accept that the use of the Asset may be tracked.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-acceptTracking",
+      "text": "acceptTracking"
+   },
+   {
+      "description": "To use the Asset or parts of it as part of a composite collection.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-aggregate",
+      "text": "aggregate"
+   },
+   {
+      "description": "To add explanatory notations/commentaries to the Asset without modifying the Asset in any other way.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-annotate",
+      "text": "annotate"
+   },
+   {
+      "description": "To anonymize all or parts of the Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-anonymize",
+      "text": "anonymize"
+   },
+   {
+      "description": "The act of adding to the end of an asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-append",
+      "text": "append"
+   },
+   {
+      "description": "The act of appending data to the Asset without modifying the Asset in any other way.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-appendTo",
+      "text": "appendTo"
+   },
+   {
+      "description": "To store the Asset (in a non-transient form).",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-archive",
+      "text": "archive"
+   },
+   {
+      "description": "To attribute the use of the Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-attribute",
+      "text": "attribute"
+   },
+   {
+      "description": "To create multiple copies of the Asset that are being concurrently used.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-concurrentUse",
+      "text": "concurrentUse"
+   },
+   {
+      "description": "The act of making an exact reproduction of the asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-copy",
+      "text": "copy"
+   },
+   {
+      "description": "To permanently remove all copies of the Asset after it has been used.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-delete",
+      "text": "delete"
+   },
+   {
+      "description": "To create a new derivative Asset from this Asset and to edit or modify the derivative.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-derive",
+      "text": "derive"
+   },
+   {
+      "description": "To produce a digital copy of (or otherwise digitize) the Asset from its analogue form.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-digitize",
+      "text": "digitize"
+   },
+   {
+      "description": "To create a static and transient rendition of an Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-display",
+      "text": "display"
+   },
+   {
+      "description": "To supply the Asset to third-parties.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-distribute",
+      "text": "distribute"
+   },
+   {
+      "description": "To ensure that the Rule on the Asset is exclusive.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-ensureExclusivity",
+      "text": "ensureExclusivity"
+   },
+   {
+      "description": "To run the computer program Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-execute",
+      "text": "execute"
+   },
+   {
+      "description": "The act of transforming the asset into a new form.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-export",
+      "text": "export"
+   },
+   {
+      "description": "To extract parts of the Asset and to use it as a new Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-extract",
+      "text": "extract"
+   },
+   {
+      "description": "To transfer the ownership of the Asset to a third party without compensation and while deleting the original asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-give",
+      "text": "give"
+   },
+   {
+      "description": "To include other related assets in the Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-include",
+      "text": "include"
+   },
+   {
+      "description": "To record the Asset in an index.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-index",
+      "text": "index"
+   },
+   {
+      "description": "To inform that an action has been performed on or in relation to the Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-inform",
+      "text": "inform"
+   },
+   {
+      "description": "To load the computer program Asset onto a storage device which allows operating or running the Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-install",
+      "text": "install"
+   },
+   {
+      "description": "The act of making available the asset to a third-party for a fixed period of time with exchange of value.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-lease",
+      "text": "lease"
+   },
+   {
+      "description": "The act of granting the right to use the asset to a third-party.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-license",
+      "text": "license"
+   },
+   {
+      "description": "The act of making available the asset to a third-party for a fixed period of time without exchange of value.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-lend",
+      "text": "lend"
+   },
+   {
+      "description": "To change existing content of the Asset. A new asset is not created by this action.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-modify",
+      "text": "modify"
+   },
+   {
+      "description": "To move the Asset from one digital location to another including deleting the original copy.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-move",
+      "text": "move"
+   },
+   {
+      "description": "To grant the specified Policy to a third party for their use of the Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-nextPolicy",
+      "text": "nextPolicy"
+   },
+   {
+      "description": "To obtain verifiable consent to perform the requested action in relation to the Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-obtainConsent",
+      "text": "obtainConsent"
+   },
+   {
+      "description": "The act of paying a financial amount to a party for use of the asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-pay",
+      "text": "pay"
+   },
+   {
+      "description": "To create a sequential and transient rendition of an Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-play",
+      "text": "play"
+   },
+   {
+      "description": "To publicly perform the Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-present",
+      "text": "present"
+   },
+   {
+      "description": "The act of providing a short preview of the asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-preview",
+      "text": "preview"
+   },
+   {
+      "description": "To create a tangible and permanent rendition of an Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-print",
+      "text": "print"
+   },
+   {
+      "description": "To obtain data from the Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-read",
+      "text": "read"
+   },
+   {
+      "description": "To make duplicate copies the Asset in any material form.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-reproduce",
+      "text": "reproduce"
+   },
+   {
+      "description": "To review the Policy applicable to the Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-reviewPolicy",
+      "text": "reviewPolicy"
+   },
+   {
+      "description": "The act of using the asset for a purpose other than the purpose it was intended for.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-secondaryUse",
+      "text": "secondaryUse"
+   },
+   {
+      "description": "To transfer the ownership of the Asset to a third party with compensation and while deleting the original asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-sell",
+      "text": "sell"
+   },
+   {
+      "description": "To deliver the Asset in real-time.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-stream",
+      "text": "stream"
+   },
+   {
+      "description": "To use the Asset in timed relations with media (audio/visual) elements of another Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-synchronize",
+      "text": "synchronize"
+   },
+   {
+      "description": "To have a text Asset read out loud.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-textToSpeech",
+      "text": "textToSpeech"
+   },
+   {
+      "description": "To transfer the ownership of the Asset in perpetuity.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-transfer",
+      "text": "transfer"
+   },
+   {
+      "description": "To convert the Asset into a different format.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-transform",
+      "text": "transform"
+   },
+   {
+      "description": "To translate the original natural language of an Asset into another natural language.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-translate",
+      "text": "translate"
+   },
+   {
+      "description": "To unload and delete the computer program Asset from a storage device and disable its readiness for operation.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-uninstall",
+      "text": "uninstall"
+   },
+   {
+      "description": "To apply a watermark to the Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-watermark",
+      "text": "watermark"
+   },
+   {
+      "description": "The act of writing to the Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-write",
+      "text": "write"
+   },
+   {
+      "description": "The act of adding data to the Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-writeTo",
+      "text": "writeTo"
+   },
+   {
+      "description": "The Party is the recipient of the Rule.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-assignee",
+      "text": "assignee",
+      "type": "property"
+   },
+   {
+      "description": "The Party is the issuer of the Rule.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-assigner",
+      "text": "assigner",
+      "type": "property"
+   },
+   {
+      "description": "Identifies an ODRL Policy for which the identified Party undertakes the assignee functional role.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-assigneeOf",
+      "text": "assigneeOf",
+      "type": "property"
+   },
+   {
+      "description": "Identifies an ODRL Policy for which the identified Party undertakes the assigner functional role.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-assignerOf",
+      "text": "assignerOf",
+      "type": "property"
+   },
+   {
+      "description": "The Party to be attributed.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-attributedParty",
+      "text": "attributedParty",
+      "type": "property"
+   },
+   {
+      "description": "The Party who undertakes the attribution.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-attributingParty",
+      "text": "attributingParty",
+      "type": "property"
+   },
+   {
+      "description": "The Party to obtain consent from.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-consentingParty",
+      "text": "consentingParty",
+      "type": "property"
+   },
+   {
+      "description": "The Party who obtains the consent.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-consentedParty",
+      "text": "consentedParty",
+      "type": "property"
+   },
+   {
+      "description": "The Party to be informed of all uses.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-informedParty",
+      "text": "informedParty",
+      "type": "property"
+   },
+   {
+      "description": "The Party who provides the inform use data.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-informingParty",
+      "text": "informingParty",
+      "type": "property"
+   },
+   {
+      "description": "The Party is the recipient of the payment.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-payeeParty",
+      "text": "payeeParty",
+      "type": "property"
+   },
+   {
+      "description": "The Party is the recipient of the compensation.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-compensatedParty",
+      "text": "compensatedParty",
+      "type": "property"
+   },
+   {
+      "description": "The Party that is the provider of the compensation.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-compensatingParty",
+      "text": "compensatingParty",
+      "type": "property"
+   },
+   {
+      "description": "The Party who is tracking usage.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-trackingParty",
+      "text": "trackingParty",
+      "type": "property"
+   },
+   {
+      "description": "The Party whose usage is being tracked.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-trackedParty",
+      "text": "trackedParty",
+      "type": "property"
+   },
+   {
+      "description": "The Party who is offering the contract.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-contractingParty",
+      "text": "contractingParty",
+      "type": "property"
+   },
+   {
+      "description": "The Party who is being contracted.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-contractedParty",
+      "text": "contractedParty",
+      "type": "property"
+   },
+   {
+      "description": "A Policy that grants the assignee a Rule over an Asset from an assigner.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-Agreement",
+      "text": "Agreement",
+      "type": "class"
+   },
+   {
+      "description": "A Policy that asserts a Rule over an Asset from parties.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-Assertion",
+      "text": "Assertion",
+      "type": "class"
+   },
+   {
+      "description": "A Policy that proposes a Rule over an Asset from an assigner.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-Offer",
+      "text": "Offer",
+      "type": "class"
+   },
+   {
+      "description": "A Policy that expresses a Rule over an Asset containing personal information.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-Privacy",
+      "text": "Privacy",
+      "type": "class"
+   },
+   {
+      "description": "A Policy that proposes a Rule over an Asset from an assignee.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-Request",
+      "text": "Request",
+      "type": "class"
+   },
+   {
+      "description": "A Policy that expresses a Rule over an Asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-Set",
+      "text": "Set",
+      "type": "class"
+   },
+   {
+      "description": "A Policy that grants the holder a Rule over an Asset from an assigner.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-Ticket",
+      "text": "Ticket",
+      "type": "class"
+   },
+   {
+      "description": "Scopes for Asset Scope expressions.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-AssetScope",
+      "text": "AssetScope",
+      "type": "class"
+   },
+   {
+      "description": "Scopes for Party Scope expressions.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-PartyScope",
+      "text": "PartyScope",
+      "type": "class"
+   },
+   {
+      "description": "Specifies that the scope of the relationship is all of the collective individuals within a context.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-All",
+      "text": "All"
+   },
+   {
+      "description": "Specifies that the scope of the relationship is all of the second-level connections to the Party.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-All",
+      "text": "All"
+   },
+   {
+      "description": "Specifies that the scope of the relationship is all of the first-level connections of the Party.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-AllConnections",
+      "text": "AllConnections"
+   },
+   {
+      "description": "Specifies that the scope of the relationship is all of the group connections of the Party.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-AllGroups",
+      "text": "AllGroups"
+   },
+   {
+      "description": "Specifies that the scope of the relationship is the defined group with multiple individual members.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-Group",
+      "text": "Group"
+   },
+   {
+      "description": "Specifies that the scope of the relationship is the single Party individual.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-Individual",
+      "text": "Individual"
+   },
+   {
+      "description": "The act of sharing the asset to parties in close proximity to the owner.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-adHocShare",
+      "text": "adHocShare"
+   },
+   {
+      "description": "The act of extracting (replicating) unchanged characters from the asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-extractChar",
+      "text": "extractChar"
+   },
+   {
+      "description": "The act of extracting (replicating) unchanged pages from the asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-extractPage",
+      "text": "extractPage"
+   },
+   {
+      "description": "The act of extracting (replicating) unchanged words from the asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-extractWord",
+      "text": "extractWord"
+   },
+   {
+      "description": "The act of keeping the policy notice with the asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-attachPolicy",
+      "text": "attachPolicy"
+   },
+   {
+      "description": "The act of attaching the source of the asset and its derivatives.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-attachSource",
+      "text": "attachSource"
+   },
+   {
+      "description": "The act of distributing any derivative asset under the same terms as the original asset.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-shareAlike",
+      "text": "shareAlike"
+   },
+   {
+      "description": "The act of using the asset in a business environment.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-commercialize",
+      "text": "commercialize"
+   },
+   {
+      "description": "The act of the non-commercial reproduction and distribution of the asset to third-parties.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-share",
+      "text": "share"
+   },
+   {
+      "description": "An value indicating the closeness or nearness.",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-proximity",
+      "text": "proximity",
+      "type": "property"
+   }
+]
