@@ -12,6 +12,7 @@
 
 # Prefixes for documentation are found in ontologies.json
 # Push turtle via cat
+# Only tested on Mac OS with Python 2.7
 
 import sys
 import re

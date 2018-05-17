@@ -1,0 +1,104 @@
+[
+   {
+      "description": "The datatype of RDF literals storing fragments of HTML content",
+      "descriptionMoreURL": "https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#HTML",
+      "text": "HTML",
+      "type": "class"
+   },
+   {
+      "description": "The datatype of language-tagged string values",
+      "descriptionMoreURL": "https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#langString",
+      "text": "langString",
+      "type": "class"
+   },
+   {
+      "description": "The class of plain (i.e. untyped) literal values, as used in RIF and OWL 2",
+      "descriptionMoreURL": "https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#PlainLiteral",
+      "text": "PlainLiteral",
+      "type": "class"
+   },
+   {
+      "description": "The subject is an instance of a class.",
+      "descriptionMoreURL": "https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#type",
+      "text": "type",
+      "type": "property"
+   },
+   {
+      "description": "The class of RDF properties.",
+      "descriptionMoreURL": "https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#Property",
+      "text": "Property",
+      "type": "class"
+   },
+   {
+      "description": "The class of RDF statements.",
+      "descriptionMoreURL": "https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#Statement",
+      "text": "Statement",
+      "type": "class"
+   },
+   {
+      "description": "The subject of the subject RDF statement.",
+      "descriptionMoreURL": "https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#subject",
+      "text": "subject",
+      "type": "property"
+   },
+   {
+      "description": "The predicate of the subject RDF statement.",
+      "descriptionMoreURL": "https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#predicate",
+      "text": "predicate",
+      "type": "property"
+   },
+   {
+      "description": "The object of the subject RDF statement.",
+      "descriptionMoreURL": "https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#object",
+      "text": "object",
+      "type": "property"
+   },
+   {
+      "description": "The class of unordered containers.",
+      "descriptionMoreURL": "https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#Bag",
+      "text": "Bag",
+      "type": "class"
+   },
+   {
+      "description": "The class of ordered containers.",
+      "descriptionMoreURL": "https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#Seq",
+      "text": "Seq",
+      "type": "class"
+   },
+   {
+      "description": "The class of containers of alternatives.",
+      "descriptionMoreURL": "https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#Alt",
+      "text": "Alt",
+      "type": "class"
+   },
+   {
+      "description": "Idiomatic property used for structured values.",
+      "descriptionMoreURL": "https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#value",
+      "text": "value",
+      "type": "property"
+   },
+   {
+      "description": "The class of RDF Lists.",
+      "descriptionMoreURL": "https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#List",
+      "text": "List",
+      "type": "class"
+   },
+   {
+      "description": "The empty list, with no items in it. If the rest of a list is nil then the list has no more items in it.",
+      "descriptionMoreURL": "https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#nil",
+      "text": "nil",
+      "type": "property"
+   },
+   {
+      "description": "The first item in the subject RDF list.",
+      "descriptionMoreURL": "https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#first",
+      "text": "first",
+      "type": "property"
+   },
+   {
+      "description": "The rest of the subject RDF list after the first item.",
+      "descriptionMoreURL": "https://www.w3.org/TR/2004/REC-rdf-mt-20040210/#rest",
+      "text": "rest",
+      "type": "property"
+   }
+]
