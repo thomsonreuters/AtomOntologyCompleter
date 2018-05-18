@@ -18,14 +18,21 @@ import sys
 import re
 import json
 
+def compile_regex(pattern):
+    if hasattr(pattern, 'decode'):
+        # Python 2, decode to unicode first
+        return re.compile(pattern.decode('ascii'))
+    else:
+        return re.compile(pattern)
+
 if len(sys.argv) < 3:
     sys.exit('Usage %s <documentation_url_base> <desired_prefix_to_extract>' % sys.argv[0])
 urlPrefix=sys.argv[1]
 desiredPrefix=sys.argv[2]
 predicates = []
-predicateRegex = re.compile(ur'^([^:\s]*):([a-zA-Z\-_]+)')
-typeRegex = re.compile(ur'a (rdf|owl|rdfs|dcam):([\w]+)')
-commentRegex = re.compile(ur'\s+(rdfs:comment|skos:definition|rdfs:label) \"([^\"]+)\"(@\w\w)?')
+predicateRegex = compile_regex(r'^([^:\s]*):([a-zA-Z\-_]+)')
+typeRegex = compile_regex(r'a (rdf|owl|rdfs|dcam):([\w]+)')
+commentRegex = compile_regex(r'\s+(rdfs:comment|skos:definition|rdfs:label) \"([^\"]+)\"(@\w\w)?')
 currentPredicate = None
 for line in sys.stdin:
     predicateName = predicateRegex.match(line)
