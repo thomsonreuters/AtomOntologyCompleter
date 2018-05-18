@@ -1,5 +1,6 @@
-##
-* 0.4.1
+## 0.4.2
+* Fixed rdf.json. Thanks to Stefan Münnich for the issue
+## 0.4.1
 * Updated README, patched for ontologies missed on checkin
 ## 0.4.0
 * Added unit tests
