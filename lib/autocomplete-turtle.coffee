@@ -34,7 +34,7 @@ module.exports =
   activate: ->
     atom.config.observe 'turtle-completer.enableLocalOntologies', (newValue) ->
       provider.localConfigChanged()
-    atom.config.observe 'turtle-completer.localOntologyConfigFile', (newValue) ->
+    atom.config.observe 'turtle-completer.localOntologyConfigFile',(newValue) ->
       provider.localConfigChanged()
     provider.loadOntologies()
   getProvider: -> provider
