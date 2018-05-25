@@ -1,7 +1,7 @@
 {
   "name": "turtle-completer",
   "main": "./lib/autocomplete-turtle",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "description": "Auto completer for the RDF turtle serialization with knowledge of common schema",
   "keywords": [],
   "repository": "https://github.com/thomsonreuters/AtomOntologyCompleter",
