@@ -19,7 +19,6 @@ Current ontologies are:
 * [ODRL](https://www.w3.org/TR/odrl-vocab/)
 * [Ontology for Media Resources](https://www.w3.org/TR/2012/REC-mediaont-10-20120209/)
 * [OWL](https://www.w3.org/TR/owl2-overview/)
-* [Prov](https://www.w3.org/TR/2013/REC-prov-o-20130430/)
 * [R2RML](http://www.w3.org/TR/2012/REC-r2rml-20120927/)
 * [RDF](https://www.w3.org/TR/2004/REC-rdf-mt-20040210/)
 * [RDFS](https://www.w3.org/TR/rdf-schema/)
