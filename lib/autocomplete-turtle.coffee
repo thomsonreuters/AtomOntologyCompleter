@@ -20,6 +20,21 @@
 provider = require './turtle-provider'
 
 module.exports =
+  config:
+    enableLocalOntologies:
+      type: 'boolean'
+      default: false
+      description: "Enable to add your own ontologies to the completer. See the
+      instructions in README.md"
+    localOntologyConfigFile:
+      type:'string'
+      default: ''
+      description: "Set the full path & filename of a local ontology
+        configuration file"
   activate: ->
+    atom.config.observe 'turtle-completer.enableLocalOntologies', (newValue) ->
+      provider.localConfigChanged()
+    atom.config.observe 'turtle-completer.localOntologyConfigFile', (newValue) ->
+      provider.localConfigChanged()
     provider.loadOntologies()
   getProvider: -> provider

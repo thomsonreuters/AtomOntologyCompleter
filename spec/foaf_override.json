@@ -1,0 +1,20 @@
+[
+   {
+      "description": "An Audi",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-core",
+      "text": "A2",
+      "type": "class"
+   },
+   {
+      "description": "A psuedo-sporty Audi",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-core",
+      "text": "SQ5",
+      "type": "class"
+   },
+   {
+      "description": "Another Audi",
+      "descriptionMoreURL": "https://www.w3.org/TR/odrl-vocab/#term-Asset",
+      "text": "A3",
+      "type": "property"
+   }
+ ]

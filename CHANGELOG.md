@@ -1,3 +1,6 @@
+## 0.5.0
+* Added capability to load local ontologies
+* Fixed convert.py to work on Python 2 or 3 (thanks again to Stefan for reporting that)
 ## 0.4.2
 * Fixed rdf.json. Thanks to Stefan Münnich for the issue
 ## 0.4.1

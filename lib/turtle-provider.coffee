@@ -17,7 +17,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-ONTOLOGIES = require './ontologies.json'
+PACKAGE_ONTOLOGIES = require './ontologies.json'
 
 module.exports =
   selector: '.source.turtle'
@@ -25,51 +25,75 @@ module.exports =
   inclusionPriority: 1
   suggestionPriority: 1
   filterSuggestions: true
-  ontologies: ONTOLOGIES
-  ontologyCompletions: []
+  mergedOntologies: null
+  localOntologies: null
+  prefixCompletions: []
+
+  localConfigChanged: ->
+    localEnabled = atom.config.get('turtle-completer.enableLocalOntologies')
+    value = atom.config.get('turtle-completer.localOntologyConfigFile')
+    console.log "Config change #{localEnabled} for #{value}"
+    try
+      if localEnabled
+        @localOntologies = require value
+      else
+        @localOntologies = null
+    catch error
+      console.log 'Unable to load ', value, error
+    @loadOntologies()
+
+  buildCompletionEntry: (prefix, ontology) ->
+    text: prefix
+    description: ontology.title
+    descriptionMoreURL: ontology.spec
 
   loadOntologies: ->
     completions = []
-    for key,ontology of @ontologies
-      ontologyEntry = {}
-      ontologyEntry.description = ontology.title
-      ontologyEntry.descriptionMoreURL = ontology.spec
-      ontologyEntry.text = key
-      completions.push(ontologyEntry)
-    @ontologyCompletions = completions
+    @mergedOntologies = []
+    for key, ontology of PACKAGE_ONTOLOGIES
+      @mergedOntologies[key] = ontology
+    if @localOntologies?
+      for key,ontology of @localOntologies
+        completions.push(@buildCompletionEntry(key,ontology))
+        @mergedOntologies[key] = ontology
+    for key,ontology of @mergedOntologies
+      if not @localOntologies? or key not of @localOntologies
+        completions.push(@buildCompletionEntry(key,ontology))
+    @prefixCompletions = completions
 
   loadOntology: (ontologyPrefix) ->
-    if ontologyPrefix of @ontologies
-      completions = require @ontologies[ontologyPrefix].ontology
-      @ontologies[ontologyPrefix].completions = completions
+    if ontologyPrefix of @mergedOntologies
+      try
+        completions = require @mergedOntologies[ontologyPrefix].ontology
+        @mergedOntologies[ontologyPrefix].completions = completions
+      catch error
+        console.log 'Unable to load ontology with prefix ', ontologyPrefix
 
   getSuggestions: ({editor,bufferPosition,scopeDescriptor, prefix}) ->
     return [] if not prefix? or not prefix.length
     currentScope = scopeDescriptor.getScopesArray()
-    candidateArray = null
     if currentScope.length < 2  # we're not sure of scope yet, so choose ont
-      candidateArray = @ontologyCompletions
+      return @getMatches(@prefixCompletions,prefix)
     else if currentScope.includes("entity.name.tag.prefixed-uri.turtle")
       namespace = @determineNamespace(
         editor.lineTextForBufferRow(bufferPosition.row))
-      if namespace? and namespace of @ontologies
-        if not @ontologies[namespace].completions?
+      if namespace? and namespace of @mergedOntologies
+        if not @mergedOntologies[namespace].completions?
           @loadOntology(namespace)
-        candidateArray = @ontologies[namespace].completions
-    return @getMatches(candidateArray,prefix)
+        return @getMatches(@mergedOntologies[namespace].completions,prefix)
+    return []
 
-  buildMatch: (match, prefix) ->
+  buildMatch: (match) ->
     text: match.text
     description: match.description
     descriptionMoreURL: match.descriptionMoreURL
-  #  replacementPrefix: prefix  # doesn't seem necessary
 
   getMatches: (candidateArray, prefix) ->
     return [] if not candidateArray?
     matches = []
     for candidate in candidateArray when not prefix.trim() or
     firstCharsEqual(candidate.text,prefix)
-      matches.push(@buildMatch(candidate,prefix))
+      matches.push(@buildMatch(candidate))
     matches
 
   determineNamespace: (line, position) ->

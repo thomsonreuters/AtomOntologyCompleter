@@ -1,0 +1,9 @@
+{
+  "foaf":{
+    "title":"Test Ontology",
+    "spec":"https://www.w3.org/TR/tabular-metadata/",
+    "prefix":"<http://www.w3.org/ns/csvw#>",
+    "docprefix":"https://www.w3.org/TR/tabular-metadata/#",
+    "ontology":"../spec/foaf_override.json"
+  }
+}

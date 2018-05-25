@@ -32,4 +32,26 @@ If you'd like others added either raise an issue on the atom package, tweet \@no
 
 Known ontologies are referenced from the file `ontologies.json` in `\lib`. Each ontology has a JSON file that contains the completion info.
 
-To generate a new file, run `convert.py` over a ttl version of the ontology to generate the JSON. Note that quality of anchor links into the specs varies on whether the naming convention for the anchors is sufficiently predicable. Feel free to fix any that are wrong in the relevant JSON file and do a pull request to get added.
+To generate a new file, run `convert.py` over a ttl version of the ontology to generate the JSON. Note that quality of anchor links into the specs varies on whether the naming convention for the anchors is sufficiently predicable. Feel free to fix any that are wrong in the relevant JSON file and do a pull request
+to get added.
+## Testing ontologies
+To test a new ontology without the palaver of pull requests:
+* Create a copy of the file ontologies.json in ``\lib``
+* Convert your ontology to the JSON format required for the completer
+* Update the ontologies.json file, setting the key to the desired prefix and
+ontology attribute to the filename & path of the converted ontology.
+* The spec, prefix and docprefix attributes aren't part of the code path so can
+be ignored or completed as you wish
+* Note that if you re-use a predefined prefix you'll override the built in
+ontology
+
+For example:
+```
+"tr":{
+  "title":"My First ontology",
+  "spec":"",
+  "prefix":"",
+  "docprefix":"",
+  "ontology":"/users/dan/ontologies/tr.json"
+}
+```
