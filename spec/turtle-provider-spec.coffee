@@ -110,7 +110,6 @@ describe "Turtle autocompletions", ->
 
     packagePath = atom.packages.resolvePackagePath('turtle-completer')
     overrideFile = "#{packagePath}spec#{path.sep}ontology_override.json"
-    console.log overrideFile
     atom.config.set('turtle-completer.localOntologyConfigFile',overrideFile)
     # Setting the override file shouldn't change anything
     completions = getCompletions()
