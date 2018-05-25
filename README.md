@@ -7,6 +7,8 @@
 
 This is an autocompleter for the [Atom](http://atom.io) editor, compatible with AutoComplete+ that knows common ontologies and will suggest predicates based on your typing.
 
+![Short video of the completor in action](/docs/completer-sample-video.gif?raw=true)
+
 Current ontologies are:
 * [Activity Vocabulary](http://dublincore.org/documents/dcmi-terms/)
 * [Metadata for Tabular Data](https://www.w3.org/TR/tabular-metadata/)
