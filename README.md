@@ -1,9 +1,10 @@
 # Turtle Autocompleter package
-[![dependencies Status](https://david-dm.org/thomsonreuters/AtomOntologyCompleter/status.svg)](https://david-dm.org/thomsonreuters/AtomOntologyCompleter)
+[![dependencies Status](https://david-dm.org/thomsonreuters/AtomOntologyCompleter/status.svg?style=flat-square)](https://david-dm.org/thomsonreuters/AtomOntologyCompleter)
 [![Build Status](https://travis-ci.org/thomsonreuters/AtomOntologyCompleter.svg?branch=master&style=flat-square)](https://travis-ci.org/thomsonreuters/AtomOntologyCompleter)
 [![Installs!](https://img.shields.io/apm/dm/atom-clock.svg?style=flat-square)](https://atom.io/packages/turtle-completer)
 [![Version!](https://img.shields.io/apm/v/atom-clock.svg?style=flat-square)](https://atom.io/packages/turtle-completer)
 [![License](https://img.shields.io/apm/l/atom-clock.svg?style=flat-square)](https://github.com/thomsonreuters/AtomOntologyCompleter/blob/master/LICENSE)
+[![Gitter chat](https://badges.gitter.im/thomsonreuters/AtomOntologyCompleter.svg?style=flat-square)](https://gitter.im/thomsonreuters/AtomOntologyCompleter)
 
 This is an autocompleter for the [Atom](http://atom.io) editor, compatible with AutoComplete+ that knows common ontologies and will suggest predicates based on your typing.
 
@@ -29,11 +30,13 @@ Current ontologies are:
 * [W3C Provenance](https://www.w3.org/TR/2013/REC-prov-o-20130430/)
 * [Web Annotation Vocabulary](http://www.w3.org/TR/annotation-vocab/)
 
-If you'd like others added either raise an issue on the atom package, tweet \@nonodename or do a pull request with the conversion. Contributions are greatly appreciated.  Note that the ontology is matched based on common prefixes.
+If you'd like others added either raise an issue on the atom package, comment on gitter, tweet @nonodename or do a pull request with the conversion. Contributions are greatly appreciated.  Note that the ontology is matched based on common prefixes.
 
 Known ontologies are referenced from the file `ontologies.json` in `\lib`. Each ontology has a JSON file that contains the completion info.
 
-To generate a new file, run `convert.py` over a ttl version of the ontology to generate the JSON. Note that quality of anchor links into the specs varies on whether the naming convention for the anchors is sufficiently predictable. Feel free to fix any that are wrong in the relevant JSON file and do a pull request
+To generate a new file, run `convert.py` over a ttl version of the ontology to generate the JSON. convert.py supports a few command line options, run without any parameters to see them.
+
+Note that quality of anchor links into the specs varies on whether the naming convention for the anchors is sufficiently predictable. Feel free to fix any that are wrong in the relevant JSON file and do a pull request
 to get added.
 
 ## Testing ontologies
@@ -51,9 +54,9 @@ For example:
 ```
 "tr":{
   "title":"My First ontology",
-  "spec":"",
-  "prefix":"",
-  "docprefix":"",
+  "spec":"URL of the spec",
+  "prefix":"tr",
+  "docprefix":"URL prefix for documentation",
   "ontology":"/users/dan/ontologies/tr.json"
 }
 ```
