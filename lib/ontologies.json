@@ -111,6 +111,13 @@
     "docprefix":"https://www.w3.org/TR/rdf-schema/#ch_#",
     "ontology":"./ontologies/rdfs.json"
   },
+  "rel":{
+    "title":"Relationship",
+    "spec":"http://www.perceive.net/schemas/20031015/relationship/",
+    "prefix":"<http://www.perceive.net/schemas/relationship/>",
+    "docprefix":"http://www.perceive.net/schemas/20031015/relationship/#",
+    "ontology":"./ontologies/rel.json"
+  },
   "rr":{
     "title":"R2RML: RDB to RDF Mapping Language",
     "spec":"http://www.w3.org/TR/2012/REC-r2rml-20120927/",

@@ -1,0 +1,56 @@
+[
+   {
+      "description": "Friend Of", 
+      "descriptionMoreURL": "http://www.perceive.net/schemas/20031015/relationship/#friendOf", 
+      "text": "friendOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "Acquaintance Of", 
+      "descriptionMoreURL": "http://www.perceive.net/schemas/20031015/relationship/#acquaintanceOf", 
+      "text": "acquaintanceOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "Parent Of", 
+      "descriptionMoreURL": "http://www.perceive.net/schemas/20031015/relationship/#parentOf", 
+      "text": "parentOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "Sibling Of", 
+      "descriptionMoreURL": "http://www.perceive.net/schemas/20031015/relationship/#siblingOf", 
+      "text": "siblingOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "Child Of", 
+      "descriptionMoreURL": "http://www.perceive.net/schemas/20031015/relationship/#childOf", 
+      "text": "childOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "Grandchild Of", 
+      "descriptionMoreURL": "http://www.perceive.net/schemas/20031015/relationship/#grandchildOf", 
+      "text": "grandchildOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "Spouse Of", 
+      "descriptionMoreURL": "http://www.perceive.net/schemas/20031015/relationship/#spouseOf", 
+      "text": "spouseOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "Enemy Of", 
+      "descriptionMoreURL": "http://www.perceive.net/schemas/20031015/relationship/#enemyOf", 
+      "text": "enemyOf", 
+      "type": "property"
+   }, 
+   {
+      "description": "Antagonist Of", 
+      "descriptionMoreURL": "http://www.perceive.net/schemas/20031015/relationship/#antagonistOf", 
+      "text": "antagonistOf", 
+      "type": "property"
+   }
+]

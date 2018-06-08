@@ -8,7 +8,7 @@
 
 This is an autocompleter for the [Atom](http://atom.io) editor, compatible with AutoComplete+ that knows common ontologies and will suggest predicates based on your typing.
 
-![Short video of the completor in action](/docs/completer-sample-video.gif?raw=true)
+![Short video of the completer in action](/docs/completer-sample-video.gif?raw=true)
 
 Current ontologies are:
 * [Activity Vocabulary](http://dublincore.org/documents/dcmi-terms/)
@@ -25,6 +25,7 @@ Current ontologies are:
 * [R2RML](http://www.w3.org/TR/2012/REC-r2rml-20120927/)
 * [RDF](https://www.w3.org/TR/2004/REC-rdf-mt-20040210/)
 * [RDFS](https://www.w3.org/TR/rdf-schema/)
+* [Relationship](http://www.perceive.net/schemas/20031015/relationship/)
 * [SHapes Constraint Language](https://www.w3.org/TR/shacl/)
 * [SKOS](https://www.w3.org/2009/08/skos-reference/skos.html)
 * [W3C Provenance](https://www.w3.org/TR/2013/REC-prov-o-20130430/)
@@ -34,7 +35,7 @@ If you'd like others added either raise an issue on the atom package, comment on
 
 Known ontologies are referenced from the file `ontologies.json` in `\lib`. Each ontology has a JSON file that contains the completion info.
 
-To generate a new file, run `convert.py` over a ttl version of the ontology to generate the JSON. convert.py supports a few command line options, run without any parameters to see them.
+To generate a new file, run `convert.py` over a [ttl](https://en.wikipedia.org/wiki/Turtle_(syntax)) version of the ontology to generate the JSON. convert.py supports a few command line options, run without any parameters to see them.
 
 Note that quality of anchor links into the specs varies on whether the naming convention for the anchors is sufficiently predictable. Feel free to fix any that are wrong in the relevant JSON file and do a pull request
 to get added.
