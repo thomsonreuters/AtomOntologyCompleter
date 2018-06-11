@@ -96,10 +96,11 @@ module.exports =
       matches.push(@buildMatch(candidate))
     matches
 
-  determineNamespace: (line, position) ->
+  determineNamespace: (line) ->
+    return null if not line?
     regex = /([\w]+):[^:]+$/
     match = regex.exec(line)
-    return match[1]
+    return match?[1] or null
 
 firstCharsEqual = (str1, str2) ->
   str1[0].toLowerCase() is str2[0].toLowerCase()

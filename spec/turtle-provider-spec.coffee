@@ -50,6 +50,15 @@ describe "Turtle autocompletions", ->
     waitsForPromise -> atom.workspace.open('test.ttl')
     runs -> editor = atom.workspace.getActiveTextEditor()
 
+  it "deals correctly with edge conditions for prefixes", ->
+    expect(provider.determineNamespace('foaf:enemyOf')).toBe 'foaf'
+    expect(provider.determineNamespace('foaf:e')).toBe 'foaf'
+    expect(provider.determineNamespace('foaf:')).toBe null
+    expect(provider.determineNamespace('foaf')).toBe null
+    expect(provider.determineNamespace('')).toBe null
+    expect(provider.determineNamespace(null)).toBe null
+
+
   it "returns no completions when text is empty", ->
     editor.setText('')
     expect(getCompletions().length).toBe 0
