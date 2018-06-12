@@ -69,18 +69,25 @@ module.exports =
       catch error
         console.log 'Unable to load ontology with prefix ', ontologyPrefix
 
+  # there seems to be a bug with scopedescriptors not being correctly set
+  # midline. For now, just look at the preceding text and make a decision
+  # about which type of suggestion to offer based on whether there is a
+  # turtle prefix
   getSuggestions: ({editor,bufferPosition,scopeDescriptor, prefix}) ->
     return [] if not prefix? or not prefix.length
-    currentScope = scopeDescriptor.getScopesArray()
-    if currentScope.length < 2  # we're not sure of scope yet, so choose ont
+    scopes = scopeDescriptor.getScopesArray()
+      # return nothing if deep in a scope that isn't prefixed URIs
+    return [] if scopes.length > 1 and
+    not scopes.includes('entity.name.tag.prefixed-uri.turtle')
+    lineToCursor = editor.getTextInRange([[bufferPosition.row, 0],
+      bufferPosition])
+    namespace = @determineNamespace(lineToCursor)
+    if namespace? and namespace of @mergedOntologies
+      if not @mergedOntologies[namespace].completions?
+        @loadOntology(namespace)
+      return @getMatches(@mergedOntologies[namespace].completions,prefix)
+    else
       return @getMatches(@prefixCompletions,prefix)
-    else if currentScope.includes("entity.name.tag.prefixed-uri.turtle")
-      namespace = @determineNamespace(
-        editor.lineTextForBufferRow(bufferPosition.row))
-      if namespace? and namespace of @mergedOntologies
-        if not @mergedOntologies[namespace].completions?
-          @loadOntology(namespace)
-        return @getMatches(@mergedOntologies[namespace].completions,prefix)
     return []
 
   buildMatch: (match) ->
@@ -98,7 +105,7 @@ module.exports =
 
   determineNamespace: (line) ->
     return null if not line?
-    regex = /([\w]+):[^:]+$/
+    regex = /([\w]+):[^:\s]+$/
     match = regex.exec(line)
     return match?[1] or null
 

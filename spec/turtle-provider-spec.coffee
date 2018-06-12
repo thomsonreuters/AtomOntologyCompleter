@@ -51,6 +51,10 @@ describe "Turtle autocompletions", ->
     runs -> editor = atom.workspace.getActiveTextEditor()
 
   it "deals correctly with edge conditions for prefixes", ->
+    expect(provider.determineNamespace('foaf:enemyOf rel:en')).toBe "rel"
+    expect(provider.determineNamespace('foaf:enemyOf rel:')).toBe null
+    expect(provider.determineNamespace('foaf:enemyOf rel')).toBe null
+    expect(provider.determineNamespace('foaf:enemyOf ')).toBe null
     expect(provider.determineNamespace('foaf:enemyOf')).toBe 'foaf'
     expect(provider.determineNamespace('foaf:e')).toBe 'foaf'
     expect(provider.determineNamespace('foaf:')).toBe null
