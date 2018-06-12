@@ -30,7 +30,7 @@ if len(sys.argv) < 3:
 urlPrefix=sys.argv[1]
 desiredPrefix=sys.argv[2]
 predicates = []
-predicateRegex = compile_regex(r'^([^:\s]*):([a-zA-Z\-_]+)')
+predicateRegex = compile_regex(r'^([^:\s]*):([\w]+)')
 typeRegex = compile_regex(r'a (rdf|owl|rdfs|dcam):([\w]+)')
 commentRegex = compile_regex(r'\s+(rdfs:comment|skos:definition|rdfs:label) \"([^\"]+)\"(@\w\w)?')
 currentPredicate = None
