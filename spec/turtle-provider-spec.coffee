@@ -20,19 +20,19 @@
 path = require 'path'
 
 describe "Turtle autocompletions", ->
-  [editor, provider] = []
+  [editor, provider,trigEditor] = []
 
-  getCompletions = (options={}) ->
-    cursor = editor.getLastCursor()
+  getCompletions = (ed) ->
+    cursor = ed.getLastCursor()
     start = cursor.getBeginningOfCurrentWordBufferPosition()
     end = cursor.getBufferPosition()
-    prefix = editor.getTextInRange([start, end])
+    prefix = ed.getTextInRange([start, end])
     request =
-      editor: editor
+      editor: ed
       bufferPosition: end
       scopeDescriptor: cursor.getScopeDescriptor()
       prefix: prefix
-      activatedManually: options.activatedManually ? true
+      activatedManually: true
     provider.getSuggestions(request)
 
   beforeEach ->
@@ -45,10 +45,11 @@ describe "Turtle autocompletions", ->
       provider = atom.packages.getActivePackage('turtle-completer').
       mainModule.getProvider()
 
-    #waitsFor -> atom.config.set('turtle-completer.enableLocalOntologies',false)
     waitsFor -> Object.keys(provider.mergedOntologies).length > 0
     waitsForPromise -> atom.workspace.open('test.ttl')
     runs -> editor = atom.workspace.getActiveTextEditor()
+    waitsForPromise -> atom.workspace.open('test.trig')
+    runs -> trigEditor = atom.workspace.getActiveTextEditor()
 
   it "deals correctly with edge conditions for prefixes", ->
     expect(provider.determineNamespace('foaf:enemyOf rel:en')).toBe "rel"
@@ -62,17 +63,24 @@ describe "Turtle autocompletions", ->
     expect(provider.determineNamespace('')).toBe null
     expect(provider.determineNamespace(null)).toBe null
 
+  it "also works with TriG files", ->
+    trigEditor.setText('o')
+    completions = getCompletions(trigEditor)
+    expect(completions.length).toBe 3
+    expect(completions[0].text).toBe 'oa'
+    expect(completions[1].text).toBe 'odrl'
+    expect(completions[2].text).toBe 'owl'
 
   it "returns no completions when text is empty", ->
     editor.setText('')
-    expect(getCompletions().length).toBe 0
+    expect(getCompletions(editor).length).toBe 0
     editor.setText('d')
     editor.setCursorBufferPosition([0, 0])
-    expect(getCompletions().length).toBe 0
+    expect(getCompletions(editor).length).toBe 0
 
   it "returns owl,odrl and oa as an option when text is o", ->
     editor.setText('o')
-    completions = getCompletions()
+    completions = getCompletions(editor)
     expect(completions.length).toBe 3
     expect(completions[0].text).toBe 'oa'
     expect(completions[1].text).toBe 'odrl'
@@ -80,7 +88,7 @@ describe "Turtle autocompletions", ->
 
   it "returns approporiate ontologies for owl when text is owl:Cl", ->
     editor.setText('owl:Cl')
-    completions = getCompletions()
+    completions = getCompletions(editor)
     expect(completions.length).toBe 3
     expect(completions[0].text).toBe 'Class'
     expect(completions[1].text).toBe 'cardinality'
@@ -91,7 +99,7 @@ describe "Turtle autocompletions", ->
     # might seem wrong but is right
   it "returns skos and shacl when sxyz is passed as prefix", ->
     editor.setText('sxyz')
-    completions = getCompletions()
+    completions = getCompletions(editor)
     expect(completions.length).toBe 2
     expect(completions[0].text).toBe 'sh'
     expect(completions[1].text).toBe 'skos'
@@ -100,19 +108,19 @@ describe "Turtle autocompletions", ->
     editor.setText('xyz')
 
     completions = []
-    expect(-> completions = getCompletions()).not.toThrow()
+    expect(-> completions = getCompletions(editor)).not.toThrow()
     expect(completions.length).toBe 0
 
   it "does not throw or return suggestions when an odd prefix is used", ->
     editor.setText('dan:Be')
 
     completions = []
-    expect(-> completions = getCompletions()).not.toThrow()
+    expect(-> completions = getCompletions(editor)).not.toThrow()
     expect(completions.length).toBe 0
 
   it "correctly overrides an ontology when the local option is enabled", ->
     editor.setText('foaf:A')
-    completions = getCompletions()
+    completions = getCompletions(editor)
     expect(completions.length).toBe 6
     expect(completions[0].text).toBe 'Agent'
     expect(completions[1].text).toBe 'aimChatID'
@@ -125,7 +133,7 @@ describe "Turtle autocompletions", ->
     overrideFile = "#{packagePath}spec#{path.sep}ontology_override.json"
     atom.config.set('turtle-completer.localOntologyConfigFile',overrideFile)
     # Setting the override file shouldn't change anything
-    completions = getCompletions()
+    completions = getCompletions(editor)
     expect(completions.length).toBe 6
     expect(completions[0].text).toBe 'Agent'
     expect(completions[1].text).toBe 'aimChatID'
@@ -136,14 +144,14 @@ describe "Turtle autocompletions", ->
 
     atom.config.set('turtle-completer.enableLocalOntologies', true)
     # Now it should change
-    completions = getCompletions()
+    completions = getCompletions(editor)
     expect(completions.length).toBe 2
     expect(completions[0].text).toBe 'A2'
     expect(completions[1].text).toBe 'A3'
 
     atom.config.set('turtle-completer.enableLocalOntologies', false)
     # And this should go back
-    completions = getCompletions()
+    completions = getCompletions(editor)
     expect(completions.length).toBe 6
     expect(completions[0].text).toBe 'Agent'
     expect(completions[1].text).toBe 'aimChatID'

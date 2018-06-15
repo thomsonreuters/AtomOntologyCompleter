@@ -20,8 +20,8 @@
 PACKAGE_ONTOLOGIES = require './ontologies.json'
 
 module.exports =
-  selector: '.source.turtle'
-  disableForSelector: '.source.turtle .comment'
+  selector: '.source.trig, .source.turtle'
+  disableForSelector: '.source.turtle .comment, .source.trig .comment'
   inclusionPriority: 1
   suggestionPriority: 1
   filterSuggestions: true

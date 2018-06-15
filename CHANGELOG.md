@@ -1,3 +1,5 @@
+## 1.0.0
+* Now supports the TriG serialization in addition to Turtle
 ## 0.6.0
 * Fixed bug that suggestions wouldn't be provided mid-line
 * Fixed bug in converter that wouldn't allow predicates with a number in. Thanks again to Stefan for reporting.

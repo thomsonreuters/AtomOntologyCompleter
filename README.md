@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/apm/l/atom-clock.svg?style=flat-square)](https://github.com/thomsonreuters/AtomOntologyCompleter/blob/master/LICENSE)
 [![Gitter chat](https://badges.gitter.im/thomsonreuters/AtomOntologyCompleter.svg?style=flat-square)](https://gitter.im/thomsonreuters/AtomOntologyCompleter)
 
-This is an autocompleter for the [Atom](http://atom.io) editor, compatible with AutoComplete+ that knows common ontologies and will suggest predicates based on your typing.
+This is an autocompleter for the [Atom](http://atom.io) editor, compatible with [AutoComplete+](https://atom.io/packages/autocomplete-plus) that knows common ontologies and will suggest predicates based on your typing. Both the [Turtle](https://www.w3.org/TR/turtle/) and [TriG](https://www.w3.org/TR/trig/) serializations are supported.
 
 ![Short video of the completer in action](/docs/completer-sample-video.gif?raw=true)
 
