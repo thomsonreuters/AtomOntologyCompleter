@@ -4,7 +4,7 @@
 [![Installs!](https://img.shields.io/apm/dm/atom-clock.svg?style=flat-square)](https://atom.io/packages/turtle-completer)
 [![Version!](https://img.shields.io/apm/v/atom-clock.svg?style=flat-square)](https://atom.io/packages/turtle-completer)
 [![License](https://img.shields.io/apm/l/atom-clock.svg?style=flat-square)](https://github.com/thomsonreuters/AtomOntologyCompleter/blob/master/LICENSE)
-[![Gitter chat](https://badges.gitter.im/thomsonreuters/AtomOntologyCompleter.svg?style=flat-square)](https://gitter.im/thomsonreuters/AtomOntologyCompleter)
+[![Gitter chat](https://badges.gitter.im/thomsonreuters/AtomOntologyCompleter.svg?style=flat-square)](https://gitter.im/thomsonreuters/AtomOntologyCompleter) [![Join the chat at https://gitter.im/thomsonreuters/AtomOntologyCompleter](https://badges.gitter.im/thomsonreuters/AtomOntologyCompleter.svg)](https://gitter.im/thomsonreuters/AtomOntologyCompleter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 This is an autocompleter for the [Atom](http://atom.io) editor, compatible with [AutoComplete+](https://atom.io/packages/autocomplete-plus) that knows common ontologies and will suggest predicates based on your typing. Both the [Turtle](https://www.w3.org/TR/turtle/) and [TriG](https://www.w3.org/TR/trig/) serializations are supported.
 
